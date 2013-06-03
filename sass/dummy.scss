@@ -1,0 +1,8 @@
+[class*="col"]:nth-child(even) {
+}
+[class*="col"]:nth-child(odd) {
+}
+
+[class*="col"]{
+    text-align: justify;
+}

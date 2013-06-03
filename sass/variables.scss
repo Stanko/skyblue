@@ -1,0 +1,45 @@
+// Grays
+
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+
+
+// Colors
+
+$bodyBackground:       	#fff;
+$textColor:           	$gray;
+
+
+// Scaffolding
+
+$rowWidth:				1100px;
+$rowWidthSmall:			$rowWidth * 0.75;
+
+$numberOfColumns:		12;
+$columnWidth:			100%/$numberOfColumns;
+$columnMargin:			40px;
+$columnHalfMargin:		$columnMargin/2;
+
+
+//+ GRID SYSTEM
+//+ --------------------------------------------------
+
+// Default 940px grid
+$gridColumns:               12 !default;
+$gridColumnWidth:           60px !default;
+$gridGutterWidth:           30px !default;
+$gridFloatBreakpoint:       768px;
+$gridRowWidth:              ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+
+
+
+// Layout
+
+$fixedTopHeight:		50px;
+$navWidth:				120px;
+$navWidthMedium:		78px;
+$navWidthSmall:			50px;
+$floatingPanelWidth:	300px;

@@ -1,0 +1,146 @@
+// Grid System
+// -----------
+
+// Centered container element
+@mixin tb_container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  @include tb_clearfix;
+}
+
+// Make a Grid
+
+// Creates a wrapper for a series of columns
+@mixin tb_makeRow() {
+  // Negative margin the row out to align the content of columns
+  margin-left:  ($gridGutterWidth / -2);
+  margin-right: ($gridGutterWidth / -2);
+  // Then clear the floated columns
+  @include tb_clearfix;
+}
+// Generate the columns
+@mixin tb_makeColumn($columns) {
+  @media (min-width: $gridFloatBreakpoint) {
+    float: left;
+    // Calculate width based on number of columns available
+    width: percentage($columns / $gridColumns);
+  }
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Set inner padding as gutters instead of margin
+  padding-left:  ($gridGutterWidth / 2);
+  padding-right: ($gridGutterWidth / 2);
+}
+// Generate the column offsets
+@mixin tb_makeColumnOffset($columns) {
+  @media (min-width: $gridFloatBreakpoint) {
+    margin-left: percentage(($columns / $gridColumns));
+  }
+}
+@mixin tb_makeColumnPush($columns) {
+  @media (min-width: $gridFloatBreakpoint) {
+    left: percentage(($columns / $gridColumns));
+  }
+}
+@mixin tb_makeColumnPull($columns) {
+  @media (min-width: $gridFloatBreakpoint) {
+    right: percentage(($columns / $gridColumns));
+  }
+}
+
+
+// The Grid
+@mixin tb_makeColumn($columns) {
+  float: left;
+  padding: $gridGutterWidth;
+  width: percentage($columns / $gridColumns);
+}
+
+@mixin tb_makeColumnOffset($columns) {
+  margin-left: percentage($columns / $gridColumns);
+}
+
+
+// The Grid
+@mixin tb_grid-core($gridColumnWidth) {
+  @include tb_grid-span-x($gridColumns);
+  @include tb_grid-offset-x($gridColumns);
+}
+
+@mixin tb_grid-span-x($gridColumns) {
+  @while $gridColumns > 0 {
+    .span#{$gridColumns} { @include tb_grid-span($gridColumns); }
+    $gridColumns: $gridColumns - 1;
+  }
+}
+
+@mixin tb_grid-offset-x($gridColumns) {
+  @while $gridColumns > 0 {
+    .offset#{$gridColumns} { @include tb_grid-offset($gridColumns); }
+    $gridColumns: $gridColumns - 1;
+  }
+}
+
+@mixin tb_grid-offset($columns) {
+  margin-left: percentage(($columns / $gridColumns));
+}
+@mixin tb_grid-span($columns) {
+  width: percentage(($columns / $gridColumns));
+}
+
+
+
+
+
+
+
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Set the container width, and override it for fixed navbars in media queries
+.container {
+  @include tb_container-fixed;
+}
+
+// Mobile-first defaults
+.row {
+  @include tb_makeRow;
+}
+[class^="span"] {
+  position: relative;
+  min-height: 1px;
+  padding-left:  ($gridGutterWidth / 2);
+  padding-right: ($gridGutterWidth / 2);
+  @include box-sizing(border-box)
+}
+
+// Responsive: Tablets and up
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 728px;
+  }
+  // Generate the grid columns and offsets
+  [class^="span"] { float: left; }
+  @include tb_grid-core($gridColumnWidth);
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+// Responsive: Large desktops and up
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+// Reset utility classes due to specificity
+[class*="span"].pull-right {
+  float: right;
+}

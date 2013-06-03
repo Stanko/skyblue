@@ -1,0 +1,32 @@
+$emptyButtonColor:		#49d;
+$buttonColor:			#49d;
+
+$colorDiff:				#333;
+
+.button{
+	@include box-sizing(border-box);
+	display: inline-block;
+	padding: 8px 25px;
+	min-width: 120px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	background: $buttonColor;
+	border: 2px solid $buttonColor;
+
+	&:hover{
+		background-color: $buttonColor - $colorDiff;
+		border-color: $buttonColor - $colorDiff;
+	}
+
+	&.empty{
+		border-radius: 20px;
+		color: $emptyButtonColor;
+		background: #fff;
+		
+		&:hover{
+			color: $emptyButtonColor - $colorDiff;
+		}
+	}
+}

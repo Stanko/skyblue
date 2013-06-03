@@ -1,0 +1,29 @@
+input, select, textarea{
+	@include box-sizing(border-box);
+	height: 2.625em;
+	width: 300px;
+
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+
+	font-family: 'Helvetica Neue';
+	font-size: 1em;
+	font-weight: 200;
+	
+	border: 2px solid #ddd;
+	border-radius: 3px;
+}
+
+select{
+	-webkit-appearance:none;
+}
+textarea{
+	height: auto;
+	min-height: 100px;
+	line-height: 1.4em;
+}
+
+input:focus, textarea:focus, select:focus{
+	border: 2px solid #49d;
+	outline: none;
+}

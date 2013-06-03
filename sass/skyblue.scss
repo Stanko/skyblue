@@ -1,0 +1,58 @@
+@import "compass/reset";
+
+
+/*
+ *
+ * SkyBlue Sass by RocketLaunch
+ *
+ * Built and maintained with a lots of love by Stanko
+ *
+ */
+
+// Core variables and mixins
+@import "variables"; // Modify this for custom colors, font-sizes, etc
+@import "mixins";
+
+// CSS Reset
+
+@import "reset";
+
+// Grid system and page structure
+//@import "scaffolding";
+@import "grid";
+@import "layout";
+
+// Base CSS
+@import "fonts";
+@import "typography";
+@import "forms";
+//@import "tables";
+
+@import "buttons";
+
+
+
+// Dummy testing stuff
+@import "dummy";
+
+
+
+
+// Responsive
+@import "responsive";
+
+
+// Helpers - it needs to be last to override all others
+@import "helpers";
+
+
+
+
+
+
+body{
+	font-family: 'Helvetica Neue';
+	font-size: 16px;
+	font-weight: 200;
+	background: #eee;
+}
