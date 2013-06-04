@@ -1,45 +1,37 @@
 // Grays
-
-$grayDarker:            #222;
-$grayDark:              #333;
-$gray:                  #555;
-$grayLight:             #999;
-$grayLighter:           #eee;
+$grayDarker:			#222;
+$grayDark:				#333;
+$gray:					#555;
+$grayLight:				#999;
+$grayLighter:			#eee;
 
 
 // Colors
-
-$bodyBackground:       	#fff;
-$textColor:           	$gray;
-
-
-// Scaffolding
-
-$rowWidth:				1100px;
-$rowWidthSmall:			$rowWidth * 0.75;
-
-$numberOfColumns:		12;
-$columnWidth:			100%/$numberOfColumns;
-$columnMargin:			40px;
-$columnHalfMargin:		$columnMargin/2;
+$bodyBackground:		#eee;
+$textColor:				$gray;
 
 
-//+ GRID SYSTEM
-//+ --------------------------------------------------
-
-// Default 940px grid
-$gridColumns:               12 !default;
-$gridColumnWidth:           60px !default;
-$gridGutterWidth:           30px !default;
-$gridFloatBreakpoint:       768px;
-$gridRowWidth:              ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
+// Defaults
+$fontFamily:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontSize:				14px;
+$fontWeight:			200;
+$lineHeight:			1.4em;
 
 
+// Grid
+$gridColumns:			12;
+$gridPaddingWidth:		30px;
+$gridUnitWidth:			100% / $gridColumns;
 
-// Layout
 
-$fixedTopHeight:		50px;
-$navWidth:				120px;
-$navWidthMedium:		78px;
-$navWidthSmall:			50px;
-$floatingPanelWidth:	300px;
+$containerWidthTablet:	720px;
+$containerWidthDesktop:	940px;
+$containerWidthBigDesktop:	1150px;
+
+
+// Buttons
+$buttonColor:			#49d;
+
+
+// Helpers
+$colorDiff:				#333;

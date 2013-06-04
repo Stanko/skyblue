@@ -2,14 +2,11 @@ input, select, textarea{
 	@include box-sizing(border-box);
 	height: 2.625em;
 	width: 300px;
-
 	padding: 0.5em;
-	margin-bottom: 0.5em;
-
-	font-family: 'Helvetica Neue';
+	margin-bottom: 1em;
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
 	font-size: 1em;
-	font-weight: 200;
-	
 	border: 2px solid #ddd;
 	border-radius: 3px;
 }
@@ -17,13 +14,21 @@ input, select, textarea{
 select{
 	-webkit-appearance:none;
 }
+
 textarea{
 	height: auto;
 	min-height: 100px;
-	line-height: 1.4em;
+	line-height: $lineHeight;
 }
 
 input:focus, textarea:focus, select:focus{
 	border: 2px solid #49d;
 	outline: none;
+}
+
+
+label{
+	display: block;
+	min-width: 200px;
+	margin-bottom: 0.5em;
 }

@@ -1,8 +1,25 @@
-[class*="col"]:nth-child(even) {
-}
-[class*="col"]:nth-child(odd) {
+.dummy{
+	.row{
+		background: #fff;
+	}
+
+	[class^="span"]{
+		min-height: 40px;
+		border: 1px solid #ddd;
+	}
+	[class^="span"]:nth-child(even) {
+		//background: #e5e5e5;
+	}
+	[class^="span"]:nth-child(odd) {
+		//background: #eee;
+	}
 }
 
-[class*="col"]{
-    text-align: justify;
+.test{
+	[class^="span"]{
+		min-height: 40px;
+		padding: 15px;
+	}
 }
+
+.container{ background: white; }

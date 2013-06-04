@@ -1,0 +1,71 @@
+// GRID
+
+
+.container {
+	@include clearfix;
+	@include box-sizing(border-box);
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  $gridPaddingWidth;
+	padding-right: $gridPaddingWidth;
+}
+
+.row {
+	@include box-sizing(border-box);
+	@include clearfix;
+
+	margin-left:  ($gridPaddingWidth / -2);
+	margin-right: ($gridPaddingWidth / -2);
+}
+
+[class^="span"] {
+	position: relative;
+	min-height: 1px;
+	margin-left:  ($gridPaddingWidth / 2);
+	margin-right: ($gridPaddingWidth / 2);
+	@include box-sizing(border-box);
+}
+
+@mixin buildSpans($containerWidth){
+	$spanWithMargins: ($containerWidth - $gridPaddingWidth) / $gridColumns;
+	@for $i from 1 through $gridColumns {
+		.span#{$i} { width: ($i*$spanWithMargins)-($gridPaddingWidth*1); }
+	}
+}
+
+
+// Responsive: Tablets and up
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: $containerWidthTablet;
+	}
+
+	// Generate the grid columns and offsets
+	[class^="span"] { float: left; }
+
+	@include buildSpans($containerWidthTablet);
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: 992px) {
+	.container {
+		max-width: $containerWidthDesktop;
+	}
+
+	@include buildSpans($containerWidthDesktop);
+}
+
+// Responsive: Large desktops and up
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: $containerWidthBigDesktop;
+	}
+
+	@include buildSpans($containerWidthBigDesktop);
+
+}
+
+// Reset utility classes due to specificity
+[class*="span"].floatRight {
+	float: right;
+}
