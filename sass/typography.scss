@@ -36,3 +36,11 @@ p{
 	margin-bottom: 1em;
 	line-height: $lineHeight;
 }
+
+
+a{
+	color: $mainColor;
+}
+a:active, a:focus, a:hover{
+	color: $mainColor - $colorDiff;
+}

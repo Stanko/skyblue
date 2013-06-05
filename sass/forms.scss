@@ -7,7 +7,7 @@ input, select, textarea{
 	font-family: $fontFamily;
 	font-weight: $fontWeight;
 	font-size: 1em;
-	border: 2px solid #ddd;
+	border: 2px solid $grayLighter;
 	border-radius: 3px;
 }
 
@@ -22,13 +22,27 @@ textarea{
 }
 
 input:focus, textarea:focus, select:focus{
-	border: 2px solid #49d;
+	border: 2px solid $mainColor;
 	outline: none;
 }
 
 
 label{
 	display: block;
-	min-width: 200px;
 	margin-bottom: 0.5em;
+}
+
+
+.form{
+	&.formHorizontal{
+		label{
+			display: inline-block;
+			width: 200px;
+			max-width: 100%;
+			height: 2.625em;
+			line-height: 2.625em;
+			font-size: 1em;
+			vertical-align: top;
+		}
+	}
 }

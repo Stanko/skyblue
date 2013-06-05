@@ -1,18 +1,22 @@
 .button{
 	@include box-sizing(border-box);
-	display: inline-block;
-	padding: 8px 25px;
-	min-width: 120px;
-	border-radius: 3px;
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
 	background: $buttonColor;
+	color: #fff;
+	display: inline-block;
+	min-width: 120px;
+	padding: 8px 25px;
+	margin-bottom: 1em;
 	border: 2px solid $buttonColor;
+	border-radius: 3px;
+	font-size: 1em;
+	text-align: center;
+	text-decoration: none;
+	
 
 	&:hover{
 		background-color: $buttonColor - $colorDiff;
 		border-color: $buttonColor - $colorDiff;
+		color: #fff;
 	}
 
 	&.empty{

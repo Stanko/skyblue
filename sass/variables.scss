@@ -3,17 +3,20 @@ $grayDarker:			#222;
 $grayDark:				#333;
 $gray:					#555;
 $grayLight:				#999;
-$grayLighter:			#eee;
+$grayLighter:			#ddd;
 
 
 // Colors
 $bodyBackground:		#eee;
 $textColor:				$gray;
 
+// Buttons
+$mainColor:				#49d;
+$buttonColor:			$mainColor;
 
 // Defaults
 $fontFamily:			"Helvetica Neue", Helvetica, Arial, sans-serif;
-$fontSize:				14px;
+$fontSize:				15px;
 $fontWeight:			200;
 $lineHeight:			1.4em;
 
@@ -28,9 +31,6 @@ $containerWidthTablet:	720px;
 $containerWidthDesktop:	940px;
 $containerWidthBigDesktop:	1150px;
 
-
-// Buttons
-$buttonColor:			#49d;
 
 
 // Helpers

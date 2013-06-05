@@ -86,7 +86,7 @@ html {
 /* line 1, ../sass/main.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1.4em;
   background: #eeeeee;
@@ -341,33 +341,46 @@ p {
   line-height: 1.4em;
 }
 
+/* line 41, ../sass/typography.scss */
+a {
+  color: #4499dd;
+}
+
+/* line 44, ../sass/typography.scss */
+a:active, a:focus, a:hover {
+  color: #1166aa;
+}
+
 /* line 1, ../sass/buttons.scss */
 .button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  padding: 8px 25px;
-  min-width: 120px;
-  border-radius: 3px;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
   background: #4499dd;
+  color: #fff;
+  display: inline-block;
+  min-width: 120px;
+  padding: 8px 25px;
+  margin-bottom: 1em;
   border: 2px solid #4499dd;
+  border-radius: 3px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
 }
-/* line 13, ../sass/buttons.scss */
+/* line 16, ../sass/buttons.scss */
 .button:hover {
   background-color: #1166aa;
   border-color: #1166aa;
+  color: #fff;
 }
-/* line 18, ../sass/buttons.scss */
+/* line 22, ../sass/buttons.scss */
 .button.empty {
   border-radius: 20px;
   color: #4499dd;
   background: #fff;
 }
-/* line 23, ../sass/buttons.scss */
+/* line 27, ../sass/buttons.scss */
 .button.empty:hover {
   color: #1166aa;
 }
@@ -384,7 +397,7 @@ input, select, textarea {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 1em;
-  border: 2px solid #ddd;
+  border: 2px solid #dddddd;
   border-radius: 3px;
 }
 
@@ -402,15 +415,25 @@ textarea {
 
 /* line 24, ../sass/forms.scss */
 input:focus, textarea:focus, select:focus {
-  border: 2px solid #49d;
+  border: 2px solid #4499dd;
   outline: none;
 }
 
 /* line 30, ../sass/forms.scss */
 label {
   display: block;
-  min-width: 200px;
   margin-bottom: 0.5em;
+}
+
+/* line 38, ../sass/forms.scss */
+.form.formHorizontal label {
+  display: inline-block;
+  width: 200px;
+  max-width: 100%;
+  height: 2.625em;
+  line-height: 2.625em;
+  font-size: 1em;
+  vertical-align: top;
 }
 
 /* line 2, ../sass/helpers.scss */
