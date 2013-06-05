@@ -5,4 +5,6 @@ body{
 	line-height: $lineHeight;
 	background: $bodyBackground;
 	color: $textColor;
+
+	-webkit-font-smoothing: antialiased;
 }

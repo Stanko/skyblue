@@ -1,4 +1,16 @@
-input, select, textarea{
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+select, 
+textarea
+{
 	@include box-sizing(border-box);
 	height: 2.625em;
 	width: 300px;
@@ -11,17 +23,29 @@ input, select, textarea{
 	border-radius: 3px;
 }
 
-select{
-	-webkit-appearance:none;
-}
-
 textarea{
 	height: auto;
 	min-height: 100px;
 	line-height: $lineHeight;
 }
 
-input:focus, textarea:focus, select:focus{
+select{
+	-webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus
+{
 	border: 2px solid $mainColor;
 	outline: none;
 }
@@ -32,6 +56,12 @@ label{
 	margin-bottom: 0.5em;
 }
 
+input[type="checkbox"], 
+input[type="radio"]{
+	font-size: 1em;
+	height: 1em;
+	width: 1em;
+} 
 
 .form{
 	&.formHorizontal{

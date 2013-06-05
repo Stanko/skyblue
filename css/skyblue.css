@@ -91,6 +91,7 @@ body {
   line-height: 1.4em;
   background: #eeeeee;
   color: #555555;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* line 4, ../sass/grid.scss */
@@ -385,8 +386,19 @@ a:active, a:focus, a:hover {
   color: #1166aa;
 }
 
-/* line 1, ../sass/forms.scss */
-input, select, textarea {
+/* line 13, ../sass/forms.scss */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+select,
+textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -401,31 +413,50 @@ input, select, textarea {
   border-radius: 3px;
 }
 
-/* line 14, ../sass/forms.scss */
-select {
-  -webkit-appearance: none;
-}
-
-/* line 18, ../sass/forms.scss */
+/* line 26, ../sass/forms.scss */
 textarea {
   height: auto;
   min-height: 100px;
   line-height: 1.4em;
 }
 
-/* line 24, ../sass/forms.scss */
-input:focus, textarea:focus, select:focus {
+/* line 32, ../sass/forms.scss */
+select {
+  -webkit-appearance: none;
+}
+
+/* line 48, ../sass/forms.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus {
   border: 2px solid #4499dd;
   outline: none;
 }
 
-/* line 30, ../sass/forms.scss */
+/* line 54, ../sass/forms.scss */
 label {
   display: block;
   margin-bottom: 0.5em;
 }
 
-/* line 38, ../sass/forms.scss */
+/* line 60, ../sass/forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  font-size: 1em;
+  height: 1em;
+  width: 1em;
+}
+
+/* line 68, ../sass/forms.scss */
 .form.formHorizontal label {
   display: inline-block;
   width: 200px;
