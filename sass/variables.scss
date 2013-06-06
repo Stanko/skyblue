@@ -4,6 +4,7 @@ $grayDark:				#333;
 $gray:					#555;
 $grayLight:				#999;
 $grayLighter:			#ddd;
+$grayReallyLight:		#f8f8f8;
 
 
 // Colors
@@ -21,6 +22,17 @@ $fontWeight:			200;
 $lineHeight:			1.4em;
 
 
+// Code
+$preFontFamily:			"DejaVu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+$preFontSize:			13px;
+
+
+// Tables
+$tableBorderColor:		$grayLighter;
+$tableBackground:		$grayReallyLight;
+$tableBackgroundHover:	$mainColor + #111;
+$tableColorHover:		#fff;
+
 // Grid
 $gridColumns:			12;
 $gridPaddingWidth:		30px;
@@ -35,3 +47,4 @@ $containerWidthBigDesktop:	1150px;
 
 // Helpers
 $colorDiff:				#333;
+$borderRadius:			3px;

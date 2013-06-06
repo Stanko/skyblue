@@ -13,6 +13,9 @@
 .margin40{ margin: 40px; }
 .margin50{ margin: 50px; }
 
+.marginBottom1em{ margin-bottom: 1em; }
+.marginBottom05em{ margin-bottom: 0.5em; }
+
 
 // Floats
 .floatLeft{ float: left; }
@@ -25,3 +28,7 @@
 .textRight{ text-align: right; }
 
 
+// Display
+.displayBlock{ display: block; }
+.displayInlineBlock{ display: inline-block; }
+.displayInline{ display: inline; }

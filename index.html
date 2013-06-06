@@ -9,7 +9,10 @@
 
     <link rel="stylesheet" href="css/skyblue.css">
     
-
+    <!--[if lt IE 9]>
+        <script src="js/ie/respond.src.js"></script>
+    <![endif]-->
+    
     <!-- script src="js/app.js"></script -->
 </head>
 <body>
@@ -75,7 +78,8 @@
 
         <h2>Typography</h2>
         <div class="row">
-            <div class="span4">
+            <div class="span3">
+                <h3>Headers</h3>
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -83,10 +87,13 @@
                 <h5>Header 5</h5>
                 <h6>Header 6</h6>
             </div>
-            <div class="span4">
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <div class="span3">
+                <h3>Paragraph and links</h3>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta felis euismod semper. <small>Vivamus sagittis lacus vel</small> augue laoreet rutrum faucibus dolor auctor.</p>
+                <p class="big">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus.</p>
             </div>
-            <div class="span4">
+            <div class="span3">
+                <h3>Unordered list</h3>
                 <ul>
                     <li>Cras mattis consectetur purus sit amet fermentum.</li>
                     <li>
@@ -99,52 +106,111 @@
                     </li>
                     <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
                 </ul>
+
+                <h3>Ordered list</h3>
+                <ol>
+                    <li>Cras mattis consectetur purus sit amet fermentum.</li>
+                    <li>
+                        Donec ullamcorper nulla non metus auctor fringilla.
+                        <ol>
+                            <li>Aenean eu leo quam.</li>
+                            <li>Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
+                            <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
+                        </ol>
+                    </li>
+                    <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                </ol>
+            </div>
+            <div class="span3">
+                <h3>Blockquote</h3>
+                <blockquote>
+                    <p>All blockquotes have right to be nice!</p>
+                    <cite>Stanko Tadić, SkyBlue Creator</cite>
+                </blockquote>
+
+                <h3>Code</h3>
+                <pre>&lt;pre&gt;Your code here&lt;/pre&gt;
+
+int main(){
+    return 0;
+}</pre>
+
+Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
             </div>
         </div>
         
 
         <div class="row">
+            <h3>Tables</h3>
             <div class="span12">
-                <h2> Forms </h2>
-                <label>Select box</label>
-                <select class="chosen-select persons">
-                    <option> 2 persons </option>
-                    <option> 3 persons </option>
-                    <option> 4 persons </option>
-                    <option> 5 persons </option>
-                    <option> 6 persons </option>
-                    <option> 7 persons </option>
-                    <option> 8 persons </option>
-                    <option> 9 persons </option>
-                    <option> 10 persons </option>
-                </select>
-
-                <label><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
-                <label><input type="radio" /> Radio</label>
-
-                <div>
-                    <label>Inputs</label>
-                    <input type="text" placeholder="Street name and number" />
-                </div>
-                <div>
-                    <label>Inputs</label>
-                    <input type="text" placeholder="Postal code" class="postal" />
-                </div>
-
-                <label class="width4">Textarea</label>
-                <textarea></textarea>
-
-                <div>
-                    <a class="button" href="#">Button</a>
-                    <a class="button empty" href="#">Empty button</a>
-                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Stanko</td>
+                            <td>Tadic</td>
+                            <td>stanko</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ognjen Vuk</td>
+                            <td>Perisic</td>
+                            <td>gio</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Milos</td>
+                            <td>Pavlicevic</td>
+                            <td>pavlicak</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Table <small>striped, bordered, hover</small></h3>
+                <table class="table tableStriped tableBordered tableHover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Stanko</td>
+                            <td>Tadic</td>
+                            <td>stanko</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ognjen Vuk</td>
+                            <td>Perisic</td>
+                            <td>gio</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Milos</td>
+                            <td>Pavlicevic</td>
+                            <td>pavlicak</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
         <div class="row">
-            <div class="span12">
-                <form class="form formHorizontal">
-                    <h3> Horizontal forms </h3>
+            <div class="span6">
+                <form class="form">
+                    <h2> Forms </h2>
                     <label>Select box</label>
                     <select class="chosen-select persons">
                         <option> 2 persons </option>
@@ -157,6 +223,69 @@
                         <option> 9 persons </option>
                         <option> 10 persons </option>
                     </select>
+
+                    <label>Checkboxes</label>
+                    <div class="checkboxGroup">
+                        <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                        <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                    </div>
+                    <label>Radios</label>
+                    <div class="checkboxGroup">
+                        <label class=""><input type="radio" /> Radio</label>
+                        <label class=""><input type="radio" /> Radio</label>
+                        <label class=""><input type="radio" /> Radio</label>
+                    </div>
+
+                    <div>
+                        <label>Inputs</label>
+                        <input type="text" placeholder="Street name and number" />
+                    </div>
+                    <div>
+                        <label>Inputs</label>
+                        <input type="text" placeholder="Postal code" class="postal" />
+                    </div>
+
+                    <label class="width4">Textarea</label>
+                    <textarea></textarea>
+
+                    <div>
+                        <a class="button" href="#">Button</a>
+                        <a class="button empty" href="#">Empty button</a>
+                    </div>
+                </form>
+            </div>
+            <div class="span6">
+                <form class="form formHorizontal">
+                    <h2> Horizontal forms </h2>
+                    <label>Select box</label>
+                    <select class="chosen-select persons">
+                        <option> 2 persons </option>
+                        <option> 3 persons </option>
+                        <option> 4 persons </option>
+                        <option> 5 persons </option>
+                        <option> 6 persons </option>
+                        <option> 7 persons </option>
+                        <option> 8 persons </option>
+                        <option> 9 persons </option>
+                        <option> 10 persons </option>
+                    </select>
+
+                    <div>
+                        <label>Checkboxes</label>
+                        <div class="checkboxGroup">
+                            <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                            <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Radios</label>
+                        <div class="checkboxGroup">
+                            <label class=""><input type="radio" /> Radio</label>
+                            <label class=""><input type="radio" /> Radio</label>
+                            <label class=""><input type="radio" /> Radio</label>
+                        </div>
+                    </div>
 
                     <div>
                         <label>Inputs</label>

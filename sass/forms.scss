@@ -20,7 +20,7 @@ textarea
 	font-weight: $fontWeight;
 	font-size: 1em;
 	border: 2px solid $grayLighter;
-	border-radius: 3px;
+	border-radius: $borderRadius;
 }
 
 textarea{
@@ -54,6 +54,8 @@ textarea:focus
 label{
 	display: block;
 	margin-bottom: 0.5em;
+	height: 1.5;
+	line-height: 1.5em;
 }
 
 input[type="checkbox"], 
@@ -64,15 +66,23 @@ input[type="radio"]{
 } 
 
 .form{
+	.checkboxGroup, .radioGroup{
+		margin-bottom: 1em;
+	}
 	&.formHorizontal{
 		label{
 			display: inline-block;
 			width: 200px;
 			max-width: 100%;
-			height: 2.625em;
-			line-height: 2.625em;
 			font-size: 1em;
 			vertical-align: top;
+		}
+
+		.checkboxGroup, .radioGroup{
+			display: inline-block;
+			label{
+				display: block;
+			}
 		}
 	}
 }

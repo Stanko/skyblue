@@ -36,11 +36,92 @@ p{
 	margin-bottom: 1em;
 	line-height: $lineHeight;
 }
+small{
+	font-size: 0.8em;
+}
+.big{
+	font-size: 1.2em;
+}
 
 
+
+// Links
 a{
 	color: $mainColor;
 }
 a:active, a:focus, a:hover{
 	color: $mainColor - $colorDiff;
 }
+
+
+
+// Lists
+ul, ol{
+	margin-bottom: 1em;
+	padding-left: 22px;
+	ul, ol{
+		margin-bottom: 0;
+	}
+}
+
+ul{
+	li{
+		list-style: disc outside none;
+		li{
+			list-style: circle outside none;
+		}
+	}
+}
+
+ol{
+	li{
+		list-style: decimal outside none;
+	}
+}
+
+
+// Blockquote
+blockquote{
+	@include box-sizing(border-box);
+	border-left: 2px solid $grayLighter;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+	font-size: 1.1em;
+	color: $gray;
+
+	cite{
+		font-size: 0.8em;
+		&:before {
+		    content: "— ";
+		}
+	}
+}
+
+
+
+// Code
+pre, code{
+	@include box-sizing(border-box);
+
+	font-family: $preFontFamily;
+	font-size: $preFontSize;
+	line-height: $lineHeight;
+
+	background: $grayReallyLight;
+	border: 2px solid $grayLighter;
+	border-radius: 3px;
+
+	padding: 0.8em 1em;
+
+	white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+pre{
+	margin-bottom: $fontSize;
+}
+code{
+	display: inline-block;
+	padding: 0.1em 0.3em;
+}
+
