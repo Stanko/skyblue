@@ -23,8 +23,6 @@
 [class^="span"] {
 	position: relative;
 	min-height: 1px;
-	padding-left:  $gridPaddingWidth / 2;
-	padding-right: $gridPaddingWidth / 2;
 	@include box-sizing(border-box);
 }
 
@@ -38,6 +36,8 @@
 
 	// Float columns
 	[class^="span"] { 
+		padding-left:  $gridPaddingWidth / 2;
+		padding-right: $gridPaddingWidth / 2;
 		float: left; 
 	}
 
