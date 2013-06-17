@@ -20,25 +20,49 @@
 	}
 }
 
-[class^="span"] {
+
+@mixin span-stuff(){
+	padding-left:  $gridPaddingWidth / 2;
+	padding-right: $gridPaddingWidth / 2;
+	float: left; 
+}
+
+
+// ^= selectors are slow
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12,
+.spanSmall1, .spanSmall2, .spanSmall3, .spanSmall4, .spanSmall5, .spanSmall6, 
+.spanSmall7, .spanSmall8, .spanSmall9, .spanSmall10, .spanSmall11, .spanSmall12
+{
 	position: relative;
 	min-height: 1px;
 	@include box-sizing(border-box);
 }
 
 
+// Mobile grid
+.spanSmall1, .spanSmall2, .spanSmall3, .spanSmall4, .spanSmall5, .spanSmall6, 
+.spanSmall7, .spanSmall8, .spanSmall9, .spanSmall10, .spanSmall11, .spanSmall12
+{
+	//@include span-stuff();
+	float: left; 
+}
+
+@for $i from 1 through $gridColumns {
+	.spanSmall#{$i}{ width: $i*$gridUnitWidth; }
+	.offsetSmall#{$i}{ margin-left: $i*$gridUnitWidth; }
+}
+
+
 // Responsive: Tablets and up
 @media screen and (min-width: 768px) {
 	.container {
-		max-width: 680px;
+		max-width: 700px;
 	}
 
 
 	// Float columns
-	[class^="span"] { 
-		padding-left:  $gridPaddingWidth / 2;
-		padding-right: $gridPaddingWidth / 2;
-		float: left; 
+	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { 
+		@include span-stuff();
 	}
 
 	.row {
@@ -48,7 +72,7 @@
 	}
 
 	@for $i from 1 through $gridColumns {
-  		.span#{$i}, .width#{$i} { width: $i*$gridUnitWidth; }
+  		.span#{$i}, .width#{$i} { width: $i*$gridUnitWidth; } // TODO Width
   		.offset#{$i}{ margin-left: $i*$gridUnitWidth; }
 	}
 }
@@ -56,7 +80,7 @@
 // Responsive: Desktops and up
 @media screen and (min-width: 992px) {
 	.container {
-		max-width: 900px;
+		max-width: 920px;
 	}
 }
 
@@ -66,6 +90,10 @@
 		max-width: 1120px;
 	}
 }
+
+
+
+
 
 // Reset utility classes due to specificity
 [class*="span"].floatRight {
