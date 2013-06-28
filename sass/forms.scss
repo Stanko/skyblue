@@ -50,9 +50,18 @@ textarea{
 	min-height: 100px;
 	line-height: $lineHeight;
 }
-
 select{
 	-webkit-appearance: none;
+}
+
+// Hack for webkit only
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	select{
+		//background-image: url(../img/select-webkit.png);
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAIAAAAy3EnLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYcDSA5NaKHLwAAAQRJREFUGNN9jrGKg0AURW9iMelSOX6AEMg3TO8PGJCA+HEiiBAJ04n/IkKKAWeqFIHMCL4tZnF3XXZv9bicw30gonEcrbX0b6y14zgS0V4p1XWdlNI5hz/inJNSdl2nlArO5/M8z6/X6/F4nE6nIAh+0/f73Rjjf9kLIZZlWZZFa9227WbHOde2rdbaM0KIHRENw9D3vbUWQBiGl8uFMQbAWnu73YwxABhjSZLEcbwjIgDGmKZpvMMYy7IMwKYJwxDApwBAa13X9Ur4BX9fr1fOuce+BADP59N/vDac8zRNj8fj2vwQALzf76qqpmkCEEVRnueHw+E7sBW8U5YlgKIoNjSAD706zRArYH/gAAAAAElFTkSuQmCC');
+		background-repeat: no-repeat;
+		background-position: right 10px center;
+	}
 }
 
 label{

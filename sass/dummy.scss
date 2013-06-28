@@ -4,13 +4,10 @@
 	}
 
 	[class^="span"] > div{
-		padding: 12px;
-	}
-	[class^="span"]:nth-child(even) {
-		//background: #e5e5e5;
-	}
-	[class^="span"]:nth-child(odd) {
-		//background: #eee;
+		min-height: 40px;
+		line-height: 40px;
+		text-align: center;
+		overflow: hidden;
 	}
 
 	.c1{ background: $mainColor; color: $gray1; }
@@ -21,3 +18,6 @@
 .container{ background: white; }
 
 
+.dummyNavigation{
+	position: fixed;
+}

@@ -13,12 +13,6 @@
 	@include box-sizing(border-box);
 	@include clearfix;
 
-	// Mobile columns
-	#{$gridSpanMobileClasses} {
-		padding-left:  $gridPaddingWidth / 2;
-		padding-right: $gridPaddingWidth / 2;
-	}
-
 	// Grid nesting fix
 	.row{
 		margin-left:  $gridPaddingWidth / -2;
@@ -29,17 +23,6 @@
 			padding-right: $gridPaddingWidth / 2;
 		}
 	}
-
-
-	&.rowMobile{
-		margin-left:  $gridPaddingWidth / -2;
-		margin-right: $gridPaddingWidth / -2;
-		.row{
-			margin-left: 0;
-			margin-right: 0;
-		}
-	}
-
 }
 
 
@@ -54,12 +37,15 @@
 	position: relative;
 	min-height: 1px;
 	@include box-sizing(border-box);
+
+	.floatRight {
+		float: right;
+	}
 }
 
 
 // Mobile grid
 #{$gridSpanMobileClasses} {
-	//@include span-stuff();
 	float: left; 
 }
 
@@ -73,6 +59,8 @@
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 700px;
+		padding-left:  $gridPaddingWidth/2;
+		padding-right: $gridPaddingWidth/2;
 	}
 
 
@@ -83,8 +71,8 @@
 
 	.row {
 		// Negative margin the row out to align the content of columns
-		margin-left:  $gridPaddingWidth / -2;
-		margin-right: $gridPaddingWidth / -2;
+		// margin-left:  $gridPaddingWidth / -2;
+		// margin-right: $gridPaddingWidth / -2;
 	}
 
 	@for $i from 1 through $gridColumns {
@@ -108,9 +96,3 @@
 }
 
 
-
-
-// Reset utility classes due to specificity
-[class*="span"].floatRight {
-	float: right;
-}
