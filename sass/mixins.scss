@@ -10,3 +10,30 @@
 	&:before, &:after { content: " "; display: table; line-height: 0; }
 	&:after { clear: both; }
 }
+
+
+// Placeholder
+@mixin placeholder($color){
+	// WebKit
+	::-webkit-input-placeholder {
+	    color:    $color;
+	}
+	// FF4-18
+	:-moz-placeholder {
+	    color:    $color;
+	}
+	// FF19+
+	::-moz-placeholder {
+	    color:    $color;
+	}
+	// IE10
+	:-ms-input-placeholder {
+	    color:    $color;
+	}
+	// Fix for input type search
+	[type="search"] {
+	    -moz-appearance:    textfield;
+	    -webkit-appearance: textfield;
+	    appearance: textfield;
+	}
+}

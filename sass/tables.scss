@@ -26,7 +26,7 @@ th {
     // Bottom align for column headings
     thead th {
         vertical-align: bottom;
-        font-weight: bold;
+        font-weight: $bold;
     }
     // Remove top border from thead by default
     caption + thead tr:first-child th,

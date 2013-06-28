@@ -13,14 +13,36 @@ textarea
 {
 	@include box-sizing(border-box);
 	height: 2.625em;
-	width: 300px;
+	width: $inputWidth;
+	max-width: 100%;
 	padding: 0.5em;
 	margin-bottom: 1em;
 	font-family: $fontFamily;
 	font-weight: $fontWeight;
+	color: $gray5;
 	font-size: 1em;
-	border: 2px solid $grayLighter;
+	border: 2px solid $gray2;
 	border-radius: $borderRadius;
+	transition: border-color, color 0.3s;
+
+
+	&:focus{
+		border: 2px solid $mainColor;
+		color: $gray7;
+		outline: none;
+	}
+
+
+
+	&.error, .error &{
+		border-color: $errorColor;
+	}
+	&.warning, .warning &{
+		border-color: $warningColor;
+	}
+	&.success, .success &{
+		border-color: $successColor;
+	}
 }
 
 textarea{
@@ -33,29 +55,21 @@ select{
 	-webkit-appearance: none;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-select:focus,
-textarea:focus
-{
-	border: 2px solid $mainColor;
-	outline: none;
-}
-
-
 label{
 	display: block;
 	margin-bottom: 0.5em;
 	height: 1.5;
 	line-height: 1.5em;
+
+	&.error, .error &{
+		color: $errorColor;
+	}
+	&.warning, .warning &{
+		color: $warningColor;
+	}
+	&.success, .success &{
+		color: $successColor;
+	}
 }
 
 input[type="checkbox"], 
@@ -64,6 +78,9 @@ input[type="radio"]{
 	height: 1em;
 	width: 1em;
 } 
+
+
+@include placeholder($gray3);
 
 .form{
 	.checkboxGroup, .radioGroup{
@@ -80,6 +97,7 @@ input[type="radio"]{
 
 		.checkboxGroup, .radioGroup{
 			display: inline-block;
+			width: $inputWidth;
 			label{
 				display: block;
 			}

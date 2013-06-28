@@ -13,11 +13,33 @@
 	@include box-sizing(border-box);
 	@include clearfix;
 
+	// Mobile columns
+	#{$gridSpanMobileClasses} {
+		padding-left:  $gridPaddingWidth / 2;
+		padding-right: $gridPaddingWidth / 2;
+	}
+
 	// Grid nesting fix
 	.row{
 		margin-left:  $gridPaddingWidth / -2;
 		margin-right: $gridPaddingWidth / -2;
+
+		#{$gridSpanClasses} {
+			padding-left:  $gridPaddingWidth / 2;
+			padding-right: $gridPaddingWidth / 2;
+		}
 	}
+
+
+	&.rowMobile{
+		margin-left:  $gridPaddingWidth / -2;
+		margin-right: $gridPaddingWidth / -2;
+		.row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+
 }
 
 
@@ -27,12 +49,8 @@
 	float: left; 
 }
 
-
 // ^= selectors are slow
-.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12,
-.spanSmall1, .spanSmall2, .spanSmall3, .spanSmall4, .spanSmall5, .spanSmall6, 
-.spanSmall7, .spanSmall8, .spanSmall9, .spanSmall10, .spanSmall11, .spanSmall12
-{
+#{$gridSpanClasses}, #{$gridSpanMobileClasses} {
 	position: relative;
 	min-height: 1px;
 	@include box-sizing(border-box);
@@ -40,16 +58,14 @@
 
 
 // Mobile grid
-.spanSmall1, .spanSmall2, .spanSmall3, .spanSmall4, .spanSmall5, .spanSmall6, 
-.spanSmall7, .spanSmall8, .spanSmall9, .spanSmall10, .spanSmall11, .spanSmall12
-{
+#{$gridSpanMobileClasses} {
 	//@include span-stuff();
 	float: left; 
 }
 
 @for $i from 1 through $gridColumns {
-	.spanSmall#{$i}{ width: $i*$gridUnitWidth; }
-	.offsetSmall#{$i}{ margin-left: $i*$gridUnitWidth; }
+	.spanMobile#{$i}{ width: $i*$gridUnitWidth; }
+	.offsetMobile#{$i}{ margin-left: $i*$gridUnitWidth; }
 }
 
 
@@ -61,7 +77,7 @@
 
 
 	// Float columns
-	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 { 
+	#{$gridSpanClasses} { 
 		@include span-stuff();
 	}
 
@@ -90,7 +106,6 @@
 		max-width: 1120px;
 	}
 }
-
 
 
 

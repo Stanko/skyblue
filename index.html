@@ -7,6 +7,7 @@
 
     <title>SkyBlue CSS Framework</title>
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500italic,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/skyblue.css">
     
     <!--[if lt IE 9]>
@@ -21,64 +22,100 @@
 
         <h2>Grid</h2>
         <div class="row dummy">
-            <div class="span1">1</div>
-            <div class="span1">1</div>
-            <div class="span2">2</div>
-            <div class="span2">2</div>
-            <div class="span3">3</div>
-            <div class="span3">3</div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
+            <div class="span1"><div class="c1">1</div></div>
         </div>
         <div class="row dummy">
-            <div class="span4 spanSmall3">4</div>
-            <div class="span4 spanSmall4">4</div>
-            <div class="span4 spanSmall5">4</div>
+            <div class="span2"><div class="c2">2</div></div>
+            <div class="span2"><div class="c2">2</div></div>
+            <div class="span2"><div class="c2">2</div></div>
+            <div class="span2"><div class="c2">2</div></div>
+            <div class="span2"><div class="c2">2</div></div>
+            <div class="span2"><div class="c2">2</div></div>
         </div>
         <div class="row dummy">
-            <div class="span6">6</div>
-            <div class="span6">6</div>
+            <div class="span3"><div class="c1">3</div></div>
+            <div class="span3"><div class="c1">3</div></div>
+            <div class="span3"><div class="c1">3</div></div>
+            <div class="span3"><div class="c1">3</div></div>
+        </div>
+        <div class="row dummy">
+            <div class="span4"><div class="c2">4</div></div>
+            <div class="span4"><div class="c2">4</div></div>
+            <div class="span4"><div class="c2">4</div></div>
+        </div>
+        <div class="row dummy">
+            <div class="span6"><div class="c1">6</div></div>
+            <div class="span6"><div class="c1">6</div></div>        
+        </div>
+        <div class="row dummy">
+            <div class="span12"><div class="c2">12</div></div>
         </div>
 
-        <h2>Nesting grid</h2>
+        <h3>Nesting grid</h3>
 
-        <div class="row dummy test">
-            <div class="span6">
-                span6 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.
+        <div class="row dummy">
+            <div class="span8">
                 <div class="row">
-                    <div class="span6">span6 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</div>
-                    <div class="span3">span3 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</div>
-                    <div class="span3">span3 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</div>
+                    <div class="span4"><div class="c1">span4 inside span8</div></div>
+                    <div class="span4"><div class="c1">span4 inside span8</div></div>
+                    <div class="span4"><div class="c1">span4 inside span8</div></div>
                 </div>
             </div>
-            <div class="span6">
-                span6 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.
+            <div class="span4">
                 <div class="row">
-                    <div class="span4">span4 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</div>
-                    <div class="span8">span8 Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vestibulum id ligula porta felis euismod semper.</div>
-                </div>
-            </div>
-        </div>
-        <div class="row dummy test">
-            <div class="span9">
-                span9
-                <div class="row">
-                    <div class="span3">span3</div>
-                    <div class="span4">span4</div>
-                    <div class="span3">span3</div>
-                    <div class="span2">span2</div>
-                </div>
-            </div>
-            <div class="span3">
-                span3
-                <div class="row">
-                    <div class="span6">span6</div>
-                    <div class="span6">span6</div>
+                    <div class="span4"><div class="c2">span4 inside span4</div></div>
+                    <div class="span4"><div class="c2">span4 inside span4</div></div>
+                    <div class="span4"><div class="c2">span4 inside span4</div></div>
                 </div>
             </div>
         </div>
+
+        <h3>Mobile columns - use .rowMobile class</h3>
+
+        <div class="row rowMobile dummy">
+            <div class="span2 spanMobile3"><div class="c1">4 - mobile3</div></div>
+            <div class="span2 spanMobile3"><div class="c1">4 - mobile3</div></div>
+            <div class="span2 spanMobile3"><div class="c1">4 - mobile3</div></div>
+            <div class="span2 spanMobile3"><div class="c1">4 - mobile3</div></div>
+            <div class="span2 spanMobile6"><div class="c2">4 - mobile6</div></div>
+            <div class="span2 spanMobile6"><div class="c2">4 - mobile6</div></div>
+        </div>
+
+
+        <h3>Mobile columns with nesting</h3>
+        <div class="row dummy">
+            <div class="span6">
+                <div class="row">
+                    <div class="span4 spanMobile4"><div class="c1">4</div></div>
+                    <div class="span4 spanMobile4"><div class="c1">4</div></div>
+                    <div class="span4 spanMobile4"><div class="c1">4</div></div>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="row">
+                    <div class="span3 spanMobile3"><div class="c2">3</div></div>
+                    <div class="span3 spanMobile3"><div class="c2">3</div></div>
+                    <div class="span3 spanMobile3"><div class="c2">3</div></div>
+                    <div class="span3 spanMobile3"><div class="c2">3</div></div>
+                </div>
+            </div>
+        </div>
+
 
         <h2>Typography</h2>
         <div class="row">
-            <div class="span3">
+            <div class="span6">
                 <h3>Headers</h3>
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
@@ -87,12 +124,14 @@
                 <h5>Header 5</h5>
                 <h6>Header 6</h6>
             </div>
-            <div class="span3">
+            <div class="span6">
                 <h3>Paragraph and links</h3>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta felis euismod semper. <small>Vivamus sagittis lacus vel</small> augue laoreet rutrum faucibus dolor auctor.</p>
-                <p class="big">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec id elit non mi porta gravida at eget metus.</p>
+                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta <b>felis euismod</b> semper. <small>Vivamus sagittis lacus vel</small> augue laoreet rutrum faucibus dolor auctor.</p>
+                <p class="big">Vivamus sagittis lacus vel augue <i>rutrum faucibus dolor</i> auctor. Donec id elit non mi porta gravida at eget metus.</p>
             </div>
-            <div class="span3">
+        <div class="row">
+        </div>    
+            <div class="span6">
                 <h3>Unordered list</h3>
                 <ul>
                     <li>Cras mattis consectetur purus sit amet fermentum.</li>
@@ -121,7 +160,7 @@
                     <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
                 </ol>
             </div>
-            <div class="span3">
+            <div class="span6">
                 <h3>Blockquote</h3>
                 <blockquote>
                     <p>All blockquotes have right to be nice!</p>
@@ -237,21 +276,24 @@ Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
                     </div>
 
                     <div>
-                        <label>Inputs</label>
+                        <label>Input</label>
                         <input type="text" placeholder="Street name and number" />
                     </div>
-                    <div>
-                        <label>Inputs</label>
-                        <input type="text" placeholder="Postal code" class="postal" />
+                    <div  class="error">
+                        <label>Input - error</label>
+                        <input type="text" placeholder="Postal code" value="Error" />
+                    </div>
+                    <div class="warning">
+                        <label>Input - warning</label>
+                        <input type="text" placeholder="Postal code" value="Warning"  />
+                    </div>
+                    <div class="success">
+                        <label>Input - success</label>
+                        <input type="text" placeholder="Postal code" value="Success" />
                     </div>
 
                     <label class="width4">Textarea</label>
                     <textarea></textarea>
-
-                    <div>
-                        <a class="button" href="#">Button</a>
-                        <a class="button empty" href="#">Empty button</a>
-                    </div>
                 </form>
             </div>
             <div class="span6">
@@ -288,23 +330,35 @@ Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
                     </div>
 
                     <div>
-                        <label>Inputs</label>
+                        <label>Input</label>
                         <input type="text" placeholder="Street name and number" />
                     </div>
                     <div>
-                        <label>Inputs</label>
+                        <label>Input</label>
                         <input type="text" placeholder="Postal code" class="postal" />
                     </div>
                     <div>
                         <label class="width4">Textarea</label>
                         <textarea></textarea>
                     </div>
-
-                    <div>
-                        <a class="button" href="#">Button</a>
-                        <a class="button empty" href="#">Empty button</a>
-                    </div>
                 </form>
+            </div>
+        </div>
+        <div>
+            <div>
+                <a class="button" href="#">Button</a>
+                <a class="button buttonSuccess" href="#">Success</a>
+                <a class="button buttonError" href="#">Error</a>
+                <a class="button buttonWarning" href="#">Warning</a>
+                <a class="button buttonLight" href="#">Light</a>
+                <a class="button buttonDark" href="#">Dark</a>
+                <br/>
+                <a class="button buttonEmpty" href="#">Empty button</a>
+                <a class="button buttonEmpty buttonSuccess" href="#">Success</a>
+                <a class="button buttonEmpty buttonError" href="#">Error</a>
+                <a class="button buttonEmpty buttonWarning" href="#">Warning</a>
+                <a class="button buttonEmpty buttonLight" href="#">Light</a>
+                <a class="button buttonEmpty buttonDark" href="#">Dark</a>
             </div>
         </div>
 
