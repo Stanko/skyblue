@@ -29,7 +29,7 @@
 @mixin span-stuff(){
 	padding-left:  $gridPaddingWidth / 2;
 	padding-right: $gridPaddingWidth / 2;
-	float: left; 
+	float: left;
 }
 
 // ^= selectors are slow
@@ -46,7 +46,7 @@
 
 // Mobile grid
 #{$gridSpanMobileClasses} {
-	float: left; 
+	float: left;
 }
 
 @for $i from 1 through $gridColumns {
@@ -65,7 +65,7 @@
 
 
 	// Float columns
-	#{$gridSpanClasses} { 
+	#{$gridSpanClasses} {
 		@include span-stuff();
 	}
 

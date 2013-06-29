@@ -17,9 +17,9 @@ button, input[type="submit"], input[type="button"]{
 	font-size: 1em;
 	text-align: center;
 	text-decoration: none;
-	
 
-	&:hover, &:active{
+
+	&:hover{
 		background-color: $buttonColor - $colorDiff;
 		border-color: $buttonColor - $colorDiff;
 		color: #fff;
@@ -31,13 +31,30 @@ button, input[type="submit"], input[type="button"]{
 	&:active{
 		background-color: $buttonColor - $colorDiff*2;
 		border-color: $buttonColor - $colorDiff*2;
+		top: 1px;
+		position: relative;
+	}
+
+	// SMALL BUTTON
+	&.buttonSmall{
+		padding: 4px 15px;
+		min-width: 30px;
+		border-width: 1px;
+		font-size: 0.8em;
+		line-height: 1.2em;
+	}
+	// BIG BUTTON
+	&.buttonBig{
+		padding: 14px 45px;
+		min-width: 140px;
+		font-size: 1.4em;
 	}
 
 	// SUCCESS BUTTON
 	&.buttonSuccess{
 		background: $successColor;
 		border-color: $successColor;
-		
+
 		&:hover{
 			background: $successColor - $colorDiff;
 			border-color: $successColor - $colorDiff;
@@ -52,7 +69,7 @@ button, input[type="submit"], input[type="button"]{
 	&.buttonError{
 		background: $errorColor;
 		border-color: $errorColor;
-		
+
 		&:hover{
 			background: $errorColor - $colorDiff;
 			border-color: $errorColor - $colorDiff;
@@ -67,7 +84,7 @@ button, input[type="submit"], input[type="button"]{
 	&.buttonWarning{
 		background: $warningColor;
 		border-color: $warningColor;
-		
+
 		&:hover{
 			background: $warningColor - $colorDiff;
 			border-color: $warningColor - $colorDiff;
@@ -83,7 +100,7 @@ button, input[type="submit"], input[type="button"]{
 		background: $lightColor;
 		border-color: $lightColor;
 		color: $gray3;
-		
+
 		&:hover{
 			background: $lightColor - $colorDiff;
 			border-color: $lightColor - $colorDiff;
@@ -100,7 +117,7 @@ button, input[type="submit"], input[type="button"]{
 	&.buttonDark{
 		background: $darkColor;
 		border-color: $darkColor;
-		
+
 		&:hover{
 			background: $darkColor - $colorDiff;
 			border-color: $darkColor - $colorDiff;
@@ -112,13 +129,13 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 
-	
+
 	// EMPTY BUTTONS
 	&.buttonEmpty{
 		border-radius: $bigBorderRadius;
 		color: $buttonColor;
 		background: #fff;
-		
+
 		&:hover{
 			background: #fff;
 			color: $buttonColor - $colorDiff;
@@ -162,7 +179,7 @@ button, input[type="submit"], input[type="button"]{
 		&.buttonWarning{
 			border-color: $warningColor;
 			color: $warningColor;
-			
+
 			&:hover{
 				border-color: $warningColor - $colorDiff;
 				color: $warningColor - $colorDiff;
@@ -177,7 +194,7 @@ button, input[type="submit"], input[type="button"]{
 		&.buttonLight{
 			border-color: $gray2;
 			color: $gray3;
-			
+
 			&:hover{
 				border-color: $lightColor - $colorDiff;
 				color: $gray3 - $colorDiff;
@@ -192,7 +209,7 @@ button, input[type="submit"], input[type="button"]{
 		&.buttonDark{
 			border-color: $darkColor;
 			color: $darkColor;
-			
+
 			&:hover{
 				border-color: $darkColor - $colorDiff;
 				color: $darkColor - $colorDiff;
