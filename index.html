@@ -154,7 +154,6 @@
                     <h6>Header 6</h6>
                 </div>
 
-
                 <div>
                     <h3>Unordered list</h3>
                     <ul>
@@ -185,8 +184,6 @@
                     </ol>
                 </div>
 
-
-
                 <div>
                     <h3>Blockquote</h3>
                     <blockquote>
@@ -195,272 +192,260 @@
                     </blockquote>
 
                     <h3>Code</h3>
-                    <pre>RS.stopPropagation = function(e){
-                        e = e || window.event; // IE Fix
 
-                        if(e.stopPropagation){
-                        e.stopPropagation();
-                    }
-                    else{
-                    // IE8 and lower stop propagation
-                    window.event.cancelBubble = true;
-                    window.event.returnValue = false;
-                }
-            };</pre>
+                    <pre>
+RS.stopPropagation = function(e){
+    e = e || window.event; // IE Fix
 
-            Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
-        </div>
+    if(e.stopPropagation){
+        e.stopPropagation();
+    }
+    else{
+        // IE8 and lower stop propagation
+        window.event.cancelBubble = true;
+        window.event.returnValue = false;
+    }
+};
+                    </pre>
+                    Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
+                </div>
 
-        <h2 id="tables">Tables</h2>
-        <div class="row">
-            <div class="span12">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Stanko</td>
-                            <td>Tadic</td>
-                            <td>stanko</td>
-                            <td>Stanko</td>
-                            <td>Tadic</td>
-                            <td>stanko</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Milos</td>
-                            <td>Pavlicevic</td>
-                            <td>pavlicak</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Table <small>striped, bordered, hover</small></h3>
-                <table class="table tableStriped tableBordered tableHover">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Stanko</td>
-                            <td>Tadic</td>
-                            <td>stanko</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Milos</td>
-                            <td>Pavlicevic</td>
-                            <td>pavlicak</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h2 id="tables">Tables</h2>
+                <div class="row">
+                    <div class="span12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Stanko</td>
+                                    <td>Tadic</td>
+                                    <td>stanko</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ognjen Vuk</td>
+                                    <td>Perisic</td>
+                                    <td>gio</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Milos</td>
+                                    <td>Pavlicevic</td>
+                                    <td>pavlicak</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Table <small>striped, bordered, hover</small></h3>
+                        <table class="table tableStriped tableBordered tableHover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Stanko</td>
+                                    <td>Tadic</td>
+                                    <td>stanko</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ognjen Vuk</td>
+                                    <td>Perisic</td>
+                                    <td>gio</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Milos</td>
+                                    <td>Pavlicevic</td>
+                                    <td>pavlicak</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="span12">
+                        <form class="form">
+                            <h2 id="forms"> Forms </h2>
+                            <label>Select box</label>
+                            <select class="chosen-select persons">
+                                <option> 2 persons </option>
+                                <option> 3 persons </option>
+                                <option> 4 persons </option>
+                                <option> 5 persons </option>
+                                <option> 6 persons </option>
+                                <option> 7 persons </option>
+                                <option> 8 persons </option>
+                                <option> 9 persons </option>
+                                <option> 10 persons </option>
+                            </select>
+
+                            <label>Checkboxes</label>
+                            <div class="checkboxGroup">
+                                <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                                <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                            </div>
+                            <label>Radios</label>
+                            <div class="checkboxGroup">
+                                <label class=""><input type="radio" /> Radio</label>
+                                <label class=""><input type="radio" /> Radio</label>
+                                <label class=""><input type="radio" /> Radio</label>
+                            </div>
+
+                            <div>
+                                <label>Input</label>
+                                <input type="text" placeholder="Street name and number" />
+                            </div>
+                            <div  class="error">
+                                <label>Input - error</label>
+                                <input type="text" placeholder="Postal code" value="Error" />
+                            </div>
+                            <div class="warning">
+                                <label>Input - warning</label>
+                                <input type="text" placeholder="Postal code" value="Warning"  />
+                            </div>
+                            <div class="success">
+                                <label>Input - success</label>
+                                <input type="text" placeholder="Postal code" value="Success" />
+                            </div>
+
+                            <label class="width4">Textarea</label>
+                            <textarea></textarea>
+
+                            <div>
+                                <button class="btn" href="javascript:void(0)">Button</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="span12">
+                        <form class="form formHorizontal">
+                            <h2> Horizontal forms </h2>
+                            <label>Select box</label>
+                            <select class="chosen-select persons">
+                                <option> 2 persons </option>
+                                <option> 3 persons </option>
+                                <option> 4 persons </option>
+                                <option> 5 persons </option>
+                                <option> 6 persons </option>
+                                <option> 7 persons </option>
+                                <option> 8 persons </option>
+                                <option> 9 persons </option>
+                                <option> 10 persons </option>
+                            </select>
+
+                            <div>
+                                <label>Checkboxes</label>
+                                <div class="checkboxGroup">
+                                    <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                                    <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Radios</label>
+                                <div class="checkboxGroup">
+                                    <label class=""><input type="radio" /> Radio</label>
+                                    <label class=""><input type="radio" /> Radio</label>
+                                    <label class=""><input type="radio" /> Radio</label>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label>Input</label>
+                                <input type="text" placeholder="Street name and number" />
+                            </div>
+                            <div>
+                                <label>Input</label>
+                                <input type="text" placeholder="Postal code" class="postal" />
+                            </div>
+                            <div>
+                                <label class="">Textarea</label>
+                                <textarea></textarea>
+                            </div>
+                            <div>
+                                <button class="btn" onclick="return false;">Button</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h2 id="buttons">Buttons</h2>
+                <div>
+                    <a class="btn" href="javascript:void(0)">Button</a>
+                    <a class="btn btnSuccess" href="javascript:void(0)">Success</a>
+                    <a class="btn btnError" href="javascript:void(0)">Error</a>
+                    <a class="btn btnWarning" href="javascript:void(0)">Warning</a>
+                    <a class="btn btnLight" href="javascript:void(0)">Light</a>
+                    <a class="btn btnDark" href="javascript:void(0)">Dark</a>
+                </div>
+                <div>
+                    <a class="btn btnEmpty" href="javascript:void(0)">Empty btn</a>
+                    <a class="btn btnEmpty btnSuccess" href="javascript:void(0)">Success</a>
+                    <a class="btn btnEmpty btnError" href="javascript:void(0)">Error</a>
+                    <a class="btn btnEmpty btnWarning" href="javascript:void(0)">Warning</a>
+                    <a class="btn btnEmpty btnLight" href="javascript:void(0)">Light</a>
+                    <a class="btn btnEmpty btnDark" href="javascript:void(0)">Dark</a>
+                </div>
+                <h3>Small btns</h3>
+                <div>
+                    <a class="btn btnSmall" href="javascript:void(0)">Button</a>
+                    <a class="btn btnSmall btnSuccess" href="javascript:void(0)">Success</a>
+                    <a class="btn btnSmall btnError" href="javascript:void(0)">Error</a>
+                    <a class="btn btnSmall btnWarning" href="javascript:void(0)">Warning</a>
+                    <a class="btn btnSmall btnLight" href="javascript:void(0)">Light</a>
+                    <a class="btn btnSmall btnDark" href="javascript:void(0)">Dark</a>
+                </div>
+                <div>
+                    <a class="btn btnEmpty btnSmall" href="javascript:void(0)">Button</a>
+                    <a class="btn btnEmpty btnSmall btnSuccess" href="javascript:void(0)">Success</a>
+                    <a class="btn btnEmpty btnSmall btnError" href="javascript:void(0)">Error</a>
+                    <a class="btn btnEmpty btnSmall btnWarning" href="javascript:void(0)">Warning</a>
+                    <a class="btn btnEmpty btnSmall btnLight" href="javascript:void(0)">Light</a>
+                    <a class="btn btnEmpty btnSmall btnDark" href="javascript:void(0)">Dark</a>
+                </div>
+                <h3>Big btns</h3>
+                <div>
+                    <a class="btn btnBig" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
+                    <a class="btn btnBig btnSuccess" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
+                    <a class="btn btnBig btnError" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
+                    <a class="btn btnBig btnWarning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
+                    <a class="btn btnBig btnLight" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
+                    <a class="btn btnBig btnDark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
+                </div>
+                <div>
+                    <a class="btn btnEmpty btnBig" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
+                    <a class="btn btnEmpty btnBig btnSuccess" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
+                    <a class="btn btnEmpty btnBig btnError" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
+                    <a class="btn btnEmpty btnBig btnWarning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
+                    <a class="btn btnEmpty btnBig btnLight" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
+                    <a class="btn btnEmpty btnBig btnDark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
+                </div>
+
+
+                <h2 id="icons">Icons</h2>
+                <div id="iconic">
+                    <script src="js/icons.js"></script>
+                    <script>generateIconicHTML()</script>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="span12">
-                <form class="form">
-                    <h2 id="forms"> Forms </h2>
-                    <label>Select box</label>
-                    <select class="chosen-select persons">
-                        <option> 2 persons </option>
-                        <option> 3 persons </option>
-                        <option> 4 persons </option>
-                        <option> 5 persons </option>
-                        <option> 6 persons </option>
-                        <option> 7 persons </option>
-                        <option> 8 persons </option>
-                        <option> 9 persons </option>
-                        <option> 10 persons </option>
-                    </select>
-
-                    <label>Checkboxes</label>
-                    <div class="checkboxGroup">
-                        <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
-                        <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
-                    </div>
-                    <label>Radios</label>
-                    <div class="checkboxGroup">
-                        <label class=""><input type="radio" /> Radio</label>
-                        <label class=""><input type="radio" /> Radio</label>
-                        <label class=""><input type="radio" /> Radio</label>
-                    </div>
-
-                    <div>
-                        <label>Input</label>
-                        <input type="text" placeholder="Street name and number" />
-                    </div>
-                    <div  class="error">
-                        <label>Input - error</label>
-                        <input type="text" placeholder="Postal code" value="Error" />
-                    </div>
-                    <div class="warning">
-                        <label>Input - warning</label>
-                        <input type="text" placeholder="Postal code" value="Warning"  />
-                    </div>
-                    <div class="success">
-                        <label>Input - success</label>
-                        <input type="text" placeholder="Postal code" value="Success" />
-                    </div>
-
-                    <label class="width4">Textarea</label>
-                    <textarea></textarea>
-
-                    <div>
-                        <button class="btn" href="javascript:void(0)">Button</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="span12">
-                <form class="form formHorizontal">
-                    <h2> Horizontal forms </h2>
-                    <label>Select box</label>
-                    <select class="chosen-select persons">
-                        <option> 2 persons </option>
-                        <option> 3 persons </option>
-                        <option> 4 persons </option>
-                        <option> 5 persons </option>
-                        <option> 6 persons </option>
-                        <option> 7 persons </option>
-                        <option> 8 persons </option>
-                        <option> 9 persons </option>
-                        <option> 10 persons </option>
-                    </select>
-
-                    <div>
-                        <label>Checkboxes</label>
-                        <div class="checkboxGroup">
-                            <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
-                            <label class=""><input type="checkbox" class="skyblueCheckbox" /> Checkbox</label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label>Radios</label>
-                        <div class="checkboxGroup">
-                            <label class=""><input type="radio" /> Radio</label>
-                            <label class=""><input type="radio" /> Radio</label>
-                            <label class=""><input type="radio" /> Radio</label>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label>Input</label>
-                        <input type="text" placeholder="Street name and number" />
-                    </div>
-                    <div>
-                        <label>Input</label>
-                        <input type="text" placeholder="Postal code" class="postal" />
-                    </div>
-                    <div>
-                        <label class="">Textarea</label>
-                        <textarea></textarea>
-                    </div>
-                    <div>
-                        <button class="btn" onclick="return false;">Button</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <h2 id="buttons">Buttons</h2>
-        <div>
-            <a class="btn" href="javascript:void(0)">Button</a>
-            <a class="btn btnSuccess" href="javascript:void(0)">Success</a>
-            <a class="btn btnError" href="javascript:void(0)">Error</a>
-            <a class="btn btnWarning" href="javascript:void(0)">Warning</a>
-            <a class="btn btnLight" href="javascript:void(0)">Light</a>
-            <a class="btn btnDark" href="javascript:void(0)">Dark</a>
-        </div>
-        <div>
-            <a class="btn btnEmpty" href="javascript:void(0)">Empty btn</a>
-            <a class="btn btnEmpty btnSuccess" href="javascript:void(0)">Success</a>
-            <a class="btn btnEmpty btnError" href="javascript:void(0)">Error</a>
-            <a class="btn btnEmpty btnWarning" href="javascript:void(0)">Warning</a>
-            <a class="btn btnEmpty btnLight" href="javascript:void(0)">Light</a>
-            <a class="btn btnEmpty btnDark" href="javascript:void(0)">Dark</a>
-        </div>
-        <h3>Small btns</h3>
-        <div>
-            <a class="btn btnSmall" href="javascript:void(0)">Button</a>
-            <a class="btn btnSmall btnSuccess" href="javascript:void(0)">Success</a>
-            <a class="btn btnSmall btnError" href="javascript:void(0)">Error</a>
-            <a class="btn btnSmall btnWarning" href="javascript:void(0)">Warning</a>
-            <a class="btn btnSmall btnLight" href="javascript:void(0)">Light</a>
-            <a class="btn btnSmall btnDark" href="javascript:void(0)">Dark</a>
-        </div>
-        <div>
-            <a class="btn btnEmpty btnSmall" href="javascript:void(0)">Button</a>
-            <a class="btn btnEmpty btnSmall btnSuccess" href="javascript:void(0)">Success</a>
-            <a class="btn btnEmpty btnSmall btnError" href="javascript:void(0)">Error</a>
-            <a class="btn btnEmpty btnSmall btnWarning" href="javascript:void(0)">Warning</a>
-            <a class="btn btnEmpty btnSmall btnLight" href="javascript:void(0)">Light</a>
-            <a class="btn btnEmpty btnSmall btnDark" href="javascript:void(0)">Dark</a>
-        </div>
-        <h3>Big btns</h3>
-        <div>
-            <a class="btn btnBig" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
-            <a class="btn btnBig btnSuccess" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
-            <a class="btn btnBig btnError" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
-            <a class="btn btnBig btnWarning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
-            <a class="btn btnBig btnLight" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
-            <a class="btn btnBig btnDark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
-        </div>
-        <div>
-            <a class="btn btnEmpty btnBig" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
-            <a class="btn btnEmpty btnBig btnSuccess" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
-            <a class="btn btnEmpty btnBig btnError" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
-            <a class="btn btnEmpty btnBig btnWarning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
-            <a class="btn btnEmpty btnBig btnLight" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
-            <a class="btn btnEmpty btnBig btnDark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
-        </div>
 
 
-        <h2 id="icons">Icons</h2>
-        <div id="iconic">
-            <script src="js/icons.js"></script>
-            <script>generateIconicHTML()</script>
-            <div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="js/sticky.js"></script>
-</body>
-</html>
+            <script src="js/sticky.js"></script>
+        </body>
+        </html>
