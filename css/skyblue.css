@@ -331,6 +331,472 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1120px; } }
+@font-face {
+  font-family: 'IconicStroke';
+  src: url("../fonts/iconic/iconic_stroke.eot");
+  src: url("../fonts/iconic/iconic_stroke.eot?#iefix") format("embedded-opentype"), url("../fonts/iconic/iconic_stroke.ttf") format("truetype"), url("../fonts/iconic/iconic_stroke.svg#iconic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.iconic {
+  display: inline-block;
+  font-family: 'IconicStroke';
+  vertical-align: middle;
+  line-height: 1em; }
+
+.iconic-lightbulb:before {
+  content: '\e063'; }
+
+.iconic-equalizer:before {
+  content: '\e052'; }
+
+.iconic-map-pin-stroke:before {
+  content: '\e068'; }
+
+.iconic-brush-alt:before {
+  content: '\e01c'; }
+
+.iconic-move:before {
+  content: '\e03e'; }
+
+.iconic-paperclip:before {
+  content: '\e08a'; }
+
+.iconic-pen-alt-stroke:before {
+  content: '\e005'; }
+
+.iconic-move-vertical:before {
+  content: '\e03b'; }
+
+.iconic-book-alt2:before {
+  content: '\e06a'; }
+
+.iconic-layers:before {
+  content: '\e01f'; }
+
+.iconic-pause:before {
+  content: '\e049'; }
+
+.iconic-layers-alt:before {
+  content: '\e020'; }
+
+.iconic-cloud-upload:before {
+  content: '\e045'; }
+
+.iconic-chart-alt:before {
+  content: '\e029'; }
+
+.iconic-fullscreen-exit-alt:before {
+  content: '\e051'; }
+
+.iconic-cloud-download:before {
+  content: '\e044'; }
+
+.iconic-comment-alt2-stroke:before {
+  content: '\e004'; }
+
+.iconic-mail:before {
+  content: '\2709'; }
+
+.iconic-check-alt:before {
+  content: '\2718'; }
+
+.iconic-document-stroke:before {
+  content: '\e066'; }
+
+.iconic-battery-charging:before {
+  content: '\e05d'; }
+
+.iconic-stop:before {
+  content: '\e04a'; }
+
+.iconic-arrow-up:before {
+  content: '\2191'; }
+
+.iconic-move-horizontal:before {
+  content: '\e038'; }
+
+.iconic-compass:before {
+  content: '\e021'; }
+
+.iconic-minus-alt:before {
+  content: '\e009'; }
+
+.iconic-battery-empty:before {
+  content: '\e05c'; }
+
+.iconic-map-pin-alt:before {
+  content: '\e002'; }
+
+.iconic-unlock-stroke:before {
+  content: '\e076'; }
+
+.iconic-lock-stroke:before {
+  content: '\e075'; }
+
+.iconic-question-mark:before {
+  content: '\003f'; }
+
+.iconic-list:before {
+  content: '\e055'; }
+
+.iconic-upload:before {
+  content: '\e043'; }
+
+.iconic-reload:before {
+  content: '\e030'; }
+
+.iconic-loop-alt4:before {
+  content: '\e035'; }
+
+.iconic-loop-alt3:before {
+  content: '\e034'; }
+
+.iconic-loop-alt2:before {
+  content: '\e033'; }
+
+.iconic-loop-alt1:before {
+  content: '\e032'; }
+
+.iconic-left-quote:before {
+  content: '\275d'; }
+
+.iconic-x:before {
+  content: '\2713'; }
+
+.iconic-last:before {
+  content: '\e04d'; }
+
+.iconic-document-alt-stroke:before {
+  content: '\e000'; }
+
+.iconic-bars:before {
+  content: '\e06f'; }
+
+.iconic-arrow-left:before {
+  content: '\2190'; }
+
+.iconic-arrow-down:before {
+  content: '\2193'; }
+
+.iconic-download:before {
+  content: '\e042'; }
+
+.iconic-home:before {
+  content: '\2302'; }
+
+.iconic-calendar:before {
+  content: '\e001'; }
+
+.iconic-right-quote-alt:before {
+  content: '\e012'; }
+
+.iconic-fullscreen:before {
+  content: '\e04e'; }
+
+.iconic-dial:before {
+  content: '\e058'; }
+
+.iconic-plus-alt:before {
+  content: '\e008'; }
+
+.iconic-clock:before {
+  content: '\e079'; }
+
+.iconic-movie:before {
+  content: '\e060'; }
+
+.iconic-steering-wheel:before {
+  content: '\e024'; }
+
+.iconic-pen:before {
+  content: '\270e'; }
+
+.iconic-tag-stroke:before {
+  content: '\e02b'; }
+
+.iconic-pin:before {
+  content: '\e067'; }
+
+.iconic-denied:before {
+  content: '\26d4'; }
+
+.iconic-left-quote-alt:before {
+  content: '\e011'; }
+
+.iconic-volume-mute:before {
+  content: '\e071'; }
+
+.iconic-arrow-up-alt2:before {
+  content: '\e018'; }
+
+.iconic-list-nested:before {
+  content: '\e056'; }
+
+.iconic-arrow-up-alt1:before {
+  content: '\e014'; }
+
+.iconic-comment-stroke:before {
+  content: '\e06d'; }
+
+.iconic-undo:before {
+  content: '\e02f'; }
+
+.iconic-umbrella:before {
+  content: '\2602'; }
+
+.iconic-bolt:before {
+  content: '\26a1'; }
+
+.iconic-article:before {
+  content: '\e053'; }
+
+.iconic-read-more:before {
+  content: '\e054'; }
+
+.iconic-beaker:before {
+  content: '\e023'; }
+
+.iconic-beaker-alt:before {
+  content: '\e010'; }
+
+.iconic-battery-full:before {
+  content: '\e073'; }
+
+.iconic-arrow-right:before {
+  content: '\2192'; }
+
+.iconic-new-window:before {
+  content: '\e059'; }
+
+.iconic-plus:before {
+  content: '\2795'; }
+
+.iconic-cog:before {
+  content: '\2699'; }
+
+.iconic-key-stroke:before {
+  content: '\26bf'; }
+
+.iconic-first:before {
+  content: '\e04c'; }
+
+.iconic-comment-alt1-stroke:before {
+  content: '\e003'; }
+
+.iconic-trash-stroke:before {
+  content: '\e05a'; }
+
+.iconic-image:before {
+  content: '\e027'; }
+
+.iconic-chat-alt-stroke:before {
+  content: '\e007'; }
+
+.iconic-cd:before {
+  content: '\e064'; }
+
+.iconic-right-quote:before {
+  content: '\275e'; }
+
+.iconic-brush:before {
+  content: '\e01b'; }
+
+.iconic-cloud:before {
+  content: '\2601'; }
+
+.iconic-eye:before {
+  content: '\e025'; }
+
+.iconic-play-alt:before {
+  content: '\e048'; }
+
+.iconic-transfer:before {
+  content: '\e041'; }
+
+.iconic-pen-alt2:before {
+  content: '\e006'; }
+
+.iconic-camera:before {
+  content: '\e070'; }
+
+.iconic-move-horizontal-alt2:before {
+  content: '\e03a'; }
+
+.iconic-curved-arrow:before {
+  content: '\2935'; }
+
+.iconic-move-horizontal-alt1:before {
+  content: '\e039'; }
+
+.iconic-aperture:before {
+  content: '\e026'; }
+
+.iconic-reload-alt:before {
+  content: '\e031'; }
+
+.iconic-magnifying-glass:before {
+  content: '\e074'; }
+
+.iconic-iphone:before {
+  content: '\e06e'; }
+
+.iconic-fork:before {
+  content: '\e046'; }
+
+.iconic-box:before {
+  content: '\e06b'; }
+
+.iconic-bars-alt:before {
+  content: '\e00a'; }
+
+.iconic-heart-stroke:before {
+  content: '\2764'; }
+
+.iconic-volume:before {
+  content: '\e072'; }
+
+.iconic-x-alt:before {
+  content: '\2714'; }
+
+.iconic-link:before {
+  content: '\e077'; }
+
+.iconic-moon-stroke:before {
+  content: '\263e'; }
+
+.iconic-eyedropper:before {
+  content: '\e01e'; }
+
+.iconic-spin:before {
+  content: '\e036'; }
+
+.iconic-rss:before {
+  content: '\e02c'; }
+
+.iconic-info:before {
+  content: '\2139'; }
+
+.iconic-target:before {
+  content: '\e02a'; }
+
+.iconic-cursor:before {
+  content: '\e057'; }
+
+.iconic-minus:before {
+  content: '\2796'; }
+
+.iconic-book-alt:before {
+  content: '\e00b'; }
+
+.iconic-headphones:before {
+  content: '\e061'; }
+
+.iconic-hash:before {
+  content: '\0023'; }
+
+.iconic-arrow-left-alt1:before {
+  content: '\e013'; }
+
+.iconic-arrow-left-alt2:before {
+  content: '\e017'; }
+
+.iconic-fullscreen-exit:before {
+  content: '\e050'; }
+
+.iconic-share:before {
+  content: '\e02e'; }
+
+.iconic-fullscreen-alt:before {
+  content: '\e04f'; }
+
+.iconic-at:before {
+  content: '\0040'; }
+
+.iconic-chat:before {
+  content: '\e05e'; }
+
+.iconic-move-vertical-alt2:before {
+  content: '\e03d'; }
+
+.iconic-move-vertical-alt1:before {
+  content: '\e03c'; }
+
+.iconic-check:before {
+  content: '\2717'; }
+
+.iconic-mic:before {
+  content: '\e05f'; }
+
+.iconic-calendar-alt-stroke:before {
+  content: '\e06c'; }
+
+.iconic-book:before {
+  content: '\e069'; }
+
+.iconic-move-alt1:before {
+  content: '\e03f'; }
+
+.iconic-move-alt2:before {
+  content: '\e040'; }
+
+.iconic-award-stroke:before {
+  content: '\e022'; }
+
+.iconic-wrench:before {
+  content: '\e078'; }
+
+.iconic-play:before {
+  content: '\e047'; }
+
+.iconic-star:before {
+  content: '\2605'; }
+
+.iconic-chart:before {
+  content: '\e028'; }
+
+.iconic-rain:before {
+  content: '\26c6'; }
+
+.iconic-folder-stroke:before {
+  content: '\e065'; }
+
+.iconic-sun-stroke:before {
+  content: '\2600'; }
+
+.iconic-user:before {
+  content: '\e062'; }
+
+.iconic-battery-half:before {
+  content: '\e05b'; }
+
+.iconic-aperture-alt:before {
+  content: '\e00c'; }
+
+.iconic-eject:before {
+  content: '\e04b'; }
+
+.iconic-arrow-down-alt1:before {
+  content: '\e016'; }
+
+.iconic-pilcrow:before {
+  content: '\00b6'; }
+
+.iconic-arrow-down-alt2:before {
+  content: '\e01a'; }
+
+.iconic-arrow-right-alt1:before {
+  content: '\e015'; }
+
+.iconic-arrow-right-alt2:before {
+  content: '\e019'; }
+
+.iconic-rss-alt:before {
+  content: '\e02d'; }
+
+.iconic-spin-alt:before {
+  content: '\e037'; }
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2em;
   margin-bottom: 0.5em;
@@ -431,7 +897,7 @@ button, input[type="submit"], input[type="button"] {
   font-weight: 300;
   font-size: 1em; }
 
-.button {
+.btn {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -444,130 +910,132 @@ button, input[type="submit"], input[type="button"] {
   border: 2px solid #4499dd;
   border-radius: 3px;
   font-size: 1em;
+  line-height: 1.4em;
   text-align: center;
   text-decoration: none; }
-  .button:hover {
+  .btn:hover {
     background-color: #2277bb;
     border-color: #2277bb;
     color: #fff; }
-  .button:focus {
+  .btn:focus {
     color: #fff; }
-  .button:active {
+  .btn:active {
     background-color: #005599;
     border-color: #005599;
     top: 1px;
+    color: #fff;
     position: relative; }
-  .button.buttonSmall {
+  .btn.btnSmall {
     padding: 4px 15px;
     min-width: 30px;
     border-width: 1px;
     font-size: 0.8em;
     line-height: 1.2em; }
-  .button.buttonBig {
-    padding: 14px 45px;
+  .btn.btnBig {
+    padding: 12px 45px;
     min-width: 140px;
     font-size: 1.4em; }
-  .button.buttonSuccess {
+  .btn.btnSuccess {
     background: #1abc9c;
     border-color: #1abc9c; }
-    .button.buttonSuccess:hover {
+    .btn.btnSuccess:hover {
       background: #009a7a;
       border-color: #009a7a; }
-    .button.buttonSuccess:active {
+    .btn.btnSuccess:active {
       background: #007858;
       border-color: #007858; }
-  .button.buttonError {
+  .btn.btnError {
     background: #e74c3c;
     border-color: #e74c3c; }
-    .button.buttonError:hover {
+    .btn.btnError:hover {
       background: #c52a1a;
       border-color: #c52a1a; }
-    .button.buttonError:active {
+    .btn.btnError:active {
       background: #a30800;
       border-color: #a30800; }
-  .button.buttonWarning {
+  .btn.btnWarning {
     background: #f1c000;
     border-color: #f1c000; }
-    .button.buttonWarning:hover {
+    .btn.btnWarning:hover {
       background: #cf9e00;
       border-color: #cf9e00; }
-    .button.buttonWarning:active {
+    .btn.btnWarning:active {
       background: #ad7c00;
       border-color: #ad7c00; }
-  .button.buttonLight {
+  .btn.btnLight {
     background: #ecf0f1;
     border-color: #ecf0f1;
     color: #95a5a6; }
-    .button.buttonLight:hover {
+    .btn.btnLight:hover {
       background: #cacecf;
       border-color: #cacecf;
       color: #fff; }
-    .button.buttonLight:active {
+    .btn.btnLight:active {
       background: #a8acad;
       border-color: #a8acad;
       color: #fff; }
-  .button.buttonDark {
+  .btn.btnDark {
     background: #2c3e50;
     border-color: #2c3e50; }
-    .button.buttonDark:hover {
+    .btn.btnDark:hover {
       background: #0a1c2e;
       border-color: #0a1c2e; }
-    .button.buttonDark:active {
+    .btn.btnDark:active {
       background: #00000c;
       border-color: #00000c; }
-  .button.buttonEmpty {
+  .btn.btnEmpty {
     border-radius: 20px;
     color: #4499dd;
     background: #fff; }
-    .button.buttonEmpty:hover {
+    .btn.btnEmpty:hover {
       background: #fff;
       color: #2277bb; }
-    .button.buttonEmpty:active {
+    .btn.btnEmpty:active {
       background: #fff;
       color: #005599; }
-    .button.buttonEmpty.buttonSuccess {
+    .btn.btnEmpty.btnSuccess {
       border-color: #1abc9c;
       color: #1abc9c; }
-      .button.buttonEmpty.buttonSuccess:hover {
+      .btn.btnEmpty.btnSuccess:hover {
         border-color: #009a7a;
         color: #009a7a; }
-      .button.buttonEmpty.buttonSuccess:active {
+      .btn.btnEmpty.btnSuccess:active {
         border-color: #007858;
         color: #007858; }
-    .button.buttonEmpty.buttonError {
+    .btn.btnEmpty.btnError {
       border-color: #e74c3c;
       color: #e74c3c; }
-      .button.buttonEmpty.buttonError:hover {
+      .btn.btnEmpty.btnError:hover {
         border-color: #c52a1a;
         color: #c52a1a; }
-      .button.buttonEmpty.buttonError:active {
+      .btn.btnEmpty.btnError:active {
         border-color: #a30800;
         color: #a30800; }
-    .button.buttonEmpty.buttonWarning {
+    .btn.btnEmpty.btnWarning {
       border-color: #f1c000;
       color: #f1c000; }
-      .button.buttonEmpty.buttonWarning:hover {
+      .btn.btnEmpty.btnWarning:hover {
         border-color: #cf9e00;
         color: #cf9e00; }
-      .button.buttonEmpty.buttonWarning:active {
+      .btn.btnEmpty.btnWarning:active {
         border-color: #ad7c00;
         color: #ad7c00; }
-    .button.buttonEmpty.buttonLight {
+    .btn.btnEmpty.btnLight {
       border-color: #dae0e4;
       color: #95a5a6; }
-      .button.buttonEmpty.buttonLight:hover {
+      .btn.btnEmpty.btnLight:hover {
         border-color: #cacecf;
         color: #738384; }
-      .button.buttonEmpty.buttonLight:active {
+      .btn.btnEmpty.btnLight:active {
         border-color: #a8acad;
         color: #516162; }
-    .button.buttonEmpty.buttonDark {
+    .btn.btnEmpty.btnDark {
       border-color: #2c3e50;
       color: #2c3e50; }
-      .button.buttonEmpty.buttonDark:hover {
+      .btn.btnEmpty.btnDark:hover {
         border-color: #0a1c2e;
         color: #0a1c2e; }
-      .button.buttonEmpty.buttonDark:active {
+      .btn.btnEmpty.btnDark:active {
         border-color: #00000c;
         color: #00000c; }
 
@@ -696,9 +1164,9 @@ select {
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select {
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAIAAAAy3EnLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYcDSA5NaKHLwAAAQRJREFUGNN9jrGKg0AURW9iMelSOX6AEMg3TO8PGJCA+HEiiBAJ04n/IkKKAWeqFIHMCL4tZnF3XXZv9bicw30gonEcrbX0b6y14zgS0V4p1XWdlNI5hz/inJNSdl2nlArO5/M8z6/X6/F4nE6nIAh+0/f73Rjjf9kLIZZlWZZFa9227WbHOde2rdbaM0KIHRENw9D3vbUWQBiGl8uFMQbAWnu73YwxABhjSZLEcbwjIgDGmKZpvMMYy7IMwKYJwxDApwBAa13X9Ur4BX9fr1fOuce+BADP59N/vDac8zRNj8fj2vwQALzf76qqpmkCEEVRnueHw+E7sBW8U5YlgKIoNjSAD706zRArYH/gAAAAAElFTkSuQmCC");
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAYAAACqnE5VAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYeBwwgz2YJHAAAASVJREFUOMud0jFqwzAUBuD/6QLqDXqE+Abx4MGDIR5CCBpEsUFzjtTRhAwqeMiQQUdIj9AbJPt7Vhe1OKShdv5FvCf0PngIAOCcWznnNCbGOaedcyvMiGrbdikiXkRC0zT/Yk3TaBEJIuLbtl1OhpjZMzOYORORYK19iFlrtYgEZs7SGz8ZEpFdeoQ0IBhj7jBjjGbmMQIR2U2FCAC22+0qxvgO4CX1zzHGfL/fXwFgs9loIgoAsnR/IaK3rus+ZkEAsF6vFzHGMMIuwzDkAKCUuukTUX44HD7nfAYaF3VdL4ZhuBmazt9aKZV772chdxAAVFX1GmP0ozX95ExEdd/3X3gi9FezLEud1piNkPx4PF7xZOjRRVEUOq0RSqn8dDo9jQDAN6OnnUe+41wgAAAAAElFTkSuQmCC");
     background-repeat: no-repeat;
-    background-position: right 10px center; } }
+    background-position: right center; } }
 label {
   display: block;
   margin-bottom: 0.5em;
@@ -837,15 +1305,18 @@ th {
   .tableBordered colgroup + tbody tr:first-child td:last-child {
     border-top-right-radius: 3px; }
 
-.tableStriped tbody > tr:nth-child(odd) > td,
-.tableStriped tbody > tr:nth-child(odd) > th {
+.tableStriped tr:nth-child(odd) > td {
   background-color: #f5f7f8; }
 
-.tableHover tbody tr:hover > td,
-.tableHover tbody tr:hover > th {
+.tableHover tr:hover > td {
   background-color: #dae0e4;
   color: #1f2c2d; }
 
+@media screen and (max-width: 767px) {
+  .table {
+    display: block;
+    max-width: 100%;
+    overflow-x: scroll; } }
 .padding0 {
   padding: 0; }
 
@@ -903,6 +1374,48 @@ th {
 .textRight {
   text-align: right; }
 
+.colorMain, #iconic span:hover {
+  color: #4499dd; }
+
+.colorSuccess {
+  color: #1abc9c; }
+
+.colorError {
+  color: #e74c3c; }
+
+.colorWarning {
+  color: #f1c000; }
+
+.colorLight {
+  color: #ecf0f1; }
+
+.colorDark {
+  color: #2c3e50; }
+
+.bgMain {
+  background-color: #4499dd;
+  color: #fff; }
+
+.bgSuccess {
+  background-color: #1abc9c;
+  color: #fff; }
+
+.bgError {
+  background-color: #e74c3c;
+  color: #fff; }
+
+.bgWarning {
+  background-color: #f1c000;
+  color: #fff; }
+
+.bgLight {
+  background-color: #ecf0f1;
+  color: #95a5a6; }
+
+.bgDark {
+  background-color: #2c3e50;
+  color: #fff; }
+
 .displayBlock {
   display: block; }
 
@@ -916,15 +1429,26 @@ th {
   min-height: 40px;
   line-height: 40px;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 3px; }
 .dummy .c1 {
   background: #4499dd;
   color: #f5f7f8; }
 .dummy .c2 {
   background: #ecf0f1; }
 
-.container {
+.white {
   background: white; }
+
+#iconic span {
+  vertical-align: middle;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center; }
+  #iconic span:hover {
+    font-size: 40px; }
 
 @media screen and (min-width: 768px) {
   .dummyNavigation {

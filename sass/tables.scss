@@ -140,11 +140,8 @@ th {
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
 .tableStriped {
-    tbody {
-        > tr:nth-child(odd) > td,
-        > tr:nth-child(odd) > th {
-            background-color: $tableBackground;
-        }
+    tr:nth-child(odd) > td {
+        background-color: $tableBackground;
     }
 }
 
@@ -154,13 +151,20 @@ th {
 // ------------
 // Placed here since it has to come after the potential zebra striping
 .tableHover {
-    tbody {
-        tr:hover > td,
-        tr:hover > th {
-            background-color: $tableBackgroundHover;
-            color: $tableColorHover;
-        }
+    tr:hover > td{
+        background-color: $tableBackgroundHover;
+        color: $tableColorHover;
     }
 }
+
+// Mobile
+@media screen and (max-width: 767px) {
+    .table{
+        display: block;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+}
+
 
 

@@ -30,6 +30,23 @@
 .textRight{ text-align: right; }
 
 
+// Colors
+.colorMain{ color: $mainColor; }
+.colorSuccess{ color: $successColor; }
+.colorError{ color: $errorColor; }
+.colorWarning{ color: $warningColor; }
+.colorLight{ color: $lightColor; }
+.colorDark{ color: $darkColor; }
+
+// Colors
+.bgMain{ background-color: $mainColor; color: #fff; }
+.bgSuccess{ background-color: $successColor; color: #fff; }
+.bgError{ background-color: $errorColor; color: #fff; }
+.bgWarning{ background-color: $warningColor; color: #fff; }
+.bgLight{ background-color: $lightColor; color: $gray3; }
+.bgDark{ background-color: $darkColor; color: #fff; }
+
+
 // Display
 .displayBlock{ display: block; }
 .displayInlineBlock{ display: inline-block; }

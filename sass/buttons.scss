@@ -4,7 +4,7 @@ button, input[type="submit"], input[type="button"]{
 	font-size: 1em;
 }
 
-.button{
+.btn{
 	@include box-sizing(border-box);
 	background: $buttonColor;
 	color: #fff;
@@ -15,9 +15,9 @@ button, input[type="submit"], input[type="button"]{
 	border: 2px solid $buttonColor;
 	border-radius: $borderRadius;
 	font-size: 1em;
+	line-height: 1.4em;
 	text-align: center;
 	text-decoration: none;
-
 
 	&:hover{
 		background-color: $buttonColor - $colorDiff;
@@ -32,11 +32,12 @@ button, input[type="submit"], input[type="button"]{
 		background-color: $buttonColor - $colorDiff*2;
 		border-color: $buttonColor - $colorDiff*2;
 		top: 1px;
+		color: #fff;
 		position: relative;
 	}
 
 	// SMALL BUTTON
-	&.buttonSmall{
+	&.btnSmall{
 		padding: 4px 15px;
 		min-width: 30px;
 		border-width: 1px;
@@ -44,14 +45,14 @@ button, input[type="submit"], input[type="button"]{
 		line-height: 1.2em;
 	}
 	// BIG BUTTON
-	&.buttonBig{
-		padding: 14px 45px;
+	&.btnBig{
+		padding: 12px 45px;
 		min-width: 140px;
 		font-size: 1.4em;
 	}
 
 	// SUCCESS BUTTON
-	&.buttonSuccess{
+	&.btnSuccess{
 		background: $successColor;
 		border-color: $successColor;
 
@@ -66,7 +67,7 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	// ERROR BUTTON
-	&.buttonError{
+	&.btnError{
 		background: $errorColor;
 		border-color: $errorColor;
 
@@ -81,7 +82,7 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	// WARNING BUTTON
-	&.buttonWarning{
+	&.btnWarning{
 		background: $warningColor;
 		border-color: $warningColor;
 
@@ -96,7 +97,7 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	// LIGHT BUTTON
-	&.buttonLight{
+	&.btnLight{
 		background: $lightColor;
 		border-color: $lightColor;
 		color: $gray3;
@@ -114,7 +115,7 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	// DARK BUTTON
-	&.buttonDark{
+	&.btnDark{
 		background: $darkColor;
 		border-color: $darkColor;
 
@@ -131,7 +132,7 @@ button, input[type="submit"], input[type="button"]{
 
 
 	// EMPTY BUTTONS
-	&.buttonEmpty{
+	&.btnEmpty{
 		border-radius: $bigBorderRadius;
 		color: $buttonColor;
 		background: #fff;
@@ -146,7 +147,7 @@ button, input[type="submit"], input[type="button"]{
 		}
 
 		// SUCCESS BUTTON
-		&.buttonSuccess{
+		&.btnSuccess{
 			border-color: $successColor;
 			color: $successColor;
 
@@ -161,7 +162,7 @@ button, input[type="submit"], input[type="button"]{
 		}
 
 		// ERROR BUTTON
-		&.buttonError{
+		&.btnError{
 			border-color: $errorColor;
 			color: $errorColor;
 
@@ -176,7 +177,7 @@ button, input[type="submit"], input[type="button"]{
 		}
 
 		// WARNING BUTTON
-		&.buttonWarning{
+		&.btnWarning{
 			border-color: $warningColor;
 			color: $warningColor;
 
@@ -191,7 +192,7 @@ button, input[type="submit"], input[type="button"]{
 		}
 
 		// LIGHT BUTTON
-		&.buttonLight{
+		&.btnLight{
 			border-color: $gray2;
 			color: $gray3;
 
@@ -206,7 +207,7 @@ button, input[type="submit"], input[type="button"]{
 		}
 
 		// DARK BUTTON
-		&.buttonDark{
+		&.btnDark{
 			border-color: $darkColor;
 			color: $darkColor;
 

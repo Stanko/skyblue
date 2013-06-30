@@ -8,6 +8,7 @@
 		line-height: 40px;
 		text-align: center;
 		overflow: hidden;
+		border-radius: $borderRadius;
 	}
 
 	.c1{ background: $mainColor; color: $gray1; }
@@ -15,7 +16,22 @@
 }
 
 
-.container{ background: white; }
+.white{ background: white; }
+
+#iconic{
+	span{
+		vertical-align: middle;
+		font-size: 20px;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		&:hover{
+			@extend .colorMain;
+			font-size: 40px;
+		}
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.dummyNavigation{
