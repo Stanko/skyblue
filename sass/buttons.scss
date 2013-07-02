@@ -6,13 +6,13 @@ button, input[type="submit"], input[type="button"]{
 
 .btn{
 	@include box-sizing(border-box);
-	background: $buttonColor;
+	background: $mainColor;
 	color: #fff;
 	display: inline-block;
 	min-width: 120px;
 	padding: 8px 25px;
 	margin-bottom: 1em;
-	border: 2px solid $buttonColor;
+	border: 2px solid $mainColor;
 	border-radius: $borderRadius;
 	font-size: 1em;
 	line-height: 1.4em;
@@ -20,8 +20,8 @@ button, input[type="submit"], input[type="button"]{
 	text-decoration: none;
 
 	&:hover{
-		background-color: $buttonColor - $colorDiff;
-		border-color: $buttonColor - $colorDiff;
+		background-color: $mainColor - $colorDiff;
+		border-color: $mainColor - $colorDiff;
 		color: #fff;
 	}
 	&:focus{
@@ -29,8 +29,8 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	&:active{
-		background-color: $buttonColor - $colorDiff*2;
-		border-color: $buttonColor - $colorDiff*2;
+		background-color: $mainColor - $colorDiff*2;
+		border-color: $mainColor - $colorDiff*2;
 		top: 1px;
 		color: #fff;
 		position: relative;
@@ -134,16 +134,16 @@ button, input[type="submit"], input[type="button"]{
 	// EMPTY BUTTONS
 	&.btnEmpty{
 		border-radius: $bigBorderRadius;
-		color: $buttonColor;
+		color: $mainColor;
 		background: #fff;
 
 		&:hover{
 			background: #fff;
-			color: $buttonColor - $colorDiff;
+			color: $mainColor - $colorDiff;
 		}
 		&:active{
 			background: #fff;
-			color: $buttonColor - $colorDiff*2;
+			color: $mainColor - $colorDiff*2;
 		}
 
 		// SUCCESS BUTTON

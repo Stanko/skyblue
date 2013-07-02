@@ -4,6 +4,7 @@
 	margin-right: auto;
 	margin-left: auto;
 	@include clearfix;
+
 	padding-left:  $gridPaddingWidth;
 	padding-right: $gridPaddingWidth;
 }
@@ -58,8 +59,6 @@
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 700px;
-		padding-left:  $gridPaddingWidth/2;
-		padding-right: $gridPaddingWidth/2;
 	}
 
 
@@ -70,12 +69,12 @@
 
 	.row {
 		// Negative margin the row out to align the content of columns
-		// margin-left:  $gridPaddingWidth / -2;
-		// margin-right: $gridPaddingWidth / -2;
+		margin-left:  $gridPaddingWidth / -2;
+		margin-right: $gridPaddingWidth / -2;
 	}
 
 	@for $i from 1 through $gridColumns {
-  		.span#{$i}, .width#{$i} { width: $i*$gridUnitWidth; } // TODO Width
+  		.span#{$i}{ width: $i*$gridUnitWidth; }
   		.offset#{$i}{ margin-left: $i*$gridUnitWidth; }
 	}
 }

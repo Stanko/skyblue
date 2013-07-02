@@ -1,3 +1,30 @@
+.nav{
+	background: $navigationColor;
+	text-align: center;
+	border-radius: $borderRadius;
+	margin: 1em auto;
+
+	a{
+		display: inline-block;
+		padding: 10px 17px;
+		margin: 5px 0;
+		color: $gray1;
+		text-decoration: none;
+		font-size: 1.1em;
+		border-bottom: 3px solid $navigationColor;
+		border-radius: $borderRadius;
+
+		&:hover{
+			background: $navigationColor - $colorDiff/2;
+			border-color: $navigationColor + $colorDiff;
+		}
+		&.active{
+			background: $navigationColor - $colorDiff/2;
+			border-color: $navigationColor + $colorDiff*3;
+		}
+	}
+}
+
 .breadcrumbs{
 	border-radius: $borderRadius;
 	margin-bottom: 1em;
@@ -13,4 +40,20 @@
 			content: "» ";
 		}
 	}
+}
+
+
+// Responsive: Tablets and up
+@media screen and (min-width: 768px) {
+	.nav{
+		text-align: left;
+	}
+}
+
+// Responsive: Desktops and up
+@media screen and (min-width: 992px) {
+}
+
+// Responsive: Large desktops and up
+@media screen and (min-width: 1200px) {
 }
