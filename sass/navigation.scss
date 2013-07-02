@@ -1,0 +1,16 @@
+.breadcrumbs{
+	border-radius: $borderRadius;
+	margin-bottom: 1em;
+	padding: 5px 10px;
+	background: $gray1;
+
+	a, span{
+		text-decoration: none;
+		display: inline-block;
+		padding: 5px;
+
+		&:before{
+			content: "» ";
+		}
+	}
+}

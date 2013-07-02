@@ -72,7 +72,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -webkit-text-stroke: 0.25px;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -149,7 +148,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  -webkit-text-stroke: 0.25px;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -1414,6 +1412,24 @@ pre {
 code {
   display: inline-block;
   padding: 0.1em 0.3em;
+}
+
+/* line 1, ../sass/navigation.scss */
+.breadcrumbs {
+  border-radius: 3px;
+  margin-bottom: 1em;
+  padding: 5px 10px;
+  background: #f5f7f8;
+}
+/* line 7, ../sass/navigation.scss */
+.breadcrumbs a, .breadcrumbs span {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 12, ../sass/navigation.scss */
+.breadcrumbs a:before, .breadcrumbs span:before {
+  content: "» ";
 }
 
 /* line 1, ../sass/buttons.scss */

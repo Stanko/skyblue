@@ -57,7 +57,7 @@ html {
 
  	-webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    -webkit-text-stroke: 0.25px;
+    //-webkit-text-stroke: 0.25px; // causes problems on mobile webkit on placeholders
 }
 
 // Disable iOS/WinMobile font size changes

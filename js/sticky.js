@@ -3,16 +3,18 @@ if(!is_touch_device){
 	var nav = document.getElementById('stickyNavigation'),
 		offset = nav.offsetTop;
 
-	window.onscroll = function(){
-		if( window.XMLHttpRequest ) {
-			var pageOffest = document.documentElement.scrollTop || self.pageYOffset;
-			if (pageOffest >= 0 && pageOffest <= offset) {
-				nav.style.top = offset - pageOffest + 'px';
-			}
-			else if (pageOffest > offset) {
-				nav.style.top = 0 + 'px';
-			}
-		}
-	};
-}
 
+	function onScroll(){
+		var pageOffest = window.pageYOffset || document.documentElement.scrollTop;
+		if (pageOffest >= 0 && pageOffest <= offset) {
+			nav.style.top = offset - pageOffest + 'px';
+		}
+		else if (pageOffest > offset) {
+			nav.style.top = 0 + 'px';
+		}
+	}
+
+	onScroll();
+
+	window.onscroll = onScroll;
+}
