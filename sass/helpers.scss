@@ -23,11 +23,14 @@
 .floatLeft{ float: left; }
 .floatRight{ float: right; }
 
+.clear{ @include clearfix; }
+
 
 // Text
 .textCenter{ text-align: center; }
 .textLeft{ text-align: left; }
 .textRight{ text-align: right; }
+.textJustify{ text-align: justify; }
 
 
 // Colors
@@ -45,9 +48,15 @@
 .bgWarning{ background-color: $warningColor; color: #fff; }
 .bgLight{ background-color: $lightColor; color: $gray3; }
 .bgDark{ background-color: $darkColor; color: #fff; }
+.bgWhite{ background-color: #fff; }
 
 
 // Display
 .displayBlock{ display: block; }
 .displayInlineBlock{ display: inline-block; }
 .displayInline{ display: inline; }
+
+
+// Round borders
+.borderRadius{ border-radius: $borderRadius; }
+.borderRound{ border-radius: 50%; }
