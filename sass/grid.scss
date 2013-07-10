@@ -45,8 +45,13 @@
 
 
 // Mobile grid
+.rowMobile{
+	margin-left:  $gridPaddingWidth / -2;
+	margin-right: $gridPaddingWidth / -2;
+}
+
 #{$gridSpanMobileClasses} {
-	float: left;
+	@include span-stuff();
 }
 
 @for $i from 1 through $gridColumns {
@@ -89,7 +94,7 @@
 // Responsive: Large desktops and up
 @media screen and (min-width: 1200px) {
 	.container {
-		max-width: 1120px;
+		// max-width: 1120px;
 	}
 }
 
