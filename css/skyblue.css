@@ -1712,6 +1712,71 @@ th {
   background-color: #dae0e4;
   color: #1f2c2d; }
 
+/* line 3, ../sass/slider.scss */
+.slider {
+  width: 100%;
+  height: 400px;
+  position: relative; }
+  /* line 8, ../sass/slider.scss */
+  .slider > div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 100; }
+    /* line 16, ../sass/slider.scss */
+    .slider > div.out {
+      z-index: 10; }
+      /* line 17, ../sass/slider.scss */
+      .slider > div.out .el1, .slider > div.out .el2 {
+        top: -10px;
+        opacity: 0; }
+      /* line 21, ../sass/slider.scss */
+      .slider > div.out .el3 {
+        opacity: 0;
+        margin-top: 0; }
+    /* line 27, ../sass/slider.scss */
+    .slider > div.out2 {
+      z-index: 10; }
+      /* line 28, ../sass/slider.scss */
+      .slider > div.out2 .el1, .slider > div.out2 .el2 {
+        top: 120px;
+        opacity: 0; }
+      /* line 32, ../sass/slider.scss */
+      .slider > div.out2 .el3 {
+        opacity: 0;
+        margin-top: 300px; }
+    /* line 39, ../sass/slider.scss */
+    .slider > div.noTransition .el1, .slider > div.noTransition .el2, .slider > div.noTransition .el3 {
+      transition: none; }
+  /* line 45, ../sass/slider.scss */
+  .slider .el1 {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: #f1c000;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    z-index: 100;
+    transition: all 0.65s; }
+  /* line 57, ../sass/slider.scss */
+  .slider .el2 {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #1abc9c;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    z-index: 110;
+    transition: all 0.4s; }
+  /* line 69, ../sass/slider.scss */
+  .slider .el3 {
+    transition: all 0.4s;
+    margin-top: 120px; }
+
 /* line 2, ../sass/helpers.scss */
 .padding0 {
   padding: 0; }
