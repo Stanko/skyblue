@@ -4,6 +4,7 @@ $sliderHeight: 400px;
 	width: 100%;
 	height: $sliderHeight;
 	position: relative;
+	overflow: hidden;
 
 	> div{
 		width: 100%;
