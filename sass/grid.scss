@@ -62,6 +62,9 @@
 
 // Responsive: Tablets and up
 @media screen and (min-width: 768px) {
+	#{$gridOffsetMobileClasses}{
+		margin-left: 0;
+	}
 	.container {
 		max-width: 700px;
 	}
