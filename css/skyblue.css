@@ -178,7 +178,6 @@ body {
   margin-left: 100%; }
 
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
   .container {
     max-width: 720px; }
   .md-1 {
@@ -235,113 +234,6 @@ body {
     width: 91.66667%;
     float: left; }
   .offset-md-11 {
-=======
-  /* line 65, ../sass/grid.scss */
-  .offsetMobile1, .offsetMobile2, .offsetMobile3, .offsetMobile4, .offsetMobile5, .offsetMobile6, .offsetMobile7, .offsetMobile8, .offsetMobile9, .offsetMobile10, .offsetMobile11, .offsetMobile12 {
-    margin-left: 0; }
-
-  /* line 68, ../sass/grid.scss */
-  .container {
-    max-width: 700px; }
-
-  /* line 74, ../sass/grid.scss */
-  .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left; }
-
-  /* line 78, ../sass/grid.scss */
-  .row {
-    margin-left: -15px;
-    margin-right: -15px; }
-
-  /* line 85, ../sass/grid.scss */
-  .span1 {
-    width: 8.33333%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset1 {
-    margin-left: 8.33333%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span2 {
-    width: 16.66667%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset2 {
-    margin-left: 16.66667%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span3 {
-    width: 25%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset3 {
-    margin-left: 25%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span4 {
-    width: 33.33333%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset4 {
-    margin-left: 33.33333%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span5 {
-    width: 41.66667%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset5 {
-    margin-left: 41.66667%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span6 {
-    width: 50%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset6 {
-    margin-left: 50%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span7 {
-    width: 58.33333%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset7 {
-    margin-left: 58.33333%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span8 {
-    width: 66.66667%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset8 {
-    margin-left: 66.66667%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span9 {
-    width: 75%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset9 {
-    margin-left: 75%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span10 {
-    width: 83.33333%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset10 {
-    margin-left: 83.33333%; }
-
-  /* line 85, ../sass/grid.scss */
-  .span11 {
-    width: 91.66667%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset11 {
->>>>>>> 6a06b4167b74d60c5e921417da6477e0a08eef7b
     margin-left: 91.66667%; }
   .md-12 {
     width: 100%;
@@ -349,7 +241,6 @@ body {
   .offset-md-12 {
     margin-left: 100%; } }
 
-<<<<<<< HEAD
 @media screen and (min-width: 980px) {
   .container {
     max-width: 940px; }
@@ -415,17 +306,6 @@ body {
     margin-left: 100%; } }
 
 @media screen and (min-width: 1200px) {
-=======
-  /* line 85, ../sass/grid.scss */
-  .span12 {
-    width: 100%; }
-
-  /* line 86, ../sass/grid.scss */
-  .offset12 {
-    margin-left: 100%; } }
-@media screen and (min-width: 992px) {
-  /* line 92, ../sass/grid.scss */
->>>>>>> 6a06b4167b74d60c5e921417da6477e0a08eef7b
   .container {
     max-width: 1150px; } }
 
