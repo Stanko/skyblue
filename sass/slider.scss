@@ -1,8 +1,8 @@
-$sliderHeight: 400px;
+$slider-height: 400px;
 
 .slider{
 	width: 100%;
-	height: $sliderHeight;
+	height: $slider-height;
 	position: relative;
 	overflow: hidden;
 
@@ -36,7 +36,7 @@ $sliderHeight: 400px;
 			}
 			z-index: 10;
 		}
-		&.noTransition{
+		&.no-transition{
 			.el1, .el2, .el3{
 				transition: none;
 			}
@@ -47,7 +47,7 @@ $sliderHeight: 400px;
 		height: 250px;
 		width: 250px;
 		border-radius: 50%;
-		background: $warningColor;
+		background: $warning-color;
 		position: absolute;
 		top: 50px;
 		left: 20px;
@@ -59,7 +59,7 @@ $sliderHeight: 400px;
 		height: 130px;
 		width: 130px;
 		border-radius: 50%;
-		background: $successColor;
+		background: $success-color;
 		position: absolute;
 		top: 40px;
 		left: 150px;

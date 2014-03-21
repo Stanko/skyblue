@@ -152,7 +152,7 @@ var icons = {
 	"paperclip"				:"e08a"
 };
 
-function generateIconicHTML(){
+function generate-iconic-hTML(){
 	var html = '';
 	for(var i in icons){
 		html += '<span class="iconic iconic-'+i+'"></span>';

@@ -1,10 +1,10 @@
 body{
-	font-family: $fontFamily;
-	font-size: $fontSize;
-	font-weight: $fontWeight;
-	line-height: $lineHeight;
-	background: $bodyBackground;
-	color: $textColor;
+	font-family: $font-family;
+	font-size: $font-size;
+	font-weight: $font-weight;
+	line-height: $line-height;
+	background: $body-background;
+	color: $text-color;
 
 	-webkit-font-smoothing: antialiased;
 }

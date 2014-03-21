@@ -1,62 +1,62 @@
-// Paddings
-.padding0{ padding: 0; }
-.padding10{ padding: 10px; }
-.padding20{ padding: 20px; }
-.padding30{ padding: 50px; }
-.padding40{ padding: 40px; }
-.padding50{ padding: 50px; }
+$margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10;
 
 
-// Margins
-.margin0{ margin: 0; }
-.margin10{ margin: 10px; }
-.margin20{ margin: 20px; }
-.margin30{ margin: 50px; }
-.margin40{ margin: 40px; }
-.margin50{ margin: 50px; }
+@each $value in $margin-and-padding-values {
+	.margin-#{$value} { margin: #{$value}px; }
+	.margin-top-#{$value} { margin-top: #{$value}px; }
+	.margin-bottom-#{$value} { margin-bottom: #{$value}px; }
+	.margin-left-#{$value} { margin-left: #{$value}px; }
+	.margin-right-#{$value} { margin-right: #{$value}px; }
 
-.marginBottom05em{ margin-bottom: 0.5em; }
-.marginBottom1em{ margin-bottom: 1em; }
-.marginBottom2em{ margin-bottom: 2em; }
+	.padding-#{$value} { padding: #{$value}px; }
+	.padding-top-#{$value} { padding-top: #{$value}px; }
+	.padding-bottom-#{$value} { padding-bottom: #{$value}px; }
+	.padding-left-#{$value} { padding-left: #{$value}px; }
+	.padding-right-#{$value} { padding-right: #{$value}px; }
+}
+
+.margin-bottom-05-em{ margin-bottom: 0.5em; }
+.margin-bottom-1-em{ margin-bottom: $font-size; }
+.margin-bottom-2-em{ margin-bottom: 2em; }
 
 // Floats
-.floatLeft{ float: left; }
-.floatRight{ float: right; }
+.float-left{ float: left; }
+.float-right{ float: right; }
+.float-none{ float: none; }
 
 .clear{ @include clearfix; }
 
-
 // Text
-.textCenter{ text-align: center; }
-.textLeft{ text-align: left; }
-.textRight{ text-align: right; }
-.textJustify{ text-align: justify; }
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
+.text-justify{ text-align: justify; }
 
 
 // Colors
-.colorMain{ color: $mainColor; }
-.colorSuccess{ color: $successColor; }
-.colorError{ color: $errorColor; }
-.colorWarning{ color: $warningColor; }
-.colorLight{ color: $lightColor; }
-.colorDark{ color: $darkColor; }
+.color-main{ color: $main-color; }
+.color-success{ color: $success-color; }
+.color-error{ color: $error-color; }
+.color-warning{ color: $warning-color; }
+.color-light{ color: $light-color; }
+.color-dark{ color: $dark-color; }
 
 // Colors
-.bgMain{ background-color: $mainColor; color: #fff; }
-.bgSuccess{ background-color: $successColor; color: #fff; }
-.bgError{ background-color: $errorColor; color: #fff; }
-.bgWarning{ background-color: $warningColor; color: #fff; }
-.bgLight{ background-color: $lightColor; color: $gray3; }
-.bgDark{ background-color: $darkColor; color: #fff; }
-.bgWhite{ background-color: #fff; }
+.bg-main{ background-color: $main-color; color: #fff; }
+.bg-success{ background-color: $success-color; color: #fff; }
+.bg-error{ background-color: $error-color; color: #fff; }
+.bg-warning{ background-color: $warning-color; color: #fff; }
+.bg-light{ background-color: $light-color; color: $gray3; }
+.bg-dark{ background-color: $dark-color; color: #fff; }
+.bg-white{ background-color: #fff; }
 
 
 // Display
-.displayBlock{ display: block; }
-.displayInlineBlock{ display: inline-block; }
-.displayInline{ display: inline; }
+.block{ display: block; }
+.inline-block{ display: inline-block; }
+.inline{ display: inline; }
 
 
 // Round borders
-.borderRadius{ border-radius: $borderRadius; }
-.borderRound{ border-radius: 50%; }
+.border-radius{ border-radius: $border-radius; }
+.border-round{ border-radius: 50%; }

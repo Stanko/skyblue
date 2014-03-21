@@ -13,15 +13,15 @@ th {
 // BASELINE STYLES
 .table {
     width: 100%;
-    margin-bottom: 1em;
+    margin-bottom: $font-size;
 
     // Cells
     th,
     td {
         padding: 8px;
-        line-height: $lineHeight;
+        line-height: $line-height;
         vertical-align: top;
-        border-top: 1px solid $tableBorderColor;
+        border-top: 1px solid $table-border-color;
     }
     // Bottom align for column headings
     thead th {
@@ -39,19 +39,19 @@ th {
     }
     // Account for multiple tbody instances
     tbody + tbody {
-        border-top: 2px solid $tableBorderColor;
+        border-top: 2px solid $table-border-color;
     }
 
     // Nesting
     .table {
-        background-color: $bodyBackground;
+        background-color: $body-background;
     }
 }
 
 
 
 // CONDENSED TABLE W/ HALF PADDING
-.tableCondensed {
+.table-condensed {
     th, td {
         padding: 4px 5px;
     }
@@ -59,14 +59,14 @@ th {
 
 
 // BORDERED VERSION
-.tableBordered {
-    border: 1px solid $tableBorderColor;
+.table-bordered {
+    border: 1px solid $table-border-color;
     border-collapse: separate; // Done so we can round those corners!
     border-left: 0;
-    border-radius: $borderRadius;
+    border-radius: $border-radius;
     th,
     td {
-        border-left: 1px solid $tableBorderColor;
+        border-left: 1px solid $table-border-color;
     }
     // Prevent a double border
     caption + thead tr:first-child th,
@@ -84,13 +84,13 @@ th {
     thead:first-child tr:first-child > th:first-child,
     tbody:first-child tr:first-child > td:first-child,
     tbody:first-child tr:first-child > th:first-child {
-        border-top-left-radius: $borderRadius;
+        border-top-left-radius: $border-radius;
     }
     // For last th/td in the first row in the first thead or tbody
     thead:first-child tr:first-child > th:last-child,
     tbody:first-child tr:first-child > td:last-child,
     tbody:first-child tr:first-child > th:last-child {
-        border-top-right-radius: $borderRadius;
+        border-top-right-radius: $border-radius;
     }
     // For first th/td (can be either) in the last row in the last thead, tbody, and tfoot
     thead:last-child tr:last-child > th:first-child,
@@ -98,7 +98,7 @@ th {
     tbody:last-child tr:last-child > th:first-child,
     tfoot:last-child tr:last-child > td:first-child,
     tfoot:last-child tr:last-child > th:first-child {
-        border-bottom-left-radius: $borderRadius;
+        border-bottom-left-radius: $border-radius;
     }
     // For last th/td (can be either) in the last row in the last thead, tbody, and tfoot
     thead:last-child tr:last-child > th:last-child,
@@ -106,7 +106,7 @@ th {
     tbody:last-child tr:last-child > th:last-child,
     tfoot:last-child tr:last-child > td:last-child,
     tfoot:last-child tr:last-child > th:last-child {
-        border-bottom-right-radius: $borderRadius;
+        border-bottom-right-radius: $border-radius;
     }
 
     // Clear border-radius for first and last td in the last row in the last tbody for table with tfoot
@@ -122,13 +122,13 @@ th {
     caption + tbody tr:first-child td:first-child,
     colgroup + thead tr:first-child th:first-child,
     colgroup + tbody tr:first-child td:first-child {
-        border-top-left-radius: $borderRadius;
+        border-top-left-radius: $border-radius;
     }
     caption + thead tr:first-child th:last-child,
     caption + tbody tr:first-child td:last-child,
     colgroup + thead tr:first-child th:last-child,
     colgroup + tbody tr:first-child td:last-child {
-        border-top-right-radius: $borderRadius;
+        border-top-right-radius: $border-radius;
     }
 
 }
@@ -136,24 +136,24 @@ th {
 
 
 // ZEBRA-STRIPING
-// --------------
+// -------
 
 // Default zebra-stripe styles (alternating gray and transparent backgrounds)
-.tableStriped {
+.table-striped {
     tr:nth-child(odd) > td {
-        background-color: $tableBackground;
+        background-color: $table-background;
     }
 }
 
 
 
 // HOVER EFFECT
-// ------------
+// ------
 // Placed here since it has to come after the potential zebra striping
-.tableHover {
+.table-hover {
     tr:hover > td{
-        background-color: $tableBackgroundHover;
-        color: $tableColorHover;
+        background-color: $table-background-hover;
+        color: $table-color-hover;
     }
 }
 

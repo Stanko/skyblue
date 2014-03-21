@@ -3,23 +3,23 @@
 		//background: #fff;
 	}
 
-	[class^="span"] > div{
+	.col > div{
 		min-height: 40px;
 		line-height: 40px;
 		text-align: center;
 		overflow: hidden;
-		border-radius: $borderRadius;
+		border-radius: $border-radius;
 	}
 
-	.c1{ background: $mainColor; color: $gray1; }
-	.c2{ background: $lightColor; }
+	.c1{ background: $main-color; color: $gray1; }
+	.c2{ background: $light-color; }
 }
 
 
 .white{ background: white; }
 
 #iconic{
-	span{
+	col-md-{
 		vertical-align: middle;
 		font-size: 20px;
 		width: 40px;
@@ -27,14 +27,14 @@
 		line-height: 40px;
 		text-align: center;
 		&:hover{
-			@extend .colorMain;
+			@extend .color-main;
 			font-size: 40px;
 		}
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.dummyNavigation{
+	.dummy-navigation{
 		position: fixed;
 	}
 }

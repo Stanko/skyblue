@@ -5,97 +5,136 @@
 	margin-left: auto;
 	@include clearfix;
 
-	padding-left:  $gridPaddingWidth;
-	padding-right: $gridPaddingWidth;
+	padding-left:  $grid-padding-width / 2;
+	padding-right: $grid-padding-width / 2;
 }
 
 .row {
-	@include box-sizing(border-box);
 	@include clearfix;
+	margin-left: $grid-padding-width / -2;
+	margin-right: $grid-padding-width / -2;
 
-	// Grid nesting fix
-	.row{
-		margin-left:  $gridPaddingWidth / -2;
-		margin-right: $gridPaddingWidth / -2;
-
-		#{$gridSpanClasses} {
-			padding-left:  $gridPaddingWidth / 2;
-			padding-right: $gridPaddingWidth / 2;
-		}
-	}
 }
 
-
-@mixin span-stuff(){
-	padding-left:  $gridPaddingWidth / 2;
-	padding-right: $gridPaddingWidth / 2;
-	float: left;
-}
-
-// ^= selectors are slow
-#{$gridSpanClasses}, #{$gridSpanMobileClasses} {
-	position: relative;
+.col {
 	min-height: 1px;
-	@include box-sizing(border-box);
+	position: relative;
+	padding-left:  $grid-padding-width / 2;
+	padding-right: $grid-padding-width / 2;
 
-	.floatRight {
+	.float-right {
 		float: right;
 	}
 }
 
-
-// Mobile grid
-.rowMobile{
-	margin-left:  $gridPaddingWidth / -2;
-	margin-right: $gridPaddingWidth / -2;
+@for $i from 1 through $grid-columns {
+	.sm-#{$i}{ width: $i*$grid-unit-width; float: left; }
+	.offset-sm-#{$i}{ margin-left: $i*$grid-unit-width; }
 }
 
-#{$gridSpanMobileClasses} {
-	@include span-stuff();
-}
-
-@for $i from 1 through $gridColumns {
-	.spanMobile#{$i}{ width: $i*$gridUnitWidth; }
-	.offsetMobile#{$i}{ margin-left: $i*$gridUnitWidth; }
-}
 
 
 // Responsive: Tablets and up
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet-breakpoint) {
 	.container {
-		max-width: 700px;
+		max-width: $container-width-tablet;
 	}
 
-
-	// Float columns
-	#{$gridSpanClasses} {
-		@include span-stuff();
-	}
-
-	.row {
-		// Negative margin the row out to align the content of columns
-		margin-left:  $gridPaddingWidth / -2;
-		margin-right: $gridPaddingWidth / -2;
-	}
-
-	@for $i from 1 through $gridColumns {
-  		.span#{$i}{ width: $i*$gridUnitWidth; }
-  		.offset#{$i}{ margin-left: $i*$gridUnitWidth; }
+	@for $i from 1 through $grid-columns {
+		.md-#{$i}{ width: $i*$grid-unit-width; float: left; }
+		.offset-md-#{$i}{ margin-left: $i*$grid-unit-width; }
 	}
 }
 
-// Responsive: Desktops and up
-@media screen and (min-width: 992px) {
+// Responsive: Tablets and up
+@media screen and (min-width: $desktop-breakpoint) {
 	.container {
-		max-width: 920px;
+		max-width: $container-width-desktop;
+	}
+
+	@for $i from 1 through $grid-columns {
+		.lg-#{$i}{ width: $i*$grid-unit-width; float: left; }
+		.offset-lg-#{$i}{ margin-left: $i*$grid-unit-width; }
 	}
 }
 
 // Responsive: Large desktops and up
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $large-desktop-breakpoint) {
 	.container {
-		// max-width: 1120px;
+		max-width: $container-width-large-desktop;
 	}
 }
 
+
+// @mixin col-md-stuff(){
+// 	padding-left:  $grid-padding-width / 2;
+// 	padding-right: $grid-padding-width / 2;
+// 	float: left;
+// }
+
+// // ^= selectors are slow
+// #{$grid-col-md-classes}, #{$grid-col-sm-classes} {
+// 	position: relative;
+// 	min-height: 1px;
+//
+
+// 	.float-right {
+// 		float: right;
+// 	}
+// }
+
+
+// // // Mobile grid
+// .row-mobile{
+// 	margin-left:  $grid-padding-width / -2;
+// 	margin-right: $grid-padding-width / -2;
+// }
+
+// #{$grid-col-sm-classes} {
+// 	@include col-md-stuff();
+// }
+
+// @for $i from 1 through $grid-columns {
+// 	.col-sm#{$i}{ width: $i*$grid-unit-width; }
+// 	.offset-mobile#{$i}{ margin-left: $i*$grid-unit-width; }
+// }
+
+
+// // Responsive: Tablets and up
+// @media screen and (min-width: 768px) {
+// 	.container {
+// 		max-width: 700px;
+// 	}
+
+
+// 	// Float columns
+// 	#{$grid-col-md-classes} {
+// 		@include col-md-stuff();
+// 	}
+
+// 	.row {
+// 		// Negative margin the row out to align the content of columns
+// 		margin-left:  $grid-padding-width / -2;
+// 		margin-right: $grid-padding-width / -2;
+// 	}
+
+// 	@for $i from 1 through $grid-columns {
+//   		.col-md-#{$i}{ width: $i*$grid-unit-width; }
+//   		.offset#{$i}{ margin-left: $i*$grid-unit-width; }
+// 	}
+// }
+
+// // Responsive: Desktops and up
+// @media screen and (min-width: 992px) {
+// 	.container {
+// 		max-width: 920px;
+// 	}
+// }
+
+// // Responsive: Large desktops and up
+// @media screen and (min-width: 1200px) {
+// 	.container {
+// 		// max-width: 1120px;
+// 	}
+// }
 

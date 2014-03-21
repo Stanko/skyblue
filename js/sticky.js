@@ -1,20 +1,20 @@
-var is_touch_device = 'ontouchstart' in document.documentElement;
+var is_touch_device = 'ontouchstart' in document.document-element;
 if(!is_touch_device){
-	var nav = document.getElementById('stickyNavigation'),
-		offset = nav.offsetTop;
+	var nav = document.get-element-by-id('sticky-navigation'),
+		offset = nav.offset-top;
 
 
-	function onScroll(){
-		var pageOffest = window.pageYOffset || document.documentElement.scrollTop;
-		if (pageOffest >= 0 && pageOffest <= offset) {
-			nav.style.top = offset - pageOffest + 'px';
+	function on-scroll(){
+		var page-offest = window.page-yOffset || document.document-element.scroll-top;
+		if (page-offest >= 0 && page-offest <= offset) {
+			nav.style.top = offset - page-offest + 'px';
 		}
-		else if (pageOffest > offset) {
+		else if (page-offest > offset) {
 			nav.style.top = 0 + 'px';
 		}
 	}
 
-	onScroll();
+	on-scroll();
 
-	window.onscroll = onScroll;
+	window.onscroll = on-scroll;
 }

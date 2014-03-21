@@ -11,35 +11,36 @@ input[type="url"],
 select,
 textarea
 {
-	@include box-sizing(border-box);
+
 	height: 2.625em;
-	width: $inputWidth;
+	width: $input-width;
 	max-width: 100%;
 	padding: 0.5em;
-	margin-bottom: 1em;
-	font-family: $fontFamily;
-	font-weight: $fontWeight;
+	margin-bottom: $font-size;
+	font-family: $font-family;
+	font-weight: $font-weight;
+	-webkit-font-smoothing: antialiased;
 	color: $gray5;
 	font-size: 1em;
 	border: 2px solid $gray2;
-	border-radius: $borderRadius;
+	border-radius: $border-radius;
 	transition: border-color, color 0.3s;
 
 	&:focus{
-		border: 2px solid $mainColor;
+		border: 2px solid $main-color;
 		color: $gray7;
 		outline: none;
 	}
 
 
 	&.error, .error &{
-		border-color: $errorColor;
+		border-color: $error-color;
 	}
 	&.warning, .warning &{
-		border-color: $warningColor;
+		border-color: $warning-color;
 	}
 	&.success, .success &{
-		border-color: $successColor;
+		border-color: $success-color;
 	}
 
 }
@@ -47,7 +48,7 @@ textarea
 textarea{
 	height: auto;
 	min-height: 100px;
-	line-height: $lineHeight;
+	line-height: $line-height;
 }
 select{
 	-webkit-appearance: none;
@@ -57,7 +58,7 @@ select{
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	select{
 		background-color: #fff;
-		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAYAAACqnE5VAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYeBwwgz2YJHAAAASVJREFUOMud0jFqwzAUBuD/6QLqDXqE+Abx4MGDIR5CCBpEsUFzjtTRhAwqeMiQQUdIj9AbJPt7Vhe1OKShdv5FvCf0PngIAOCcWznnNCbGOaedcyvMiGrbdikiXkRC0zT/Yk3TaBEJIuLbtl1OhpjZMzOYORORYK19iFlrtYgEZs7SGz8ZEpFdeoQ0IBhj7jBjjGbmMQIR2U2FCAC22+0qxvgO4CX1zzHGfL/fXwFgs9loIgoAsnR/IaK3rus+ZkEAsF6vFzHGMMIuwzDkAKCUuukTUX44HD7nfAYaF3VdL4ZhuBmazt9aKZV772chdxAAVFX1GmP0ozX95ExEdd/3X3gi9FezLEud1piNkPx4PF7xZOjRRVEUOq0RSqn8dDo9jQDAN6OnnUe+41wgAAAAAElFTkSuQmCC');
+		background-image: url('data:image/png;base64,i-vBORw0KGgo-aAAANSUh-eUg-aAABo-aAAAKCAYAAACqn-e5VAAAABm-jLR0QA/w-d/AP+gvae-tAAAACXBIWXMAAAs-tAAALEw-eAmpw-yAAAAB3RJTUUH3QYe-bwwgz2YJHAAAASVJREFUOMud0j-fqwz-aUBu-d/6QLq-dXq-e+Abx4MGDIR5CCBp-es-uFzjt-tRh-awqe-mi-qQUd-ij9Ab-jPt7Vhe1OKShdv5Fv-cf0Png-iAOCc-wznn-nCb-gOaedcyv-mi-grbdiki-xk-rC0z-t/Yk3Ta-bEJIu-lbtl1Ohpj-zMz-oYORORYK19i-flrt-yg-eZs7SGz8ZEp-fdeo-q0IBhj7j-bjj-gbm-mQIR2U2FCAC22+0qxvg-o4CX1zz-hGf-l/f-xw-fgs9lo-igo-asn-r/Ia-k3rus+Zk-eAs-f6v-fz-hGMMIuwz-dk-aKCUuuk-tUX44HD7nf-aYa-f3Vd-l4Zhu-bmazt9a-kZV772chdx-aAVFX1Gm-p0oz-x95Ex-edd/3X3gi9Fez-lEud1pi-nk-px4PF7x-zOj-rRVEUOq0RSqn8d-do9j-qDAN6Onn-ue+41wg-aAAAAEl-fTk-su-qm-cC');
 		background-repeat: no-repeat;
 		background-position: right center;
 	}
@@ -70,13 +71,13 @@ label{
 	line-height: 1.5em;
 
 	&.error, .error &{
-		color: $errorColor;
+		color: $error-color;
 	}
 	&.warning, .warning &{
-		color: $warningColor;
+		color: $warning-color;
 	}
 	&.success, .success &{
-		color: $successColor;
+		color: $success-color;
 	}
 }
 
@@ -91,10 +92,10 @@ input[type="radio"]{
 @include placeholder($gray3);
 
 .form{
-	.checkboxGroup, .radioGroup{
-		margin-bottom: 1em;
+	.checkbox-group, .radio-group{
+		margin-bottom: $font-size;
 	}
-	&.formHorizontal{
+	&.form-horizontal{
 		label{
 			display: inline-block;
 			width: 200px;
@@ -103,9 +104,9 @@ input[type="radio"]{
 			vertical-align: top;
 		}
 
-		.checkboxGroup, .radioGroup{
+		.checkbox-group, .radio-group{
 			display: inline-block;
-			width: $inputWidth;
+			width: $input-width;
 			max-width: 100%;
 			label{
 				display: block;

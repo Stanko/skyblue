@@ -33,8 +33,8 @@ h6{
 
 // Paragraphs
 p{
-	margin-bottom: 1em;
-	line-height: $lineHeight;
+	margin-bottom: $font-size;
+	line-height: $line-height;
 }
 small{
 	font-size: 0.8em;
@@ -54,17 +54,17 @@ i, em{
 
 // Links
 a{
-	color: $mainColor;
+	color: $main-color;
 }
 a:active, a:focus, a:hover{
-	color: $mainColor - $colorDiff;
+	color: $main-color - $color-diff;
 }
 
 
 
 // Lists
 ul, ol{
-	margin-bottom: 1em;
+	margin-bottom: $font-size;
 	padding-left: 22px;
 	ul, ol{
 		margin-bottom: 0;
@@ -89,10 +89,10 @@ ol{
 
 // Blockquote
 blockquote{
-	@include box-sizing(border-box);
+
 	border-left: 2px solid $gray2;
 	padding: 0.5em 1em;
-	margin-bottom: 1em;
+	margin-bottom: $font-size;
 	font-size: 1.1em;
 	color: $gray5;
 
@@ -115,11 +115,11 @@ hr{
 
 // Code
 pre, code{
-	@include box-sizing(border-box);
 
-	font-family: $preFontFamily;
-	font-size: $preFontSize;
-	line-height: $lineHeight;
+
+	font-family: $pre-font-family;
+	font-size: $pre-font-size;
+	line-height: $line-height;
 
 	color: $gray2;
 	background: $gray6;
@@ -133,7 +133,7 @@ pre, code{
     word-wrap: break-word;
 }
 pre{
-	margin-bottom: $fontSize;
+	margin-bottom: $font-size;
 }
 code{
 	display: inline-block;

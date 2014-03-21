@@ -1,27 +1,27 @@
 button, input[type="submit"], input[type="button"]{
-	font-family: $fontFamily;
-	font-weight: $fontWeight;
+	font-family: $font-family;
+	font-weight: $font-weight;
 	font-size: 1em;
 }
 
 .btn{
-	@include box-sizing(border-box);
-	background: $mainColor;
+
+	background: $main-color;
 	color: #fff;
 	display: inline-block;
 	min-width: 120px;
 	padding: 8px 25px;
-	margin-bottom: 1em;
-	border: 2px solid $mainColor;
-	border-radius: $borderRadius;
+	margin-bottom: $font-size;
+	border: 2px solid $main-color;
+	border-radius: $border-radius;
 	font-size: 1em;
 	line-height: 1.4em;
 	text-align: center;
 	text-decoration: none;
 
 	&:hover{
-		background-color: $mainColor - $colorDiff;
-		border-color: $mainColor - $colorDiff;
+		background-color: $main-color - $color-diff;
+		border-color: $main-color - $color-diff;
 		color: #fff;
 	}
 	&:focus{
@@ -29,15 +29,15 @@ button, input[type="submit"], input[type="button"]{
 	}
 
 	&:active{
-		background-color: $mainColor - $colorDiff*2;
-		border-color: $mainColor - $colorDiff*2;
+		background-color: $main-color - $color-diff*2;
+		border-color: $main-color - $color-diff*2;
 		top: 1px;
 		color: #fff;
 		position: relative;
 	}
 
 	// SMALL BUTTON
-	&.btnSmall{
+	&.btn-small{
 		padding: 4px 15px;
 		min-width: 30px;
 		border-width: 1px;
@@ -45,179 +45,179 @@ button, input[type="submit"], input[type="button"]{
 		line-height: 1.2em;
 	}
 	// BIG BUTTON
-	&.btnBig{
+	&.btn-big{
 		padding: 12px 45px;
 		min-width: 140px;
 		font-size: 1.4em;
 	}
 
 	// SUCCESS BUTTON
-	&.btnSuccess{
-		background: $successColor;
-		border-color: $successColor;
+	&.btn-success{
+		background: $success-color;
+		border-color: $success-color;
 
 		&:hover{
-			background: $successColor - $colorDiff;
-			border-color: $successColor - $colorDiff;
+			background: $success-color - $color-diff;
+			border-color: $success-color - $color-diff;
 		}
 		&:active{
-			background: $successColor - $colorDiff*2;
-			border-color: $successColor - $colorDiff*2;
+			background: $success-color - $color-diff*2;
+			border-color: $success-color - $color-diff*2;
 		}
 	}
 
 	// ERROR BUTTON
-	&.btnError{
-		background: $errorColor;
-		border-color: $errorColor;
+	&.btn-error{
+		background: $error-color;
+		border-color: $error-color;
 
 		&:hover{
-			background: $errorColor - $colorDiff;
-			border-color: $errorColor - $colorDiff;
+			background: $error-color - $color-diff;
+			border-color: $error-color - $color-diff;
 		}
 		&:active{
-			background: $errorColor - $colorDiff*2;
-			border-color: $errorColor - $colorDiff*2;
+			background: $error-color - $color-diff*2;
+			border-color: $error-color - $color-diff*2;
 		}
 	}
 
 	// WARNING BUTTON
-	&.btnWarning{
-		background: $warningColor;
-		border-color: $warningColor;
+	&.btn-warning{
+		background: $warning-color;
+		border-color: $warning-color;
 
 		&:hover{
-			background: $warningColor - $colorDiff;
-			border-color: $warningColor - $colorDiff;
+			background: $warning-color - $color-diff;
+			border-color: $warning-color - $color-diff;
 		}
 		&:active{
-			background: $warningColor - $colorDiff*2;
-			border-color: $warningColor - $colorDiff*2;
+			background: $warning-color - $color-diff*2;
+			border-color: $warning-color - $color-diff*2;
 		}
 	}
 
 	// LIGHT BUTTON
-	&.btnLight{
-		background: $lightColor;
-		border-color: $lightColor;
+	&.btn-light{
+		background: $light-color;
+		border-color: $light-color;
 		color: $gray3;
 
 		&:hover{
-			background: $lightColor - $colorDiff;
-			border-color: $lightColor - $colorDiff;
+			background: $light-color - $color-diff;
+			border-color: $light-color - $color-diff;
 			color: #fff;
 		}
 		&:active{
-			background: $lightColor - $colorDiff*2;
-			border-color: $lightColor - $colorDiff*2;
+			background: $light-color - $color-diff*2;
+			border-color: $light-color - $color-diff*2;
 			color: #fff;
 		}
 	}
 
 	// DARK BUTTON
-	&.btnDark{
-		background: $darkColor;
-		border-color: $darkColor;
+	&.btn-dark{
+		background: $dark-color;
+		border-color: $dark-color;
 
 		&:hover{
-			background: $darkColor - $colorDiff;
-			border-color: $darkColor - $colorDiff;
+			background: $dark-color - $color-diff;
+			border-color: $dark-color - $color-diff;
 		}
 		&:active{
-			background: $darkColor - $colorDiff*2;
-			border-color: $darkColor - $colorDiff*2;
+			background: $dark-color - $color-diff*2;
+			border-color: $dark-color - $color-diff*2;
 		}
 	}
 
 
 
 	// EMPTY BUTTONS
-	&.btnEmpty{
-		border-radius: $bigBorderRadius;
-		color: $mainColor;
+	&.btn-empty{
+		border-radius: $big-border-radius;
+		color: $main-color;
 		background: #fff;
 
 		&:hover{
 			background: #fff;
-			color: $mainColor - $colorDiff;
+			color: $main-color - $color-diff;
 		}
 		&:active{
 			background: #fff;
-			color: $mainColor - $colorDiff*2;
+			color: $main-color - $color-diff*2;
 		}
 
 		// SUCCESS BUTTON
-		&.btnSuccess{
-			border-color: $successColor;
-			color: $successColor;
+		&.btn-success{
+			border-color: $success-color;
+			color: $success-color;
 
 			&:hover{
-				border-color: $successColor - $colorDiff;
-				color: $successColor - $colorDiff;
+				border-color: $success-color - $color-diff;
+				color: $success-color - $color-diff;
 			}
 			&:active{
-				border-color: $successColor - $colorDiff*2;
-				color: $successColor - $colorDiff*2;
+				border-color: $success-color - $color-diff*2;
+				color: $success-color - $color-diff*2;
 			}
 		}
 
 		// ERROR BUTTON
-		&.btnError{
-			border-color: $errorColor;
-			color: $errorColor;
+		&.btn-error{
+			border-color: $error-color;
+			color: $error-color;
 
 			&:hover{
-				border-color: $errorColor - $colorDiff;
-				color: $errorColor - $colorDiff;
+				border-color: $error-color - $color-diff;
+				color: $error-color - $color-diff;
 			}
 			&:active{
-				border-color: $errorColor - $colorDiff*2;
-				color: $errorColor - $colorDiff*2;
+				border-color: $error-color - $color-diff*2;
+				color: $error-color - $color-diff*2;
 			}
 		}
 
 		// WARNING BUTTON
-		&.btnWarning{
-			border-color: $warningColor;
-			color: $warningColor;
+		&.btn-warning{
+			border-color: $warning-color;
+			color: $warning-color;
 
 			&:hover{
-				border-color: $warningColor - $colorDiff;
-				color: $warningColor - $colorDiff;
+				border-color: $warning-color - $color-diff;
+				color: $warning-color - $color-diff;
 			}
 			&:active{
-				border-color: $warningColor - $colorDiff*2;
-				color: $warningColor - $colorDiff*2;
+				border-color: $warning-color - $color-diff*2;
+				color: $warning-color - $color-diff*2;
 			}
 		}
 
 		// LIGHT BUTTON
-		&.btnLight{
+		&.btn-light{
 			border-color: $gray2;
 			color: $gray3;
 
 			&:hover{
-				border-color: $lightColor - $colorDiff;
-				color: $gray3 - $colorDiff;
+				border-color: $light-color - $color-diff;
+				color: $gray3 - $color-diff;
 			}
 			&:active{
-				border-color: $lightColor - $colorDiff*2;
-				color: $gray3 - $colorDiff*2;
+				border-color: $light-color - $color-diff*2;
+				color: $gray3 - $color-diff*2;
 			}
 		}
 
 		// DARK BUTTON
-		&.btnDark{
-			border-color: $darkColor;
-			color: $darkColor;
+		&.btn-dark{
+			border-color: $dark-color;
+			color: $dark-color;
 
 			&:hover{
-				border-color: $darkColor - $colorDiff;
-				color: $darkColor - $colorDiff;
+				border-color: $dark-color - $color-diff;
+				color: $dark-color - $color-diff;
 			}
 			&:active{
-				border-color: $darkColor - $colorDiff*2;
-				color: $darkColor - $colorDiff*2;
+				border-color: $dark-color - $color-diff*2;
+				color: $dark-color - $color-diff*2;
 			}
 		}
 	}

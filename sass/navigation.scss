@@ -1,7 +1,7 @@
 .nav{
-	background: $navigationColor;
+	background: $navigation-color;
 	text-align: center;
-	border-radius: $borderRadius;
+	border-radius: $border-radius;
 	margin: 1em auto;
 
 	a{
@@ -11,27 +11,27 @@
 		color: $gray1;
 		text-decoration: none;
 		font-size: 1.1em;
-		border-bottom: 3px solid $navigationColor;
-		border-radius: $borderRadius;
+		//border-bottom: 3px solid $navigation-color;
+		border-radius: $border-radius;
 
 		&:hover{
-			background: $navigationColor - $colorDiff/2;
-			border-color: $navigationColor + $colorDiff;
+			background: $navigation-color - $color-diff/2;
+			//border-color: $navigation-color + $color-diff;
 		}
 		&.active{
-			background: $navigationColor - $colorDiff/2;
-			border-color: $navigationColor + $colorDiff*3;
+			background: $navigation-color - $color-diff/2;
+			//border-color: $navigation-color + $color-diff*3;
 		}
 	}
 }
 
 .breadcrumbs{
-	border-radius: $borderRadius;
-	margin-bottom: 1em;
+	border-radius: $border-radius;
+	margin-bottom: $font-size;
 	padding: 5px 10px;
 	background: $gray1;
 
-	a, span{
+	a, col-md-{
 		text-decoration: none;
 		display: inline-block;
 		padding: 5px;
