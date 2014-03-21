@@ -15,10 +15,6 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 	.padding-right-#{$value} { padding-right: #{$value}px; }
 }
 
-.margin-bottom-05-em{ margin-bottom: 0.5em; }
-.margin-bottom-1-em{ margin-bottom: $font-size; }
-.margin-bottom-2-em{ margin-bottom: 2em; }
-
 // Floats
 .float-left{ float: left; }
 .float-right{ float: right; }

@@ -51,10 +51,16 @@ i, em{
 }
 
 
+img{
+	max-width: 100%;
+}
+
+
 
 // Links
 a{
 	color: $main-color;
+	transition: background-color $transition-time, color $transition-time;
 }
 a:active, a:focus, a:hover{
 	color: $main-color - $color-diff;
@@ -115,8 +121,6 @@ hr{
 
 // Code
 pre, code{
-
-
 	font-family: $pre-font-family;
 	font-size: $pre-font-size;
 	line-height: $line-height;

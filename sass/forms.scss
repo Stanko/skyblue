@@ -1,30 +1,35 @@
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-select,
-textarea
-{
+$inputs:
+	'input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	select,
+	textarea';
 
+
+#{$inputs} {
 	height: 2.625em;
-	width: $input-width;
+	width: 100%;
 	max-width: 100%;
 	padding: 0.5em;
 	margin-bottom: $font-size;
 	font-family: $font-family;
 	font-weight: $font-weight;
-	-webkit-font-smoothing: antialiased;
 	color: $gray5;
 	font-size: 1em;
 	border: 2px solid $gray2;
 	border-radius: $border-radius;
-	transition: border-color, color 0.3s;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+
+	transition: border-color $transition-time, color $transition-time;
 
 	&:focus{
 		border: 2px solid $main-color;
@@ -112,5 +117,12 @@ input[type="radio"]{
 				display: block;
 			}
 		}
+	}
+}
+
+
+@media screen and (min-width: $tablet-breakpoint) {
+	#{$inputs}{
+		width: $input-width;
 	}
 }

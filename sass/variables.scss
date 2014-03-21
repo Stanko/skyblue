@@ -39,9 +39,11 @@ $color-diff:			#222;
 // Defaults
 $font-family:			Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size:				16px;
-$font-weight:			300;
+$font-weight:			400;
 $line-height:			1.4em;
 $bold:					500;
+
+$transition-time:		0.25s;
 
 // Code
 $pre-font-family:		"Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
@@ -61,7 +63,7 @@ $grid-unit-width:		100% / $grid-columns;
 
 
 $tablet-breakpoint:				768px;
-$desktop-breakpoint:			980px;
+$desktop-breakpoint:			970px;
 $large-desktop-breakpoint:		1200px;
 
 $container-width-tablet:		720px;

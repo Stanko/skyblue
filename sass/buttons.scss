@@ -2,45 +2,58 @@ button, input[type="submit"], input[type="button"]{
 	font-family: $font-family;
 	font-weight: $font-weight;
 	font-size: 1em;
+	-webkit-appearance: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+@mixin generate-btn($background, $color, $active-color){
+	background: $background;
+	color: $color;
+
+	&:hover{
+		background-color: $background - $color-diff;
+		color: $active-color;
+	}
+	&:active{
+		background-color: $background - $color-diff*2;
+		color: $active-color;
+		top: 1px;
+		position: relative;
+	}
+}
+
+@mixin generate-empty-btn($border, $color){
+	border: 2px solid $border;
+	color: $color;
+
+	&:hover{
+		background-color: #fff;
+		color: $color - $color-diff;
+		border-color: $border - $color-diff;
+	}
+	&:active{
+		color: $color - $color-diff*2;
+		border-color: $border - $color-diff*2;
+	}
 }
 
 .btn{
-
-	background: $main-color;
-	color: #fff;
 	display: inline-block;
 	min-width: 120px;
-	padding: 8px 25px;
+	padding: 10px 25px;
 	margin-bottom: $font-size;
-	border: 2px solid $main-color;
+	border: none;
 	border-radius: $border-radius;
 	font-size: 1em;
 	line-height: 1.4em;
 	text-align: center;
 	text-decoration: none;
-
-	&:hover{
-		background-color: $main-color - $color-diff;
-		border-color: $main-color - $color-diff;
-		color: #fff;
-	}
-	&:focus{
-		color: #fff;
-	}
-
-	&:active{
-		background-color: $main-color - $color-diff*2;
-		border-color: $main-color - $color-diff*2;
-		top: 1px;
-		color: #fff;
-		position: relative;
-	}
+	transition: border-color $transition-time, background-color $transition-time, color $transition-time;
 
 	// SMALL BUTTON
 	&.btn-small{
-		padding: 4px 15px;
+		padding: 5px 15px;
 		min-width: 30px;
-		border-width: 1px;
 		font-size: 0.8em;
 		line-height: 1.2em;
 	}
@@ -51,174 +64,69 @@ button, input[type="submit"], input[type="button"]{
 		font-size: 1.4em;
 	}
 
+	@include generate-btn($main-color, #fff, #fff);
+
+
 	// SUCCESS BUTTON
 	&.btn-success{
-		background: $success-color;
-		border-color: $success-color;
-
-		&:hover{
-			background: $success-color - $color-diff;
-			border-color: $success-color - $color-diff;
-		}
-		&:active{
-			background: $success-color - $color-diff*2;
-			border-color: $success-color - $color-diff*2;
-		}
+		@include generate-btn($success-color, #fff, #fff);
 	}
 
 	// ERROR BUTTON
 	&.btn-error{
-		background: $error-color;
-		border-color: $error-color;
-
-		&:hover{
-			background: $error-color - $color-diff;
-			border-color: $error-color - $color-diff;
-		}
-		&:active{
-			background: $error-color - $color-diff*2;
-			border-color: $error-color - $color-diff*2;
-		}
+		@include generate-btn($error-color, #fff, #fff);
 	}
 
 	// WARNING BUTTON
 	&.btn-warning{
-		background: $warning-color;
-		border-color: $warning-color;
-
-		&:hover{
-			background: $warning-color - $color-diff;
-			border-color: $warning-color - $color-diff;
-		}
-		&:active{
-			background: $warning-color - $color-diff*2;
-			border-color: $warning-color - $color-diff*2;
-		}
+		@include generate-btn($warning-color, #fff, #fff);
 	}
 
 	// LIGHT BUTTON
 	&.btn-light{
-		background: $light-color;
-		border-color: $light-color;
-		color: $gray3;
-
-		&:hover{
-			background: $light-color - $color-diff;
-			border-color: $light-color - $color-diff;
-			color: #fff;
-		}
-		&:active{
-			background: $light-color - $color-diff*2;
-			border-color: $light-color - $color-diff*2;
-			color: #fff;
-		}
+		@include generate-btn($light-color, $gray3, #fff);
 	}
 
 	// DARK BUTTON
 	&.btn-dark{
-		background: $dark-color;
-		border-color: $dark-color;
-
-		&:hover{
-			background: $dark-color - $color-diff;
-			border-color: $dark-color - $color-diff;
-		}
-		&:active{
-			background: $dark-color - $color-diff*2;
-			border-color: $dark-color - $color-diff*2;
-		}
+		@include generate-btn($dark-color, #fff, #fff);
 	}
 
 
 
 	// EMPTY BUTTONS
 	&.btn-empty{
-		border-radius: $big-border-radius;
-		color: $main-color;
 		background: #fff;
+		border: 2px solid $main-color;
+		border-radius: $big-border-radius;
+		padding: 8px 25px;
 
-		&:hover{
-			background: #fff;
-			color: $main-color - $color-diff;
-		}
-		&:active{
-			background: #fff;
-			color: $main-color - $color-diff*2;
-		}
+		@include generate-empty-btn($main-color, $main-color);
+
 
 		// SUCCESS BUTTON
 		&.btn-success{
-			border-color: $success-color;
-			color: $success-color;
-
-			&:hover{
-				border-color: $success-color - $color-diff;
-				color: $success-color - $color-diff;
-			}
-			&:active{
-				border-color: $success-color - $color-diff*2;
-				color: $success-color - $color-diff*2;
-			}
+			@include generate-empty-btn($success-color, $success-color);
 		}
 
 		// ERROR BUTTON
 		&.btn-error{
-			border-color: $error-color;
-			color: $error-color;
-
-			&:hover{
-				border-color: $error-color - $color-diff;
-				color: $error-color - $color-diff;
-			}
-			&:active{
-				border-color: $error-color - $color-diff*2;
-				color: $error-color - $color-diff*2;
-			}
+			@include generate-empty-btn($error-color, $error-color);
 		}
 
 		// WARNING BUTTON
 		&.btn-warning{
-			border-color: $warning-color;
-			color: $warning-color;
-
-			&:hover{
-				border-color: $warning-color - $color-diff;
-				color: $warning-color - $color-diff;
-			}
-			&:active{
-				border-color: $warning-color - $color-diff*2;
-				color: $warning-color - $color-diff*2;
-			}
+			@include generate-empty-btn($warning-color, $warning-color);
 		}
 
 		// LIGHT BUTTON
 		&.btn-light{
-			border-color: $gray2;
-			color: $gray3;
-
-			&:hover{
-				border-color: $light-color - $color-diff;
-				color: $gray3 - $color-diff;
-			}
-			&:active{
-				border-color: $light-color - $color-diff*2;
-				color: $gray3 - $color-diff*2;
-			}
+			@include generate-empty-btn($gray2, $gray3);
 		}
 
 		// DARK BUTTON
 		&.btn-dark{
-			border-color: $dark-color;
-			color: $dark-color;
-
-			&:hover{
-				border-color: $dark-color - $color-diff;
-				color: $dark-color - $color-diff;
-			}
-			&:active{
-				border-color: $dark-color - $color-diff*2;
-				color: $dark-color - $color-diff*2;
-			}
+			@include generate-empty-btn($dark-color, $dark-color);
 		}
 	}
 
