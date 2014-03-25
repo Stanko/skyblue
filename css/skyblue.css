@@ -403,623 +403,111 @@ body {
   .container {
     max-width: 1150px; } }
 
-@font-face {
-  font-family: 'Iconic-stroke';
-  src: url('../fonts/iconic/iconic_stroke.eot');
-  src: url('../fonts/iconic/iconic_stroke.eot?#iefix') format('embedded-opentype'), url('../fonts/iconic/iconic_stroke.ttf') format('truetype'), url('../fonts/iconic/iconic_stroke.svg#iconic') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-/* line 9, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic {
-  display: inline-block;
-  font-family: 'Iconic-stroke';
-  vertical-align: middle;
-  line-height: 1em; }
-
-/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-lightbulb:before {
-  content: '\e063'; }
-
-/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-equalizer:before {
-  content: '\e052'; }
-
-/* line 20, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-map-pin-stroke:before {
-  content: '\e068'; }
-
-/* line 21, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-brush-alt:before {
-  content: '\e01c'; }
-
-/* line 22, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move:before {
-  content: '\e03e'; }
-
-/* line 23, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-paperclip:before {
-  content: '\e08a'; }
-
-/* line 24, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pen-alt-stroke:before {
-  content: '\e005'; }
-
-/* line 25, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-vertical:before {
-  content: '\e03b'; }
-
-/* line 26, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-book-alt2:before {
-  content: '\e06a'; }
-
-/* line 27, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-layers:before {
-  content: '\e01f'; }
-
-/* line 28, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pause:before {
-  content: '\e049'; }
-
-/* line 29, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-layers-alt:before {
-  content: '\e020'; }
-
-/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cloud-upload:before {
-  content: '\e045'; }
-
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-chart-alt:before {
-  content: '\e029'; }
-
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-fullscreen-exit-alt:before {
-  content: '\e051'; }
-
-/* line 33, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cloud-download:before {
-  content: '\e044'; }
-
-/* line 34, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-comment-alt2-stroke:before {
-  content: '\e004'; }
-
-/* line 35, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-mail:before {
-  content: '\2709'; }
-
-/* line 36, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-check-alt:before {
-  content: '\2718'; }
-
-/* line 37, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-document-stroke:before {
-  content: '\e066'; }
-
-/* line 38, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-battery-charging:before {
-  content: '\e05d'; }
-
-/* line 39, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-stop:before {
-  content: '\e04a'; }
-
-/* line 40, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-up:before {
-  content: '\2191'; }
-
-/* line 41, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-horizontal:before {
-  content: '\e038'; }
-
-/* line 42, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-compass:before {
-  content: '\e021'; }
-
-/* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-minus-alt:before {
-  content: '\e009'; }
-
-/* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-battery-empty:before {
-  content: '\e05c'; }
-
-/* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-map-pin-alt:before {
-  content: '\e002'; }
-
-/* line 46, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-unlock-stroke:before {
-  content: '\e076'; }
-
-/* line 47, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-lock-stroke:before {
-  content: '\e075'; }
-
-/* line 48, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-question-mark:before {
-  content: '\003f'; }
-
-/* line 49, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-list:before {
-  content: '\e055'; }
-
-/* line 50, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-upload:before {
-  content: '\e043'; }
-
-/* line 51, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-reload:before {
-  content: '\e030'; }
-
-/* line 52, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-loop-alt4:before {
-  content: '\e035'; }
-
-/* line 53, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-loop-alt3:before {
-  content: '\e034'; }
-
-/* line 54, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-loop-alt2:before {
-  content: '\e033'; }
-
-/* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-loop-alt1:before {
-  content: '\e032'; }
-
-/* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-left-quote:before {
-  content: '\275d'; }
-
-/* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-x:before {
-  content: '\2713'; }
-
-/* line 58, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-last:before {
-  content: '\e04d'; }
-
-/* line 59, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-document-alt-stroke:before {
-  content: '\e000'; }
-
-/* line 60, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-bars:before {
-  content: '\e06f'; }
-
-/* line 61, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-left:before {
-  content: '\2190'; }
-
-/* line 62, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-down:before {
-  content: '\2193'; }
-
-/* line 63, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-download:before {
-  content: '\e042'; }
-
-/* line 64, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-home:before {
-  content: '\2302'; }
-
-/* line 65, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-calendar:before {
-  content: '\e001'; }
-
-/* line 66, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-right-quote-alt:before {
-  content: '\e012'; }
-
-/* line 67, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-fullscreen:before {
-  content: '\e04e'; }
-
-/* line 68, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-dial:before {
-  content: '\e058'; }
-
-/* line 69, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-plus-alt:before {
-  content: '\e008'; }
-
-/* line 70, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-clock:before {
-  content: '\e079'; }
-
-/* line 71, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-movie:before {
-  content: '\e060'; }
-
-/* line 72, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-steering-wheel:before {
-  content: '\e024'; }
-
-/* line 73, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pen:before {
-  content: '\270e'; }
-
-/* line 74, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-tag-stroke:before {
-  content: '\e02b'; }
-
-/* line 75, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pin:before {
-  content: '\e067'; }
-
-/* line 76, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-denied:before {
-  content: '\26d4'; }
-
-/* line 77, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-left-quote-alt:before {
-  content: '\e011'; }
-
-/* line 78, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-volume-mute:before {
-  content: '\e071'; }
-
-/* line 79, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-up-alt2:before {
-  content: '\e018'; }
-
-/* line 80, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-list-nested:before {
-  content: '\e056'; }
-
-/* line 81, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-up-alt1:before {
-  content: '\e014'; }
-
-/* line 82, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-comment-stroke:before {
-  content: '\e06d'; }
-
-/* line 83, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-undo:before {
-  content: '\e02f'; }
-
-/* line 84, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-umbrella:before {
-  content: '\2602'; }
-
-/* line 85, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-bolt:before {
-  content: '\26a1'; }
-
-/* line 86, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-article:before {
-  content: '\e053'; }
-
-/* line 87, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-read-more:before {
-  content: '\e054'; }
-
-/* line 88, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-beaker:before {
-  content: '\e023'; }
-
-/* line 89, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-beaker-alt:before {
-  content: '\e010'; }
-
-/* line 90, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-battery-full:before {
-  content: '\e073'; }
-
-/* line 91, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-right:before {
-  content: '\2192'; }
-
-/* line 92, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-new-window:before {
-  content: '\e059'; }
-
-/* line 93, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-plus:before {
-  content: '\2795'; }
-
-/* line 94, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cog:before {
-  content: '\2699'; }
-
-/* line 95, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-key-stroke:before {
-  content: '\26bf'; }
-
-/* line 96, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-first:before {
-  content: '\e04c'; }
-
-/* line 97, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-comment-alt1-stroke:before {
-  content: '\e003'; }
-
-/* line 98, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-trash-stroke:before {
-  content: '\e05a'; }
-
-/* line 99, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-image:before {
-  content: '\e027'; }
-
-/* line 100, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-chat-alt-stroke:before {
-  content: '\e007'; }
-
-/* line 101, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cd:before {
-  content: '\e064'; }
-
-/* line 102, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-right-quote:before {
-  content: '\275e'; }
-
-/* line 103, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-brush:before {
-  content: '\e01b'; }
-
-/* line 104, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cloud:before {
-  content: '\2601'; }
-
-/* line 105, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-eye:before {
-  content: '\e025'; }
-
-/* line 106, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-play-alt:before {
-  content: '\e048'; }
-
-/* line 107, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-transfer:before {
-  content: '\e041'; }
-
-/* line 108, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pen-alt2:before {
-  content: '\e006'; }
-
-/* line 109, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-camera:before {
-  content: '\e070'; }
-
-/* line 110, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-horizontal-alt2:before {
-  content: '\e03a'; }
-
-/* line 111, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-curved-arrow:before {
-  content: '\2935'; }
-
-/* line 112, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-horizontal-alt1:before {
-  content: '\e039'; }
-
-/* line 113, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-aperture:before {
-  content: '\e026'; }
-
-/* line 114, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-reload-alt:before {
-  content: '\e031'; }
-
-/* line 115, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-magnifying-glass:before {
-  content: '\e074'; }
-
-/* line 116, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-iphone:before {
-  content: '\e06e'; }
-
-/* line 117, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-fork:before {
-  content: '\e046'; }
-
-/* line 118, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-box:before {
-  content: '\e06b'; }
-
-/* line 119, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-bars-alt:before {
-  content: '\e00a'; }
-
-/* line 120, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-heart-stroke:before {
-  content: '\2764'; }
-
-/* line 121, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-volume:before {
-  content: '\e072'; }
-
-/* line 122, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-x-alt:before {
-  content: '\2714'; }
-
-/* line 123, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-link:before {
-  content: '\e077'; }
-
-/* line 124, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-moon-stroke:before {
-  content: '\263e'; }
-
-/* line 125, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-eyedropper:before {
-  content: '\e01e'; }
-
-/* line 126, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-spin:before {
-  content: '\e036'; }
-
-/* line 127, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-rss:before {
-  content: '\e02c'; }
-
-/* line 128, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-info:before {
-  content: '\2139'; }
-
-/* line 129, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-target:before {
-  content: '\e02a'; }
-
-/* line 130, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-cursor:before {
-  content: '\e057'; }
-
-/* line 131, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-minus:before {
-  content: '\2796'; }
-
-/* line 132, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-book-alt:before {
-  content: '\e00b'; }
-
-/* line 133, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-headphones:before {
-  content: '\e061'; }
-
-/* line 134, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-hash:before {
-  content: '\0023'; }
-
-/* line 135, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-left-alt1:before {
-  content: '\e013'; }
-
-/* line 136, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-left-alt2:before {
-  content: '\e017'; }
-
-/* line 137, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-fullscreen-exit:before {
-  content: '\e050'; }
-
-/* line 138, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-share:before {
-  content: '\e02e'; }
-
-/* line 139, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-fullscreen-alt:before {
-  content: '\e04f'; }
-
-/* line 140, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-at:before {
-  content: '\0040'; }
-
-/* line 141, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-chat:before {
-  content: '\e05e'; }
-
-/* line 142, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-vertical-alt2:before {
-  content: '\e03d'; }
-
-/* line 143, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-vertical-alt1:before {
-  content: '\e03c'; }
-
-/* line 144, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-check:before {
-  content: '\2717'; }
-
-/* line 145, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-mic:before {
-  content: '\e05f'; }
-
-/* line 146, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-calendar-alt-stroke:before {
-  content: '\e06c'; }
-
-/* line 147, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-book:before {
-  content: '\e069'; }
-
-/* line 148, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-alt1:before {
-  content: '\e03f'; }
-
-/* line 149, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-move-alt2:before {
-  content: '\e040'; }
-
-/* line 150, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-award-stroke:before {
-  content: '\e022'; }
-
-/* line 151, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-wrench:before {
-  content: '\e078'; }
-
-/* line 152, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-play:before {
-  content: '\e047'; }
-
-/* line 153, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-star:before {
-  content: '\2605'; }
-
-/* line 154, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-chart:before {
-  content: '\e028'; }
-
-/* line 155, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-rain:before {
-  content: '\26c6'; }
-
-/* line 156, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-folder-stroke:before {
-  content: '\e065'; }
-
-/* line 157, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-sun-stroke:before {
-  content: '\2600'; }
-
-/* line 158, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-user:before {
-  content: '\e062'; }
-
-/* line 159, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-battery-half:before {
-  content: '\e05b'; }
-
-/* line 160, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-aperture-alt:before {
-  content: '\e00c'; }
-
-/* line 161, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-eject:before {
-  content: '\e04b'; }
-
-/* line 162, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-down-alt1:before {
-  content: '\e016'; }
-
-/* line 163, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-pilcrow:before {
-  content: '\00b6'; }
-
-/* line 164, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-down-alt2:before {
-  content: '\e01a'; }
-
-/* line 165, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-right-alt1:before {
-  content: '\e015'; }
-
-/* line 166, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-arrow-right-alt2:before {
-  content: '\e019'; }
-
-/* line 167, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-rss-alt:before {
-  content: '\e02d'; }
-
-/* line 168, /Users/stanko/Projects/htdocs/skyblue/sass/fonts */
-.iconic-spin-alt:before {
-  content: '\e037'; }
+/* line 3, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -1em; }
+  /* line 6, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+  .flexgrid .cell {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 1em; }
+
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-no-gutters {
+  margin-left: 0; }
+  /* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+  .flexgrid-no-gutters .cell {
+    padding-left: 0; }
+
+/* line 23, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-top {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+/* line 26, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-bottom {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+/* line 29, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+/* line 35, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.cell-top {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
+
+/* line 38, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.cell-bottom {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end; }
+
+/* line 41, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.cell-center {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center; }
+
+/* line 47, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-fit > .cell {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+/* line 50, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-full > .cell {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%; }
+
+/* line 53, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-2 > .cell {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%; }
+
+/* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-3 > .cell {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3333%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%; }
+
+/* line 59, /Users/stanko/Projects/htdocs/skyblue/sass/flexgrid */
+.flexgrid-1of4 > .cell {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -moz-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%; }
 
 /* line 2, /Users/stanko/Projects/htdocs/skyblue/sass/typography */
 h1, h2, h3, h4, h5, h6 {
@@ -1079,6 +567,7 @@ img {
 /* line 61, /Users/stanko/Projects/htdocs/skyblue/sass/typography */
 a {
   color: #49d;
+  -webkit-transition: background-color 0.25s, color 0.25s;
   transition: background-color 0.25s, color 0.25s; }
 
 /* line 65, /Users/stanko/Projects/htdocs/skyblue/sass/typography */
@@ -1213,6 +702,7 @@ button, input[type="submit"], input[type="button"] {
   line-height: 1.4em;
   text-align: center;
   text-decoration: none;
+  -webkit-transition: border-color 0.25s, background-color 0.25s, color 0.25s;
   transition: border-color 0.25s, background-color 0.25s, color 0.25s;
   background: #49d;
   color: #fff; }
@@ -1405,6 +895,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border-radius: 3px;
   -webkit-font-smoothing: antialiased;
   -webkit-appearance: none;
+  -webkit-transition: border-color 0.25s, color 0.25s;
   transition: border-color 0.25s, color 0.25s; }
   /* line 34, /Users/stanko/Projects/htdocs/skyblue/sass/forms */
   input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
@@ -1632,6 +1123,7 @@ th {
         margin-top: 300px; }
     /* line 40, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
     .slider > div.no-transition .el1, .slider > div.no-transition .el2, .slider > div.no-transition .el3 {
+      -webkit-transition: none;
       transition: none; }
   /* line 46, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
   .slider .el1 {
@@ -1643,6 +1135,7 @@ th {
     top: 50px;
     left: 20px;
     z-index: 100;
+    -webkit-transition: all 0.65s;
     transition: all 0.65s; }
   /* line 58, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
   .slider .el2 {
@@ -1654,9 +1147,11 @@ th {
     top: 40px;
     left: 150px;
     z-index: 110;
+    -webkit-transition: all 0.4s;
     transition: all 0.4s; }
   /* line 70, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
   .slider .el3 {
+    -webkit-transition: all 0.4s;
     transition: all 0.4s;
     margin-top: 120px; }
 
@@ -2335,26 +1830,29 @@ th {
 .border-round {
   border-radius: 50%; }
 
-/* line 6, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
-.dummy .col > div {
-  min-height: 40px;
-  line-height: 40px;
+/* line 7, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+.dummy .col > div, .dummy .cell > div {
+  min-height: 60px;
+  line-height: 60px;
   text-align: center;
   overflow: hidden;
-  border-radius: 3px; }
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
-.dummy .c1 {
+  border-radius: 3px;
   background: #49d;
-  color: #f5f7f8; }
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
-.dummy .c2 {
-  background: #ecf0f1; }
+  color: #f5f7f8;
+  margin: 0.5em 0; }
+  /* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  .dummy .col > div.c1, .dummy .cell > div.c1 {
+    background: #49d;
+    color: #f5f7f8; }
+  /* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  .dummy .col > div.c2, .dummy .cell > div.c2 {
+    background: #ecf0f1; }
 
-/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+/* line 24, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
 .white {
   background: white; }
 
-/* line 22, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+/* line 27, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
 #iconic span {
   vertical-align: middle;
   font-size: 20px;
@@ -2362,11 +1860,11 @@ th {
   height: 40px;
   line-height: 40px;
   text-align: center; }
-  /* line 29, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  /* line 34, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   #iconic span:hover {
     font-size: 40px; }
 
 @media screen and (min-width: 768px) {
-  /* line 37, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  /* line 42, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   .dummy-navigation {
     position: fixed; } }

@@ -1,0 +1,61 @@
+// FLEX GRID
+
+.flexgrid {
+	display: flex;
+	margin-left: -1em;
+	.cell {
+		flex: 1;
+		padding-left: 1em;
+	}
+}
+
+
+// Without gutters
+.flexgrid-no-gutters {
+	margin-left: 0;
+	.cell {
+		padding-left: 0;
+	}
+}
+
+
+// Alignment per row
+.flexgrid-top {
+  align-items: flex-start;
+}
+.flexgrid-bottom {
+  align-items: flex-end;
+}
+.flexgrid-center {
+  align-items: center;
+}
+
+
+// Alignment per cell
+.cell-top {
+  align-self: flex-start;
+}
+.cell-bottom {
+  align-self: flex-end;
+}
+.cell-center {
+  align-self: center;
+}
+
+
+// Base classes for all media
+.flexgrid-fit > .cell {
+  flex: 1;
+}
+.flexgrid-full > .cell {
+  flex: 0 0 100%;
+}
+.flexgrid-2 > .cell {
+  flex: 0 0 50%
+}
+.flexgrid-3 > .cell {
+  flex: 0 0 33.3333%
+}
+.flexgrid-1of4 > .cell {
+  flex: 0 0 25%
+}

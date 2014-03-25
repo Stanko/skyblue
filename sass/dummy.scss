@@ -3,16 +3,21 @@
 		//background: #fff;
 	}
 
-	.col > div{
-		min-height: 40px;
-		line-height: 40px;
+	.col > div,
+	.cell > div{
+		min-height: 60px;
+		line-height: 60px;
 		text-align: center;
 		overflow: hidden;
 		border-radius: $border-radius;
+
+		background: $main-color; color: $gray1;
+		margin: 0.5em 0;
+
+		&.c1{ background: $main-color; color: $gray1; }
+		&.c2{ background: $light-color; }
 	}
 
-	.c1{ background: $main-color; color: $gray1; }
-	.c2{ background: $light-color; }
 }
 
 
