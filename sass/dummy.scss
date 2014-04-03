@@ -4,15 +4,16 @@
 	}
 
 	.col > div,
-	.cell > div{
-		min-height: 60px;
-		line-height: 60px;
+	.cell > div
+	{
+		padding: 1em 0;
 		text-align: center;
 		overflow: hidden;
 		border-radius: $border-radius;
 
-		background: $main-color; color: $gray1;
-		margin: 0.5em 0;
+		//background: $main-color; color: $gray1;
+		margin-top: 0.5em;
+		margin-bottom: 0.5em;
 
 		&.c1{ background: $main-color; color: $gray1; }
 		&.c2{ background: $light-color; }

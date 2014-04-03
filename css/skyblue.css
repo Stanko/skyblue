@@ -102,304 +102,304 @@ body {
   .row:after {
     clear: both; }
 
-/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .col {
   min-height: 1px;
   position: relative;
   padding-left: 15px;
   padding-right: 15px; }
-  /* line 25, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 24, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .col .float-right {
     float: right; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-1 {
   width: 8.33333%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-1 {
   margin-left: 8.33333%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-2 {
   width: 16.66667%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-2 {
   margin-left: 16.66667%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-3 {
   width: 25%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-3 {
   margin-left: 25%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-4 {
   width: 33.33333%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-4 {
   margin-left: 33.33333%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-5 {
   width: 41.66667%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-5 {
   margin-left: 41.66667%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-6 {
   width: 50%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-6 {
   margin-left: 50%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-7 {
   width: 58.33333%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-7 {
   margin-left: 58.33333%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-8 {
   width: 66.66667%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-8 {
   margin-left: 66.66667%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-9 {
   width: 75%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-9 {
   margin-left: 75%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-10 {
   width: 83.33333%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-10 {
   margin-left: 83.33333%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-11 {
   width: 91.66667%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-11 {
   margin-left: 91.66667%; }
 
-/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .sm-12 {
   width: 100%;
   float: left; }
 
-/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
 .offset-sm-12 {
   margin-left: 100%; }
 
 @media screen and (min-width: 768px) {
-  /* line 39, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 38, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .container {
     max-width: 720px; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-1 {
     width: 8.33333%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-1 {
     margin-left: 8.33333%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-2 {
     width: 16.66667%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-2 {
     margin-left: 16.66667%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-3 {
     width: 25%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-3 {
     margin-left: 25%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-4 {
     width: 33.33333%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-4 {
     margin-left: 33.33333%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-5 {
     width: 41.66667%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-5 {
     margin-left: 41.66667%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-6 {
     width: 50%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-6 {
     margin-left: 50%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-7 {
     width: 58.33333%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-7 {
     margin-left: 58.33333%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-8 {
     width: 66.66667%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-8 {
     margin-left: 66.66667%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-9 {
     width: 75%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-9 {
     margin-left: 75%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-10 {
     width: 83.33333%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-10 {
     margin-left: 83.33333%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-11 {
     width: 91.66667%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-11 {
     margin-left: 91.66667%; }
-  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .md-12 {
     width: 100%;
     float: left; }
-  /* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-md-12 {
     margin-left: 100%; } }
 
 @media screen and (min-width: 970px) {
-  /* line 51, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 50, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .container {
     max-width: 940px; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-1 {
     width: 8.33333%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-1 {
     margin-left: 8.33333%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-2 {
     width: 16.66667%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-2 {
     margin-left: 16.66667%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-3 {
     width: 25%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-3 {
     margin-left: 25%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-4 {
     width: 33.33333%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-4 {
     margin-left: 33.33333%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-5 {
     width: 41.66667%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-5 {
     margin-left: 41.66667%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-6 {
     width: 50%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-6 {
     margin-left: 50%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-7 {
     width: 58.33333%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-7 {
     margin-left: 58.33333%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-8 {
     width: 66.66667%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-8 {
     margin-left: 66.66667%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-9 {
     width: 75%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-9 {
     margin-left: 75%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-10 {
     width: 83.33333%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-10 {
     margin-left: 83.33333%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-11 {
     width: 91.66667%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-11 {
     margin-left: 91.66667%; }
-  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 55, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .lg-12 {
     width: 100%;
     float: left; }
-  /* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 56, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .offset-lg-12 {
     margin-left: 100%; } }
 
 @media screen and (min-width: 1200px) {
-  /* line 63, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
+  /* line 62, /Users/stanko/Projects/htdocs/skyblue/sass/grid */
   .container {
     max-width: 1150px; } }
 
@@ -926,7 +926,7 @@ select {
   /* line 64, /Users/stanko/Projects/htdocs/skyblue/sass/forms */
   select {
     background-color: #fff;
-    background-image: url('data:image/png;base64,i-vBORw0KGgo-aAAANSUh-eUg-aAABo-aAAAKCAYAAACqn-e5VAAAABm-jLR0QA/w-d/AP+gvae-tAAAACXBIWXMAAAs-tAAALEw-eAmpw-yAAAAB3RJTUUH3QYe-bwwgz2YJHAAAASVJREFUOMud0j-fqwz-aUBu-d/6QLq-dXq-e+Abx4MGDIR5CCBp-es-uFzjt-tRh-awqe-mi-qQUd-ij9Ab-jPt7Vhe1OKShdv5Fv-cf0Png-iAOCc-wznn-nCb-gOaedcyv-mi-grbdiki-xk-rC0z-t/Yk3Ta-bEJIu-lbtl1Ohpj-zMz-oYORORYK19i-flrt-yg-eZs7SGz8ZEp-fdeo-q0IBhj7j-bjj-gbm-mQIR2U2FCAC22+0qxvg-o4CX1zz-hGf-l/f-xw-fgs9lo-igo-asn-r/Ia-k3rus+Zk-eAs-f6v-fz-hGMMIuwz-dk-aKCUuuk-tUX44HD7nf-aYa-f3Vd-l4Zhu-bmazt9a-kZV772chdx-aAVFX1Gm-p0oz-x95Ex-edd/3X3gi9Fez-lEud1pi-nk-px4PF7x-zOj-rRVEUOq0RSqn8d-do9j-qDAN6Onn-ue+41wg-aAAAAEl-fTk-su-qm-cC');
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAYAAACqnE5VAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYeBwwgz2YJHAAAASVJREFUOMud0jFqwzAUBuD/6QLqDXqE+Abx4MGDIR5CCBpEsUFzjtTRhAwqeMiQQUdIj9AbJPt7Vhe1OKShdv5FvCf0PngIAOCcWznnNCbGOaedcyvMiGrbdikiXkRC0zT/Yk3TaBEJIuLbtl1OhpjZMzOYORORYK19iFlrtYgEZs7SGz8ZEpFdeoQ0IBhj7jBjjGbmMQIR2U2FCAC22+0qxvgO4CX1zzHGfL/fXwFgs9loIgoAsnR/IaK3rus+ZkEAsF6vFzHGMMIuwzDkAKCUuukTUX44HD7nfAYaF3VdL4ZhuBmazt9aKZV772chdxAAVFX1GmP0ozX95ExEdd/3X3gi9FezLEud1piNkPx4PF7xZOjRRVEUOq0RSqn8dDo9jQDAN6OnnUe+41wgAAAAAElFTkSuQmCC);
     background-repeat: no-repeat;
     background-position: right center; } }
 
@@ -1084,76 +1084,6 @@ th {
   color: #1f2c2d; }
 
 @media screen and (max-width: 767px) { }
-
-/* line 3, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-.slider {
-  width: 100%;
-  height: 400px;
-  position: relative;
-  overflow: hidden; }
-  /* line 9, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-  .slider > div {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 100; }
-    /* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-    .slider > div.out {
-      z-index: 10; }
-      /* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-      .slider > div.out .el1, .slider > div.out .el2 {
-        top: -10px;
-        opacity: 0; }
-      /* line 22, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-      .slider > div.out .el3 {
-        opacity: 0;
-        margin-top: 0; }
-    /* line 28, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-    .slider > div.out2 {
-      z-index: 10; }
-      /* line 29, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-      .slider > div.out2 .el1, .slider > div.out2 .el2 {
-        top: 120px;
-        opacity: 0; }
-      /* line 33, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-      .slider > div.out2 .el3 {
-        opacity: 0;
-        margin-top: 300px; }
-    /* line 40, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-    .slider > div.no-transition .el1, .slider > div.no-transition .el2, .slider > div.no-transition .el3 {
-      -webkit-transition: none;
-      transition: none; }
-  /* line 46, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-  .slider .el1 {
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background: #F1C000;
-    position: absolute;
-    top: 50px;
-    left: 20px;
-    z-index: 100;
-    -webkit-transition: all 0.65s;
-    transition: all 0.65s; }
-  /* line 58, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-  .slider .el2 {
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    background: #1ABC9C;
-    position: absolute;
-    top: 40px;
-    left: 150px;
-    z-index: 110;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s; }
-  /* line 70, /Users/stanko/Projects/htdocs/skyblue/sass/slider */
-  .slider .el3 {
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    margin-top: 120px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .margin-0 {
@@ -1676,44 +1606,44 @@ th {
   padding-right: 90px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.margin-10 {
-  margin: 10px; }
+.margin-100 {
+  margin: 100px; }
 
 /* line 6, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.margin-top-10 {
-  margin-top: 10px; }
+.margin-top-100 {
+  margin-top: 100px; }
 
 /* line 7, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.margin-bottom-10 {
-  margin-bottom: 10px; }
+.margin-bottom-100 {
+  margin-bottom: 100px; }
 
 /* line 8, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.margin-left-10 {
-  margin-left: 10px; }
+.margin-left-100 {
+  margin-left: 100px; }
 
 /* line 9, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.margin-right-10 {
-  margin-right: 10px; }
+.margin-right-100 {
+  margin-right: 100px; }
 
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.padding-10 {
-  padding: 10px; }
+.padding-100 {
+  padding: 100px; }
 
 /* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.padding-top-10 {
-  padding-top: 10px; }
+.padding-top-100 {
+  padding-top: 100px; }
 
 /* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.padding-bottom-10 {
-  padding-bottom: 10px; }
+.padding-bottom-100 {
+  padding-bottom: 100px; }
 
 /* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.padding-left-10 {
-  padding-left: 10px; }
+.padding-left-100 {
+  padding-left: 100px; }
 
 /* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
-.padding-right-10 {
-  padding-right: 10px; }
+.padding-right-100 {
+  padding-right: 100px; }
 
 /* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .float-left {
@@ -1832,27 +1762,25 @@ th {
 
 /* line 7, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
 .dummy .col > div, .dummy .cell > div {
-  min-height: 60px;
-  line-height: 60px;
+  padding: 1em 0;
   text-align: center;
   overflow: hidden;
   border-radius: 3px;
-  background: #49d;
-  color: #f5f7f8;
-  margin: 0.5em 0; }
-  /* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+  /* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   .dummy .col > div.c1, .dummy .cell > div.c1 {
     background: #49d;
     color: #f5f7f8; }
-  /* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  /* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   .dummy .col > div.c2, .dummy .cell > div.c2 {
     background: #ecf0f1; }
 
-/* line 24, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+/* line 25, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
 .white {
   background: white; }
 
-/* line 27, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+/* line 28, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
 #iconic span {
   vertical-align: middle;
   font-size: 20px;
@@ -1860,11 +1788,11 @@ th {
   height: 40px;
   line-height: 40px;
   text-align: center; }
-  /* line 34, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  /* line 35, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   #iconic span:hover {
     font-size: 40px; }
 
 @media screen and (min-width: 768px) {
-  /* line 42, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
+  /* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/dummy */
   .dummy-navigation {
     position: fixed; } }
