@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 
-	<title>Sky-blue CSS Framework</title>
+	<title>SkyBlue CSS Framework</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500italic,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/skyblue.css">
@@ -16,14 +16,13 @@
 <body>
 	<div class="bg-dark padding-top-30">
 		<div class="container text-center">
-			<h1>Sky-blue CSS Framework</h1>
+			<h1>SkyBlue CSS Framework</h1>
 
 			<a class="btn btn-big btn-success" href="https://github.com/Stanko/skyblue"><span class="iconic iconic-hash"></span> Git-hub</a>
 
 			<div class="nav padding-y-15">
 				<a class="btn btn-dark btn-small" href="#grid">Grid</a>
 				<a class="btn btn-dark btn-small" href="#typography" class="active">Typography</a>
-				<a class="btn btn-dark btn-small" href="#navigation">Navigation</a>
 				<a class="btn btn-dark btn-small" href="#tables">Tables</a>
 				<a class="btn btn-dark btn-small" href="#forms">Forms</a>
 				<a class="btn btn-dark btn-small" href="#buttons">Buttons</a>
@@ -151,33 +150,10 @@ RL.stopPropagation = function(e){
 };
 </pre>
 
-
+			<p>
 			Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
+			</p>
 		</div>
-
-		<hr/>
-
-		<h2 id="navigation">Navigation</h2>
-		<div class="nav">
-			<div class="container">
-				<a href="#grid">Grid</a>
-				<a href="#typography">Typography</a>
-				<a href="#navigation">Navigation</a>
-				<a href="#tables">Tables</a>
-				<a href="#forms">Forms</a>
-				<a href="#buttons">Buttons</a>
-				<a href="#icons">Icons</a>
-			</div>
-		</div>
-
-		<h3>Breadcrumbs</h3>
-		<div class="breadcrumbs">
-			<a href="#">Home</a>
-			<a href="#">Category</a>
-			<a href="#">Subcategory</a>
-			<span>Item</span>
-		</div>
-
 
 		<hr/>
 
@@ -253,7 +229,7 @@ RL.stopPropagation = function(e){
 		<h2 id="forms"> Forms </h2>
 		<form class="form">
 			<label>Select box</label>
-			<select class="chosen-select persons">
+			<select class="chosen-select form-control persons">
 				<option> 2 persons </option>
 				<option> 3 persons </option>
 				<option> 4 persons </option>
@@ -279,79 +255,30 @@ RL.stopPropagation = function(e){
 
 			<div>
 				<label>Input</label>
-				<input type="text" placeholder="Street name and number" />
+				<input class="form-control" type="text" placeholder="Street name and number" />
 			</div>
 			<div  class="error">
 				<label>Input - error</label>
-				<input type="text" placeholder="Postal code" value="Error" />
+				<input class="form-control" type="text" placeholder="Postal code" value="Error" />
 			</div>
 			<div class="warning">
 				<label>Input - warning</label>
-				<input type="text" placeholder="Postal code" value="Warning"  />
+				<input class="form-control" type="text" placeholder="Postal code" value="Warning"  />
 			</div>
 			<div class="success">
 				<label>Input - success</label>
-				<input type="text" placeholder="Postal code" value="Success" />
+				<input class="form-control" type="text" placeholder="Postal code" value="Success" />
 			</div>
 
 			<label class="width4">Textarea</label>
-			<textarea></textarea>
+			<textarea class="form-control"></textarea>
 
 			<div>
 				<button class="btn" href="javascript:void(0)">Button</button>
 			</div>
 		</form>
 
-		<h2> Horizontal forms </h2>
-		<form class="form form-horizontal">
-			<div>
-				<label class="">Select box</label>
-				<select class="chosen-select persons">
-					<option> 2 persons </option>
-					<option> 3 persons </option>
-					<option> 4 persons </option>
-					<option> 5 persons </option>
-					<option> 6 persons </option>
-					<option> 7 persons </option>
-					<option> 8 persons </option>
-					<option> 9 persons </option>
-					<option> 10 persons </option>
-				</select>
-			</div>
-
-			<div>
-				<label>Checkboxes</label>
-				<div class="checkbox-group">
-					<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-					<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-				</div>
-			</div>
-
-			<div>
-				<label>Radios</label>
-				<div class="checkbox-group">
-					<label class=""><input type="radio" /> Radio</label>
-					<label class=""><input type="radio" /> Radio</label>
-					<label class=""><input type="radio" /> Radio</label>
-				</div>
-			</div>
-
-			<div>
-				<label>Input</label>
-				<input type="text" placeholder="Street name and number" />
-			</div>
-			<div>
-				<label>Input</label>
-				<input type="text" placeholder="Postal code" class="postal" />
-			</div>
-			<div>
-				<label class="">Textarea</label>
-				<textarea></textarea>
-			</div>
-			<div>
-				<button class="btn" onclick="return false;">Button</button>
-			</div>
-		</form>
+		<p>For horizontal forms just use grid</p>
 
 		<hr/>
 
