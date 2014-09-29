@@ -59,7 +59,7 @@ html {
     -ms-text-size-adjust: 100%; } }
 
 /* line 71, /Users/stanko/Projects/htdocs/skyblue/sass/reset */
-* {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -1105,24 +1105,44 @@ th {
 .margin-right-0 {
   margin-right: 0px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-0 {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-0 {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-0 {
   padding: 0px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-0 {
   padding-top: 0px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-0 {
   padding-bottom: 0px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-0 {
   padding-left: 0px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-0 {
+  padding-right: 0px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-0 {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-0 {
+  padding-left: 0px;
   padding-right: 0px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1145,24 +1165,44 @@ th {
 .margin-right-5 {
   margin-right: 5px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-5 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-5 {
+  margin-left: 5px;
+  margin-right: 5px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-5 {
   padding: 5px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-5 {
   padding-top: 5px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-5 {
   padding-bottom: 5px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-5 {
   padding-left: 5px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-5 {
+  padding-right: 5px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-5 {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-5 {
+  padding-left: 5px;
   padding-right: 5px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1185,24 +1225,44 @@ th {
 .margin-right-10 {
   margin-right: 10px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-10 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-10 {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-10 {
   padding: 10px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-10 {
   padding-top: 10px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-10 {
   padding-bottom: 10px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-10 {
   padding-left: 10px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-10 {
+  padding-right: 10px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-10 {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-10 {
+  padding-left: 10px;
   padding-right: 10px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1225,24 +1285,44 @@ th {
 .margin-right-15 {
   margin-right: 15px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-15 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-15 {
+  margin-left: 15px;
+  margin-right: 15px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-15 {
   padding: 15px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-15 {
   padding-top: 15px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-15 {
   padding-bottom: 15px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-15 {
   padding-left: 15px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-15 {
+  padding-right: 15px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-15 {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-15 {
+  padding-left: 15px;
   padding-right: 15px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1265,24 +1345,44 @@ th {
 .margin-right-20 {
   margin-right: 20px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-20 {
+  margin-left: 20px;
+  margin-right: 20px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-20 {
   padding: 20px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-20 {
   padding-top: 20px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-20 {
   padding-bottom: 20px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-20 {
   padding-left: 20px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-20 {
+  padding-right: 20px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-20 {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-20 {
+  padding-left: 20px;
   padding-right: 20px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1305,24 +1405,44 @@ th {
 .margin-right-25 {
   margin-right: 25px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-25 {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-25 {
+  margin-left: 25px;
+  margin-right: 25px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-25 {
   padding: 25px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-25 {
   padding-top: 25px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-25 {
   padding-bottom: 25px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-25 {
   padding-left: 25px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-25 {
+  padding-right: 25px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-25 {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-25 {
+  padding-left: 25px;
   padding-right: 25px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1345,24 +1465,44 @@ th {
 .margin-right-30 {
   margin-right: 30px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-30 {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-30 {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-30 {
   padding: 30px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-30 {
   padding-top: 30px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-30 {
   padding-bottom: 30px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-30 {
   padding-left: 30px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-30 {
+  padding-right: 30px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-30 {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-30 {
+  padding-left: 30px;
   padding-right: 30px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1385,24 +1525,44 @@ th {
 .margin-right-40 {
   margin-right: 40px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-40 {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-40 {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-40 {
   padding: 40px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-40 {
   padding-top: 40px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-40 {
   padding-bottom: 40px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-40 {
   padding-left: 40px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-40 {
+  padding-right: 40px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-40 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-40 {
+  padding-left: 40px;
   padding-right: 40px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1425,24 +1585,44 @@ th {
 .margin-right-50 {
   margin-right: 50px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-50 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-50 {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-50 {
   padding: 50px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-50 {
   padding-top: 50px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-50 {
   padding-bottom: 50px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-50 {
   padding-left: 50px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-50 {
+  padding-right: 50px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-50 {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-50 {
+  padding-left: 50px;
   padding-right: 50px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1465,24 +1645,44 @@ th {
 .margin-right-60 {
   margin-right: 60px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-60 {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-60 {
+  margin-left: 60px;
+  margin-right: 60px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-60 {
   padding: 60px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-60 {
   padding-top: 60px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-60 {
   padding-bottom: 60px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-60 {
   padding-left: 60px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-60 {
+  padding-right: 60px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-60 {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-60 {
+  padding-left: 60px;
   padding-right: 60px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1505,24 +1705,44 @@ th {
 .margin-right-70 {
   margin-right: 70px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-70 {
+  margin-top: 70px;
+  margin-bottom: 70px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-70 {
+  margin-left: 70px;
+  margin-right: 70px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-70 {
   padding: 70px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-70 {
   padding-top: 70px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-70 {
   padding-bottom: 70px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-70 {
   padding-left: 70px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-70 {
+  padding-right: 70px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-70 {
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-70 {
+  padding-left: 70px;
   padding-right: 70px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1545,24 +1765,44 @@ th {
 .margin-right-80 {
   margin-right: 80px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-80 {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-80 {
+  margin-left: 80px;
+  margin-right: 80px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-80 {
   padding: 80px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-80 {
   padding-top: 80px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-80 {
   padding-bottom: 80px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-80 {
   padding-left: 80px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-80 {
+  padding-right: 80px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-80 {
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-80 {
+  padding-left: 80px;
   padding-right: 80px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1585,24 +1825,44 @@ th {
 .margin-right-90 {
   margin-right: 90px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-90 {
+  margin-top: 90px;
+  margin-bottom: 90px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-90 {
+  margin-left: 90px;
+  margin-right: 90px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-90 {
   padding: 90px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-90 {
   padding-top: 90px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-90 {
   padding-bottom: 90px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-90 {
   padding-left: 90px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-90 {
+  padding-right: 90px; }
+
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-90 {
+  padding-top: 90px;
+  padding-bottom: 90px; }
+
+/* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-90 {
+  padding-left: 90px;
   padding-right: 90px; }
 
 /* line 5, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
@@ -1625,35 +1885,55 @@ th {
 .margin-right-100 {
   margin-right: 100px; }
 
+/* line 10, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-y-100 {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
 /* line 11, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.margin-x-100 {
+  margin-left: 100px;
+  margin-right: 100px; }
+
+/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-100 {
   padding: 100px; }
 
-/* line 12, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-top-100 {
   padding-top: 100px; }
 
-/* line 13, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-bottom-100 {
   padding-bottom: 100px; }
 
-/* line 14, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 16, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-left-100 {
   padding-left: 100px; }
 
-/* line 15, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 17, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .padding-right-100 {
   padding-right: 100px; }
 
+/* line 18, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-y-100 {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
 /* line 19, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.padding-x-100 {
+  padding-left: 100px;
+  padding-right: 100px; }
+
+/* line 23, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .float-left {
   float: left; }
 
-/* line 20, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 24, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .float-right {
   float: right; }
 
-/* line 21, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 25, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .float-none {
   float: none; }
 
@@ -1666,97 +1946,105 @@ th {
 .clear:after {
   clear: both; }
 
-/* line 26, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 30, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .text-center {
   text-align: center; }
 
-/* line 27, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 31, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .text-left {
   text-align: left; }
 
-/* line 28, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 32, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .text-right {
   text-align: right; }
 
-/* line 29, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 33, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .text-justify {
   text-align: justify; }
 
-/* line 33, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 35, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.uppercase {
+  text-transform: uppercase; }
+
+/* line 36, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+.lowercase {
+  text-transform: lowercase; }
+
+/* line 40, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-main, #iconic span:hover {
   color: #49d; }
 
-/* line 34, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 41, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-success {
   color: #1ABC9C; }
 
-/* line 35, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 42, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-error {
   color: #E74C3C; }
 
-/* line 36, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-warning {
   color: #F1C000; }
 
-/* line 37, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-light {
   color: #ecf0f1; }
 
-/* line 38, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .color-dark {
   color: #34495e; }
 
-/* line 41, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 48, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-main {
   background-color: #49d;
   color: #fff; }
 
-/* line 42, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 49, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-success {
   background-color: #1ABC9C;
   color: #fff; }
 
-/* line 43, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 50, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-error {
   background-color: #E74C3C;
   color: #fff; }
 
-/* line 44, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 51, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-warning {
   background-color: #F1C000;
   color: #fff; }
 
-/* line 45, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 52, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-light {
   background-color: #ecf0f1;
   color: #95a5a6; }
 
-/* line 46, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 53, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-dark {
   background-color: #34495e;
   color: #fff; }
 
-/* line 47, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 54, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .bg-white {
   background-color: #fff; }
 
-/* line 51, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 58, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .block {
   display: block; }
 
-/* line 52, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 59, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .inline-block {
   display: inline-block; }
 
-/* line 53, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 60, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .inline {
   display: inline; }
 
-/* line 57, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 64, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .border-radius {
   border-radius: 3px; }
 
-/* line 58, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
+/* line 65, /Users/stanko/Projects/htdocs/skyblue/sass/helpers */
 .border-round {
   border-radius: 50%; }
 

@@ -7,12 +7,16 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 	.margin-bottom-#{$value} { margin-bottom: #{$value}px; }
 	.margin-left-#{$value} { margin-left: #{$value}px; }
 	.margin-right-#{$value} { margin-right: #{$value}px; }
+	.margin-y-#{$value} { margin-top: #{$value}px; margin-bottom: #{$value}px; }
+	.margin-x-#{$value} { margin-left: #{$value}px; margin-right: #{$value}px; }
 
 	.padding-#{$value} { padding: #{$value}px; }
 	.padding-top-#{$value} { padding-top: #{$value}px; }
 	.padding-bottom-#{$value} { padding-bottom: #{$value}px; }
 	.padding-left-#{$value} { padding-left: #{$value}px; }
 	.padding-right-#{$value} { padding-right: #{$value}px; }
+	.padding-y-#{$value} { padding-top: #{$value}px; padding-bottom: #{$value}px; }
+	.padding-x-#{$value} { padding-left: #{$value}px; padding-right: #{$value}px; }
 }
 
 // Floats
@@ -27,6 +31,9 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 .text-left{ text-align: left; }
 .text-right{ text-align: right; }
 .text-justify{ text-align: justify; }
+
+.uppercase{ text-transform: uppercase; }
+.lowercase{ text-transform: lowercase; }
 
 
 // Colors
