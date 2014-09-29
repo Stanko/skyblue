@@ -25,15 +25,17 @@ button, input[type="submit"], input[type="button"]{
 @mixin generate-empty-btn($border, $color){
 	border: 2px solid $border;
 	color: $color;
+	background: none;
 
 	&:hover{
-		background-color: #fff;
 		color: $color - $color-diff;
 		border-color: $border - $color-diff;
+		background: none;
 	}
 	&:active{
 		color: $color - $color-diff*2;
 		border-color: $border - $color-diff*2;
+		background: none;
 	}
 }
 
@@ -60,7 +62,7 @@ button, input[type="submit"], input[type="button"]{
 	// BIG BUTTON
 	&.btn-big{
 		padding: 12px 45px;
-		min-width: 140px;
+		min-width: 200px;
 		font-size: 1.4em;
 	}
 
@@ -96,7 +98,7 @@ button, input[type="submit"], input[type="button"]{
 
 	// EMPTY BUTTONS
 	&.btn-empty{
-		background: #fff;
+		background: transparent;
 		border: 2px solid $main-color;
 		border-radius: $big-border-radius;
 		padding: 8px 25px;

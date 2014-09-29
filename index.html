@@ -1,472 +1,1357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 
-    <title>Sky-blue CSS Framework</title>
+	<title>Sky-blue CSS Framework</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500italic,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/skyblue.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500italic,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/skyblue.css">
+	<link rel="stylesheet" href="css/demo.css">
 
-    <!--[if lt IE 9]><script src="js/ie/respond.src.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/ie/respond.src.js"></script><![endif]-->
 </head>
 <body>
-    <div class="bg-dark">
-        <div class="container text-center">
-            <h1>Sky-blue</h1>
-            <div class="margin-bottom-15">
-                <span class="iconic iconic-sun-stroke"></span>
-                <span class="iconic iconic-sun-stroke"></span>
-                <span class="iconic iconic-sun-stroke"></span>
-            </div>
-            <a class="btn btn-big" href="https://github.com/Stanko/skyblue"><span class="iconic iconic-hash"></span> Git-hub</a>
-            <a class="btn btn-big btn-success" href="#"><span class="iconic iconic-download"></span> Download</a>
-            <a class="btn btn-big btn-warning" href="#"><span class="iconic iconic-heart-stroke"></span> Examples</a>
-            <p>
-                Still work in progress, although feel free to use it!
-            </p>
+	<div class="bg-dark padding-top-30">
+		<div class="container text-center">
+			<h1>Sky-blue CSS Framework</h1>
 
-            <div class="nav">
-                <a href="#grid">Grid</a>
-                <a href="#typography" class="active">Typography</a>
-                <a href="#navigation">Navigation</a>
-                <a href="#tables">Tables</a>
-                <a href="#forms">Forms</a>
-                <a href="#buttons">Buttons</a>
-                <a href="#icons">Icons</a>
-            </div>
-        </div>
-    </div>
-    <div class="container white">
-        <h2 id="grid">Grid</h2>
-        <div class="row dummy">
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-            <div class="col md-1"><div class="c1">1</div></div>
-        </div>
-        <div class="row dummy">
-            <div class="col md-2"><div class="c2">2</div></div>
-            <div class="col md-2"><div class="c2">2</div></div>
-            <div class="col md-2"><div class="c2">2</div></div>
-            <div class="col md-2"><div class="c2">2</div></div>
-            <div class="col md-2"><div class="c2">2</div></div>
-            <div class="col md-2"><div class="c2">2</div></div>
-        </div>
-        <div class="row dummy">
-            <div class="col md-3"><div class="c1">3</div></div>
-            <div class="col md-3"><div class="c1">3</div></div>
-            <div class="col md-3"><div class="c1">3</div></div>
-            <div class="col md-3"><div class="c1">3</div></div>
-        </div>
-        <div class="row dummy">
-            <div class="col md-4"><div class="c2">4</div></div>
-            <div class="col md-4"><div class="c2">4</div></div>
-            <div class="col md-4"><div class="c2">4</div></div>
-        </div>
-        <div class="row dummy">
-            <div class="col md-6"><div class="c1">6</div></div>
-            <div class="col md-6"><div class="c1">6</div></div>
-        </div>
-        <div class="row dummy">
-            <div class="col md-12"><div class="c2">12</div></div>
-        </div>
+			<a class="btn btn-big btn-success" href="https://github.com/Stanko/skyblue"><span class="iconic iconic-hash"></span> Git-hub</a>
 
-        <h3>Nesting grid</h3>
-        <div class="row dummy">
-            <div class="col md-8">
-                <div class="row">
-                    <div class="col md-4"><div class="c1">col md-4 inside md-8</div></div>
-                    <div class="col md-4"><div class="c1">col md-4 inside md-8</div></div>
-                    <div class="col md-4"><div class="c1">col md-4 inside md-8</div></div>
-                </div>
-            </div>
-            <div class="col md-4">
-                <div class="row">
-                    <div class="col md-4"><div class="c2">col md-4 inside col md-4</div></div>
-                    <div class="col md-4"><div class="c2">col md-4 inside col md-4</div></div>
-                    <div class="col md-4"><div class="c2">col md-4 inside col md-4</div></div>
-                </div>
-            </div>
-        </div>
+			<div class="nav padding-y-15">
+				<a class="btn btn-dark btn-small" href="#grid">Grid</a>
+				<a class="btn btn-dark btn-small" href="#typography" class="active">Typography</a>
+				<a class="btn btn-dark btn-small" href="#navigation">Navigation</a>
+				<a class="btn btn-dark btn-small" href="#tables">Tables</a>
+				<a class="btn btn-dark btn-small" href="#forms">Forms</a>
+				<a class="btn btn-dark btn-small" href="#buttons">Buttons</a>
+				<a class="btn btn-dark btn-small" href="#icons">Icons</a>
+			</div>
+		</div>
+	</div>
+	<div class="container margin-top-30">
+		<h2 id="grid">Grid</h2>
+		<div class="row dummy">
+			<div class="col md-1"><div class="c1">1</div></div>
+			<div class="col md-11"><div class="c1">1</div></div>
+		</div>
+		<div class="row dummy">
+			<div class="col md-2"><div class="c2">2</div></div>
+			<div class="col md-10"><div class="c2">2</div></div>
+		</div>
+		<div class="row dummy">
+			<div class="col md-3"><div class="c1">3</div></div>
+			<div class="col md-9"><div class="c1">3</div></div>
+		</div>
+		<div class="row dummy">
+			<div class="col md-4"><div class="c2">6</div></div>
+			<div class="col md-8"><div class="c2">4</div></div>
+		</div>
+		<div class="row dummy">
+			<div class="col md-5"><div class="c1">6</div></div>
+			<div class="col md-7"><div class="c1">4</div></div>
+		</div>
+		<div class="row dummy">
+			<div class="col md-6"><div class="c2">6</div></div>
+			<div class="col md-6"><div class="c2">6</div></div>
+		</div>
 
-        <h3>Mobile columns <small>add .sm-1-12 class</small></h3>
-        <div class="row dummy">
-            <div class="col md-2 sm-3"><div class="c1">md-2 - sm-3</div></div>
-            <div class="col md-2 sm-3"><div class="c1">md-2 - sm-3</div></div>
-            <div class="col md-2 sm-3"><div class="c1">md-2 - sm-3</div></div>
-            <div class="col md-2 sm-3"><div class="c1">md-2 - sm-3</div></div>
-            <div class="col md-2 sm-6"><div class="c2">md-2 - sm-6</div></div>
-            <div class="col md-2 sm-6"><div class="c2">md-2 - sm-6</div></div>
-        </div>
+		<h3>Nesting grid</h3>
+		<div class="row dummy">
+			<div class="col md-8">
+				<div class="margin-bottom-15">xs-4 inside md-8</div>
+				<div class="row">
+					<div class="col xs-4"><div class="c1">xs-4</div></div>
+					<div class="col xs-4"><div class="c1">xs-4</div></div>
+					<div class="col xs-4"><div class="c1">xs-4</div></div>
+				</div>
+			</div>
+			<div class="col md-4">
+				<div class="margin-bottom-15">xs-4 inside md-4</div>
+				<div class="row">
+					<div class="col xs-4"><div class="c2">xs-4</div></div>
+					<div class="col xs-4"><div class="c2">xs-4</div></div>
+					<div class="col xs-4"><div class="c2">xs-4</div></div>
+				</div>
+			</div>
+		</div>
 
+		<hr/>
 
-        <h3>Mobile columns with nesting</h3>
-        <div class="row dummy">
-            <div class="col md-6 sm-6">
-                <div class="row">
-                    <div class="col md-4 sm-4"><div class="c1">4</div></div>
-                    <div class="col md-4 sm-4"><div class="c1">4</div></div>
-                    <div class="col md-4 sm-4"><div class="c1">4</div></div>
-                </div>
-            </div>
-            <div class="col md-6 sm-6">
-                <div class="row">
-                    <div class="col md-3 sm-3"><div class="c2">3</div></div>
-                    <div class="col md-3 sm-3"><div class="c2">3</div></div>
-                    <div class="col md-3 sm-3"><div class="c2">3</div></div>
-                    <div class="col md-3 sm-3"><div class="c2">3</div></div>
-                </div>
-            </div>
-        </div>
+		<h2 id="typography">Typography</h2>
 
-        <hr/>
+		<div>
+			<h3>Paragraph and links</h3>
+			<p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta <b>felis euismod</b> semper. <small>Vivamus sagittis lacus vel</small> augue laoreet rutrum faucibus dolor auctor.</p>
+			<p class="big">Vivamus sagittis lacus vel augue <i>rutrum faucibus dolor</i> auctor. Donec id elit non mi porta gravida at eget metus.</p>
+		</div>
 
-        <h2 id="typography">Typography</h2>
+		<div>
+			<h3>Headers</h3>
+			<h1>Header 1</h1>
+			<h2>Header 2</h2>
+			<h3>Header 3</h3>
+			<h4>Header 4</h4>
+			<h5>Header 5</h5>
+			<h6>Header 6</h6>
+		</div>
 
-        <div>
-            <h3>Paragraph and links</h3>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam <a href="javascript:void(0)">venenatis vestibulum</a>. Vestibulum id ligula porta <b>felis euismod</b> semper. <small>Vivamus sagittis lacus vel</small> augue laoreet rutrum faucibus dolor auctor.</p>
-            <p class="big">Vivamus sagittis lacus vel augue <i>rutrum faucibus dolor</i> auctor. Donec id elit non mi porta gravida at eget metus.</p>
-        </div>
+		<div>
+			<h3>Unordered list</h3>
+			<ul>
+				<li>Cras mattis consectetur purus sit amet fermentum.</li>
+				<li>
+					Donec ullamcorper nulla non metus auctor fringilla.
+					<ul>
+						<li>Aenean eu leo quam.</li>
+						<li>Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
+						<li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
+					</ul>
+				</li>
+				<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+			</ul>
 
-        <div>
-            <h3>Headers</h3>
-            <h1>Header 1</h1>
-            <h2>Header 2</h2>
-            <h3>Header 3</h3>
-            <h4>Header 4</h4>
-            <h5>Header 5</h5>
-            <h6>Header 6</h6>
-        </div>
+			<h3>Ordered list</h3>
+			<ol>
+				<li>Cras mattis consectetur purus sit amet fermentum.</li>
+				<li>
+					Donec ullamcorper nulla non metus auctor fringilla.
+					<ol>
+						<li>Aenean eu leo quam.</li>
+						<li>Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
+						<li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
+					</ol>
+				</li>
+				<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+			</ol>
+		</div>
 
-        <div>
-            <h3>Unordered list</h3>
-            <ul>
-                <li>Cras mattis consectetur purus sit amet fermentum.</li>
-                <li>
-                    Donec ullamcorper nulla non metus auctor fringilla.
-                    <ul>
-                        <li>Aenean eu leo quam.</li>
-                        <li>Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
-                        <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
-                    </ul>
-                </li>
-                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ul>
+		<div>
+			<h3>Blockquote</h3>
+			<blockquote>
+				<p>All blockquotes have right to be nice!</p>
+				<cite>Stanko Tadić, Sky-blue Creator</cite>
+			</blockquote>
 
-            <h3>Ordered list</h3>
-            <ol>
-                <li>Cras mattis consectetur purus sit amet fermentum.</li>
-                <li>
-                    Donec ullamcorper nulla non metus auctor fringilla.
-                    <ol>
-                        <li>Aenean eu leo quam.</li>
-                        <li>Pellentesque ornare sem lacinia quam venenatis vestibulum.</li>
-                        <li>Nullam quis risus eget urna mollis ornare vel eu leo.</li>
-                    </ol>
-                </li>
-                <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-            </ol>
-        </div>
-
-        <div>
-            <h3>Blockquote</h3>
-            <blockquote>
-                <p>All blockquotes have right to be nice!</p>
-                <cite>Stanko Tadić, Sky-blue Creator</cite>
-            </blockquote>
-
-            <h3>Code</h3>
-
-            <pre>
-RS.stop-propagation = function(e){
+			<h3>Code</h3>
+<pre>
+RL.stopPropagation = function(e){
     e = e || window.event; // IE Fix
 
-    if(e.stop-propagation){
-        e.stop-propagation();
+    if(e.stopPropagation){
+        e.stopPropagation();
     }
     else{
         // IE8 and lower stop propagation
-        window.event.cancel-bubble = true;
-        window.event.return-value = false;
+        window.event.cancelBubble = true;
+        window.event.returnValue = false;
     }
 };
-            </pre>
-            Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
-        </div>
-
-        <hr/>
-
-        <h2 id="navigation">Navigation</h2>
-        <div class="nav">
-            <div class="container">
-                <a href="#grid">Grid</a>
-                <a href="#typography">Typography</a>
-                <a href="#navigation">Navigation</a>
-                <a href="#tables">Tables</a>
-                <a href="#forms">Forms</a>
-                <a href="#buttons">Buttons</a>
-                <a href="#icons">Icons</a>
-            </div>
-        </div>
-
-        <h3>Breadcrumbs</h3>
-        <div class="breadcrumbs">
-            <a href="#">Home</a>
-            <a href="#">Category</a>
-            <a href="#">Subcategory</a>
-            <span>Item</span>
-        </div>
+</pre>
 
 
-        <hr/>
+			Inline <code>&lt;code&gt;example&lt;/code&gt;</code> usage.
+		</div>
 
-        <h2 id="tables">Tables</h2>
-        <div class="row">
-            <div class="col md-12">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>User</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Stanko</td>
-                            <td>Tadic</td>
-                            <td>stanko</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Milos</td>
-                            <td>Pavlicevic</td>
-                            <td>pavlicak</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3>Table <small>striped, bordered, hover</small></h3>
-                <table class="table table-striped table-bordered table-hover">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>User</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Stanko</td>
-                            <td>Tadic</td>
-                            <td>stanko</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Ognjen Vuk</td>
-                            <td>Perisic</td>
-                            <td>gio</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Milos</td>
-                            <td>Pavlicevic</td>
-                            <td>pavlicak</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+		<hr/>
 
-        <hr/>
+		<h2 id="navigation">Navigation</h2>
+		<div class="nav">
+			<div class="container">
+				<a href="#grid">Grid</a>
+				<a href="#typography">Typography</a>
+				<a href="#navigation">Navigation</a>
+				<a href="#tables">Tables</a>
+				<a href="#forms">Forms</a>
+				<a href="#buttons">Buttons</a>
+				<a href="#icons">Icons</a>
+			</div>
+		</div>
 
-        <h2 id="forms"> Forms </h2>
-        <form class="form">
-            <label>Select box</label>
-            <select class="chosen-select persons">
-                <option> 2 persons </option>
-                <option> 3 persons </option>
-                <option> 4 persons </option>
-                <option> 5 persons </option>
-                <option> 6 persons </option>
-                <option> 7 persons </option>
-                <option> 8 persons </option>
-                <option> 9 persons </option>
-                <option> 10 persons </option>
-            </select>
-
-            <label>Checkboxes</label>
-            <div class="checkbox-group">
-                <label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-                <label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-            </div>
-            <label>Radios</label>
-            <div class="checkbox-group">
-                <label class=""><input type="radio" /> Radio</label>
-                <label class=""><input type="radio" /> Radio</label>
-                <label class=""><input type="radio" /> Radio</label>
-            </div>
-
-            <div>
-                <label>Input</label>
-                <input type="text" placeholder="Street name and number" />
-            </div>
-            <div  class="error">
-                <label>Input - error</label>
-                <input type="text" placeholder="Postal code" value="Error" />
-            </div>
-            <div class="warning">
-                <label>Input - warning</label>
-                <input type="text" placeholder="Postal code" value="Warning"  />
-            </div>
-            <div class="success">
-                <label>Input - success</label>
-                <input type="text" placeholder="Postal code" value="Success" />
-            </div>
-
-            <label class="width4">Textarea</label>
-            <textarea></textarea>
-
-            <div>
-                <button class="btn" href="javascript:void(0)">Button</button>
-            </div>
-        </form>
-
-        <h2> Horizontal forms </h2>
-        <form class="form form-horizontal">
-            <div>
-                <label class="">Select box</label>
-                <select class="chosen-select persons">
-                    <option> 2 persons </option>
-                    <option> 3 persons </option>
-                    <option> 4 persons </option>
-                    <option> 5 persons </option>
-                    <option> 6 persons </option>
-                    <option> 7 persons </option>
-                    <option> 8 persons </option>
-                    <option> 9 persons </option>
-                    <option> 10 persons </option>
-                </select>
-            </div>
-
-            <div>
-                <label>Checkboxes</label>
-                <div class="checkbox-group">
-                    <label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-                    <label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-                </div>
-            </div>
-
-            <div>
-                <label>Radios</label>
-                <div class="checkbox-group">
-                    <label class=""><input type="radio" /> Radio</label>
-                    <label class=""><input type="radio" /> Radio</label>
-                    <label class=""><input type="radio" /> Radio</label>
-                </div>
-            </div>
-
-            <div>
-                <label>Input</label>
-                <input type="text" placeholder="Street name and number" />
-            </div>
-            <div>
-                <label>Input</label>
-                <input type="text" placeholder="Postal code" class="postal" />
-            </div>
-            <div>
-                <label class="">Textarea</label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <button class="btn" onclick="return false;">Button</button>
-            </div>
-        </form>
-
-        <hr/>
-
-        <h2 id="buttons">Buttons</h2>
-        <div>
-            <a class="btn" href="javascript:void(0)">Button</a>
-            <a class="btn btn-success" href="javascript:void(0)">Success</a>
-            <a class="btn btn-error" href="javascript:void(0)">Error</a>
-            <a class="btn btn-warning" href="javascript:void(0)">Warning</a>
-            <a class="btn btn-light" href="javascript:void(0)">Light</a>
-            <a class="btn btn-dark" href="javascript:void(0)">Dark</a>
-        </div>
-        <div>
-            <a class="btn btn-empty" href="javascript:void(0)">Empty btn</a>
-            <a class="btn btn-empty btn-success" href="javascript:void(0)">Success</a>
-            <a class="btn btn-empty btn-error" href="javascript:void(0)">Error</a>
-            <a class="btn btn-empty btn-warning" href="javascript:void(0)">Warning</a>
-            <a class="btn btn-empty btn-light" href="javascript:void(0)">Light</a>
-            <a class="btn btn-empty btn-dark" href="javascript:void(0)">Dark</a>
-        </div>
-        <h3>Small btns</h3>
-        <div>
-            <a class="btn btn-small" href="javascript:void(0)">Button</a>
-            <a class="btn btn-small btn-success" href="javascript:void(0)">Success</a>
-            <a class="btn btn-small btn-error" href="javascript:void(0)">Error</a>
-            <a class="btn btn-small btn-warning" href="javascript:void(0)">Warning</a>
-            <a class="btn btn-small btn-light" href="javascript:void(0)">Light</a>
-            <a class="btn btn-small btn-dark" href="javascript:void(0)">Dark</a>
-        </div>
-        <div>
-            <a class="btn btn-empty btn-small" href="javascript:void(0)">Button</a>
-            <a class="btn btn-empty btn-small btn-success" href="javascript:void(0)">Success</a>
-            <a class="btn btn-empty btn-small btn-error" href="javascript:void(0)">Error</a>
-            <a class="btn btn-empty btn-small btn-warning" href="javascript:void(0)">Warning</a>
-            <a class="btn btn-empty btn-small btn-light" href="javascript:void(0)">Light</a>
-            <a class="btn btn-empty btn-small btn-dark" href="javascript:void(0)">Dark</a>
-        </div>
-        <h3>Big btns</h3>
-        <div>
-            <a class="btn btn-big" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
-            <a class="btn btn-big btn-success" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
-            <a class="btn btn-big btn-error" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
-            <a class="btn btn-big btn-warning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
-            <a class="btn btn-big btn-light" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
-            <a class="btn btn-big btn-dark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
-        </div>
-        <div>
-            <a class="btn btn-empty btn-big" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
-            <a class="btn btn-empty btn-big btn-success" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
-            <a class="btn btn-empty btn-big btn-error" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
-            <a class="btn btn-empty btn-big btn-warning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
-            <a class="btn btn-empty btn-big btn-light" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
-            <a class="btn btn-empty btn-big btn-dark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
-        </div>
-
-        <hr/>
+		<h3>Breadcrumbs</h3>
+		<div class="breadcrumbs">
+			<a href="#">Home</a>
+			<a href="#">Category</a>
+			<a href="#">Subcategory</a>
+			<span>Item</span>
+		</div>
 
 
-        <h2 id="icons">Icons</h2>
-        <div id="iconic" class="margin-bottom2em">
-            <script src="js/icons.js"></script>
-            <script>generateIconicHTML()</script>
-        </div>
-    </div>
+		<hr/>
+
+		<h2 id="tables">Tables</h2>
+		<div class="row">
+			<div class="col md-12">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>User</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Stanko</td>
+							<td>Tadic</td>
+							<td>stanko</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Ognjen Vuk</td>
+							<td>Perisic</td>
+							<td>gio</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Milos</td>
+							<td>Pavlicevic</td>
+							<td>pavlicak</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>Table <small>striped, bordered, hover</small></h3>
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>User</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Stanko</td>
+							<td>Tadic</td>
+							<td>stanko</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Ognjen Vuk</td>
+							<td>Perisic</td>
+							<td>gio</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Milos</td>
+							<td>Pavlicevic</td>
+							<td>pavlicak</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<hr/>
+
+		<h2 id="forms"> Forms </h2>
+		<form class="form">
+			<label>Select box</label>
+			<select class="chosen-select persons">
+				<option> 2 persons </option>
+				<option> 3 persons </option>
+				<option> 4 persons </option>
+				<option> 5 persons </option>
+				<option> 6 persons </option>
+				<option> 7 persons </option>
+				<option> 8 persons </option>
+				<option> 9 persons </option>
+				<option> 10 persons </option>
+			</select>
+
+			<label>Checkboxes</label>
+			<div class="checkbox-group">
+				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
+				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
+			</div>
+			<label>Radios</label>
+			<div class="checkbox-group">
+				<label class=""><input type="radio" /> Radio</label>
+				<label class=""><input type="radio" /> Radio</label>
+				<label class=""><input type="radio" /> Radio</label>
+			</div>
+
+			<div>
+				<label>Input</label>
+				<input type="text" placeholder="Street name and number" />
+			</div>
+			<div  class="error">
+				<label>Input - error</label>
+				<input type="text" placeholder="Postal code" value="Error" />
+			</div>
+			<div class="warning">
+				<label>Input - warning</label>
+				<input type="text" placeholder="Postal code" value="Warning"  />
+			</div>
+			<div class="success">
+				<label>Input - success</label>
+				<input type="text" placeholder="Postal code" value="Success" />
+			</div>
+
+			<label class="width4">Textarea</label>
+			<textarea></textarea>
+
+			<div>
+				<button class="btn" href="javascript:void(0)">Button</button>
+			</div>
+		</form>
+
+		<h2> Horizontal forms </h2>
+		<form class="form form-horizontal">
+			<div>
+				<label class="">Select box</label>
+				<select class="chosen-select persons">
+					<option> 2 persons </option>
+					<option> 3 persons </option>
+					<option> 4 persons </option>
+					<option> 5 persons </option>
+					<option> 6 persons </option>
+					<option> 7 persons </option>
+					<option> 8 persons </option>
+					<option> 9 persons </option>
+					<option> 10 persons </option>
+				</select>
+			</div>
+
+			<div>
+				<label>Checkboxes</label>
+				<div class="checkbox-group">
+					<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
+					<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
+				</div>
+			</div>
+
+			<div>
+				<label>Radios</label>
+				<div class="checkbox-group">
+					<label class=""><input type="radio" /> Radio</label>
+					<label class=""><input type="radio" /> Radio</label>
+					<label class=""><input type="radio" /> Radio</label>
+				</div>
+			</div>
+
+			<div>
+				<label>Input</label>
+				<input type="text" placeholder="Street name and number" />
+			</div>
+			<div>
+				<label>Input</label>
+				<input type="text" placeholder="Postal code" class="postal" />
+			</div>
+			<div>
+				<label class="">Textarea</label>
+				<textarea></textarea>
+			</div>
+			<div>
+				<button class="btn" onclick="return false;">Button</button>
+			</div>
+		</form>
+
+		<hr/>
+
+		<h2 id="buttons">Buttons</h2>
+		<div>
+			<a class="btn" href="javascript:void(0)">Button</a>
+			<a class="btn btn-success" href="javascript:void(0)">Success</a>
+			<a class="btn btn-error" href="javascript:void(0)">Error</a>
+			<a class="btn btn-warning" href="javascript:void(0)">Warning</a>
+			<a class="btn btn-light" href="javascript:void(0)">Light</a>
+			<a class="btn btn-dark" href="javascript:void(0)">Dark</a>
+		</div>
+		<div>
+			<a class="btn btn-empty" href="javascript:void(0)">Empty btn</a>
+			<a class="btn btn-empty btn-success" href="javascript:void(0)">Success</a>
+			<a class="btn btn-empty btn-error" href="javascript:void(0)">Error</a>
+			<a class="btn btn-empty btn-warning" href="javascript:void(0)">Warning</a>
+			<a class="btn btn-empty btn-light" href="javascript:void(0)">Light</a>
+			<a class="btn btn-empty btn-dark" href="javascript:void(0)">Dark</a>
+		</div>
+		<h3>Small btns</h3>
+		<div>
+			<a class="btn btn-small" href="javascript:void(0)">Button</a>
+			<a class="btn btn-small btn-success" href="javascript:void(0)">Success</a>
+			<a class="btn btn-small btn-error" href="javascript:void(0)">Error</a>
+			<a class="btn btn-small btn-warning" href="javascript:void(0)">Warning</a>
+			<a class="btn btn-small btn-light" href="javascript:void(0)">Light</a>
+			<a class="btn btn-small btn-dark" href="javascript:void(0)">Dark</a>
+		</div>
+		<div>
+			<a class="btn btn-empty btn-small" href="javascript:void(0)">Button</a>
+			<a class="btn btn-empty btn-small btn-success" href="javascript:void(0)">Success</a>
+			<a class="btn btn-empty btn-small btn-error" href="javascript:void(0)">Error</a>
+			<a class="btn btn-empty btn-small btn-warning" href="javascript:void(0)">Warning</a>
+			<a class="btn btn-empty btn-small btn-light" href="javascript:void(0)">Light</a>
+			<a class="btn btn-empty btn-small btn-dark" href="javascript:void(0)">Dark</a>
+		</div>
+		<h3>Big btns</h3>
+		<div>
+			<a class="btn btn-big" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
+			<a class="btn btn-big btn-success" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
+			<a class="btn btn-big btn-error" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
+			<a class="btn btn-big btn-warning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
+			<a class="btn btn-big btn-light" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
+			<a class="btn btn-big btn-dark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
+		</div>
+		<div>
+			<a class="btn btn-empty btn-big" href="javascript:void(0)"><span class="iconic iconic-heart-stroke"></span> Button</a>
+			<a class="btn btn-empty btn-big btn-success" href="javascript:void(0)"><span class="iconic iconic-star"></span> Success</a>
+			<a class="btn btn-empty btn-big btn-error" href="javascript:void(0)"><span class="iconic iconic-denied"></span> Error</a>
+			<a class="btn btn-empty btn-big btn-warning" href="javascript:void(0)"><span class="iconic iconic-bolt"></span> Warning</a>
+			<a class="btn btn-empty btn-big btn-light" href="javascript:void(0)"><span class="iconic iconic-sun-stroke"></span> Light</a>
+			<a class="btn btn-empty btn-big btn-dark" href="javascript:void(0)"><span class="iconic iconic-moon-stroke"></span> Dark</a>
+		</div>
+
+		<hr/>
+
+
+		<h2 id="icons">Icons</h2>
+		<div class="container text-center icons margin-bottom-100">
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cloud-upload"></span><span class="font-icon-class"> pe-cloud-upload</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-close"></span><span class="font-icon-class"> pe-close</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cloud-download"></span><span class="font-icon-class"> pe-cloud-download</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-close-circle"></span><span class="font-icon-class"> pe-close-circle</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-up"></span><span class="font-icon-class"> pe-angle-up</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-up-circle"></span><span class="font-icon-class"> pe-angle-up-circle</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-right"></span><span class="font-icon-class"> pe-angle-right</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-right-circle"></span><span class="font-icon-class"> pe-angle-right-circle</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-left"></span><span class="font-icon-class"> pe-angle-left</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-left-circle"></span><span class="font-icon-class"> pe-angle-left-circle</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-down"></span><span class="font-icon-class"> pe-angle-down</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-angle-down-circle"></span><span class="font-icon-class"> pe-angle-down-circle</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-wallet"></span><span class="font-icon-class"> pe-wallet</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-volume2"></span><span class="font-icon-class"> pe-volume2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-volume1"></span><span class="font-icon-class"> pe-volume1</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-voicemail"></span><span class="font-icon-class"> pe-voicemail</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-video"></span><span class="font-icon-class"> pe-video</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-user"></span><span class="font-icon-class"> pe-user</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-upload"></span><span class="font-icon-class"> pe-upload</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-unlock"></span><span class="font-icon-class"> pe-unlock</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-umbrella"></span><span class="font-icon-class"> pe-umbrella</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-trash"></span><span class="font-icon-class"> pe-trash</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-tools"></span><span class="font-icon-class"> pe-tools</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-timer"></span><span class="font-icon-class"> pe-timer</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-ticket"></span><span class="font-icon-class"> pe-ticket</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-target"></span><span class="font-icon-class"> pe-target</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-sun"></span><span class="font-icon-class"> pe-sun</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-study"></span><span class="font-icon-class"> pe-study</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-stopwatch"></span><span class="font-icon-class"> pe-stopwatch</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-star"></span><span class="font-icon-class"> pe-star</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-speaker"></span><span class="font-icon-class"> pe-speaker</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-signal"></span><span class="font-icon-class"> pe-signal</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-shuffle"></span><span class="font-icon-class"> pe-shuffle</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-shopbag"></span><span class="font-icon-class"> pe-shopbag</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-share"></span><span class="font-icon-class"> pe-share</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-server"></span><span class="font-icon-class"> pe-server</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-search"></span><span class="font-icon-class"> pe-search</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-science"></span><span class="font-icon-class"> pe-science</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-ribbon"></span><span class="font-icon-class"> pe-ribbon</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-repeat"></span><span class="font-icon-class"> pe-repeat</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-refresh"></span><span class="font-icon-class"> pe-refresh</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-refresh-cloud"></span><span class="font-icon-class"> pe-refresh-cloud</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-radio"></span><span class="font-icon-class"> pe-radio</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-print"></span><span class="font-icon-class"> pe-print</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-prev"></span><span class="font-icon-class"> pe-prev</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-power"></span><span class="font-icon-class"> pe-power</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-portfolio"></span><span class="font-icon-class"> pe-portfolio</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-plus"></span><span class="font-icon-class"> pe-plus</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-play"></span><span class="font-icon-class"> pe-play</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-plane"></span><span class="font-icon-class"> pe-plane</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-photo-gallery"></span><span class="font-icon-class"> pe-photo-gallery</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-phone"></span><span class="font-icon-class"> pe-phone</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-pen"></span><span class="font-icon-class"> pe-pen</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-paper-plane"></span><span class="font-icon-class"> pe-paper-plane</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-paint"></span><span class="font-icon-class"> pe-paint</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-notebook"></span><span class="font-icon-class"> pe-notebook</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-note"></span><span class="font-icon-class"> pe-note</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-next"></span><span class="font-icon-class"> pe-next</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-news-paper"></span><span class="font-icon-class"> pe-news-paper</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-musiclist"></span><span class="font-icon-class"> pe-musiclist</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-music"></span><span class="font-icon-class"> pe-music</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-mouse"></span><span class="font-icon-class"> pe-mouse</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-more"></span><span class="font-icon-class"> pe-more</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-moon"></span><span class="font-icon-class"> pe-moon</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-monitor"></span><span class="font-icon-class"> pe-monitor</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-micro"></span><span class="font-icon-class"> pe-micro</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-menu"></span><span class="font-icon-class"> pe-menu</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-map"></span><span class="font-icon-class"> pe-map</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-map-marker"></span><span class="font-icon-class"> pe-map-marker</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-mail"></span><span class="font-icon-class"> pe-mail</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-mail-open"></span><span class="font-icon-class"> pe-mail-open</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-mail-open-file"></span><span class="font-icon-class"> pe-mail-open-file</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-magnet"></span><span class="font-icon-class"> pe-magnet</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-loop"></span><span class="font-icon-class"> pe-loop</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-look"></span><span class="font-icon-class"> pe-look</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-lock"></span><span class="font-icon-class"> pe-lock</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-lintern"></span><span class="font-icon-class"> pe-lintern</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-link"></span><span class="font-icon-class"> pe-link</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-like"></span><span class="font-icon-class"> pe-like</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-light"></span><span class="font-icon-class"> pe-light</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-less"></span><span class="font-icon-class"> pe-less</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-keypad"></span><span class="font-icon-class"> pe-keypad</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-junk"></span><span class="font-icon-class"> pe-junk</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-info"></span><span class="font-icon-class"> pe-info</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-home"></span><span class="font-icon-class"> pe-home</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-help2"></span><span class="font-icon-class"> pe-help2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-help1"></span><span class="font-icon-class"> pe-help1</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-graph3"></span><span class="font-icon-class"> pe-graph3</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-graph2"></span><span class="font-icon-class"> pe-graph2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-graph1"></span><span class="font-icon-class"> pe-graph1</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-graph"></span><span class="font-icon-class"> pe-graph</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-global"></span><span class="font-icon-class"> pe-global</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-gleam"></span><span class="font-icon-class"> pe-gleam</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-glasses"></span><span class="font-icon-class"> pe-glasses</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-gift"></span><span class="font-icon-class"> pe-gift</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-folder"></span><span class="font-icon-class"> pe-folder</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-flag"></span><span class="font-icon-class"> pe-flag</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-filter"></span><span class="font-icon-class"> pe-filter</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-file"></span><span class="font-icon-class"> pe-file</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-expand1"></span><span class="font-icon-class"> pe-expand1</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-exapnd2"></span><span class="font-icon-class"> pe-exapnd2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-edit"></span><span class="font-icon-class"> pe-edit</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-drop"></span><span class="font-icon-class"> pe-drop</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-drawer"></span><span class="font-icon-class"> pe-drawer</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-download"></span><span class="font-icon-class"> pe-download</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-display2"></span><span class="font-icon-class"> pe-display2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-display1"></span><span class="font-icon-class"> pe-display1</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-diskette"></span><span class="font-icon-class"> pe-diskette</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-date"></span><span class="font-icon-class"> pe-date</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cup"></span><span class="font-icon-class"> pe-cup</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-culture"></span><span class="font-icon-class"> pe-culture</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-crop"></span><span class="font-icon-class"> pe-crop</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-credit"></span><span class="font-icon-class"> pe-credit</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-copy-file"></span><span class="font-icon-class"> pe-copy-file</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-config"></span><span class="font-icon-class"> pe-config</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-compass"></span><span class="font-icon-class"> pe-compass</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-comment"></span><span class="font-icon-class"> pe-comment</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-coffee"></span><span class="font-icon-class"> pe-coffee</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cloud"></span><span class="font-icon-class"> pe-cloud</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-clock"></span><span class="font-icon-class"> pe-clock</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-check"></span><span class="font-icon-class"> pe-check</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-chat"></span><span class="font-icon-class"> pe-chat</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cart"></span><span class="font-icon-class"> pe-cart</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-camera"></span><span class="font-icon-class"> pe-camera</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-call"></span><span class="font-icon-class"> pe-call</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-calculator"></span><span class="font-icon-class"> pe-calculator</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-browser"></span><span class="font-icon-class"> pe-browser</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-box2"></span><span class="font-icon-class"> pe-box2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-box1"></span><span class="font-icon-class"> pe-box1</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-bookmarks"></span><span class="font-icon-class"> pe-bookmarks</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-bicycle"></span><span class="font-icon-class"> pe-bicycle</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-bell"></span><span class="font-icon-class"> pe-bell</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-battery"></span><span class="font-icon-class"> pe-battery</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-ball"></span><span class="font-icon-class"> pe-ball</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-back"></span><span class="font-icon-class"> pe-back</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-attention"></span><span class="font-icon-class"> pe-attention</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-anchor"></span><span class="font-icon-class"> pe-anchor</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-albums"></span><span class="font-icon-class"> pe-albums</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-alarm"></span><span class="font-icon-class"> pe-alarm</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-airplay"></span><span class="font-icon-class"> pe-airplay</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-cash"></span><span class="font-icon-class"> pe-cash</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-bluetooth"></span><span class="font-icon-class"> pe-bluetooth</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-way"></span><span class="font-icon-class"> pe-way</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-id"></span><span class="font-icon-class"> pe-id</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-wristwatch"></span><span class="font-icon-class"> pe-wristwatch</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-world"></span><span class="font-icon-class"> pe-world</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-volume"></span><span class="font-icon-class"> pe-volume</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-users"></span><span class="font-icon-class"> pe-users</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-user-female"></span><span class="font-icon-class"> pe-user-female</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-up-arrow"></span><span class="font-icon-class"> pe-up-arrow</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-switch"></span><span class="font-icon-class"> pe-switch</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-scissors"></span><span class="font-icon-class"> pe-scissors</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-safe"></span><span class="font-icon-class"> pe-safe</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-right-arrow"></span><span class="font-icon-class"> pe-right-arrow</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-plug"></span><span class="font-icon-class"> pe-plug</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-pin"></span><span class="font-icon-class"> pe-pin</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-paperclip"></span><span class="font-icon-class"> pe-paperclip</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-note2"></span><span class="font-icon-class"> pe-note2</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-network"></span><span class="font-icon-class"> pe-network</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-mute"></span><span class="font-icon-class"> pe-mute</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-medal"></span><span class="font-icon-class"> pe-medal</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-like2"></span><span class="font-icon-class"> pe-like2</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-left-arrow"></span><span class="font-icon-class"> pe-left-arrow</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-key"></span><span class="font-icon-class"> pe-key</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-joy"></span><span class="font-icon-class"> pe-joy</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-film"></span><span class="font-icon-class"> pe-film</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-disk"></span><span class="font-icon-class"> pe-disk</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-delete-user"></span><span class="font-icon-class"> pe-delete-user</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+			<div class="row">
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-bottom-arrow"></span><span class="font-icon-class"> pe-bottom-arrow</span>
+					</div>
+				</div>
+				<div class="col md-2 sm-3 xs-6">
+					<div class="font-icon-detail">
+						<span class="pe-add-user"></span><span class="font-icon-class"> pe-add-user</span>
+					</div>
+				</div>
+			</div><!-- /row -->
+
+		</div>
+	</div>
 
 
 </body>

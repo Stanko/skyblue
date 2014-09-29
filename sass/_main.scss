@@ -3,8 +3,13 @@ body{
 	font-size: $font-size;
 	font-weight: $font-weight;
 	line-height: $line-height;
-	background: $body-background;
+	background-color: $body-background;
 	color: $text-color;
 
-	-webkit-font-smoothing: antialiased;
+}
+
+img{ max-width: 100%; }
+
+.noscroll {
+	overflow: hidden;
 }

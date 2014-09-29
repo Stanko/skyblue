@@ -1,0 +1,82 @@
+// Grays
+$gray7:				#111;
+$gray6:				#333;
+$gray5:				#555;
+$gray4:				#777;
+$gray3:				#999;
+$gray2:				#ddd;
+$gray1:				#f7f7f7;
+
+// Maybe use these?
+// grays
+// #ecf0f1
+// #bdc3c7
+// #95a5a6
+// #7f8c8d
+
+// Dark navy/gray
+// #34495e
+// #2c3e50
+
+// green #2ecc71 #27ae60
+// violet #9b59b6 #8e44ad
+
+// Colors
+$body-background:		#FbFbFb;
+$text-color:			#555;
+
+$main-color:			#4378a7;
+$success-color:			#16A6B6;
+$error-color:			#E74C3C;
+$warning-color:			#F1C000;
+$light-color:			#ecf0f1;
+$dark-color:			#252428;
+$main-light-color:		#72A8D6;
+$main-grey-color:		#7F8184;
+
+$navigation-color:		#2c3e50;
+
+$color-diff:			#151515;
+
+// Defaults
+$font-family:			'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size:				16px;
+$font-weight:			normal;
+$line-height:			1.5em;
+$bold:					700;
+
+$transition-time:		0.25s;
+
+// Code
+$pre-font-family:		"Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
+$pre-font-size:			18px;
+
+
+// Tables
+$table-border-color:	$gray2;
+$table-background:		$gray1;
+$table-background-hover:lighten($main-color, 10);
+$table-color-hover:		#fff;
+
+// Grid
+$grid-columns:			12;
+$grid-padding-width:	40px;
+$grid-unit-width:		100% / $grid-columns;
+
+
+$tablet-portrait-breakpoint:	480px;
+$tablet-breakpoint:				768px;
+$desktop-breakpoint:			970px;
+$large-desktop-breakpoint:		1200px;
+
+$container-width-tablet:		720px;
+$container-width-desktop:		940px;
+$container-width-large-desktop:	1150px;
+
+
+// Helpers
+$border-radius:			3px;
+$big-border-radius:		100px;
+
+//Custom colors
+$white: #fff;

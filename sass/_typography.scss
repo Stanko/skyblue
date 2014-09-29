@@ -1,46 +1,48 @@
 // Headers
 h1,h2,h3,h4,h5,h6{
 	line-height: 1.2em;
+	margin: 0;
+	font-weight: 300;
+	font-family: 'Dosis', 'Helvetica Neue', Helvetica, sans-serif;
 	margin-bottom: 0.5em;
-	margin-top: 0.5em;
 }
 
 h1{
-	font-size: 2.5em;
+	font-size: 2.4em;
 }
 
 h2{
-	font-size: 2.2em;
+	font-size: 2em;
 }
 
 h3{
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 h4{
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
 
 h5{
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 h6{
-	font-size: 1.1em;
+	font-size: 1em;
 }
 
 
 
 // Paragraphs
 p{
-	margin-bottom: $font-size;
 	line-height: $line-height;
+	margin-bottom: $font-size;
 }
 small{
-	font-size: 0.8em;
+	font-size: 0.75em;
 }
 .big{
-	font-size: 1.2em;
+	font-size: 1.25em;
 }
 
 b, strong{
@@ -59,11 +61,14 @@ img{
 
 // Links
 a{
-	color: $main-color;
-	transition: background-color $transition-time, color $transition-time;
+	color: $main-color + #222;
+	transition: all $transition-time;
+	text-decoration: none;
+	&.secundary{ color: $success-color; }
 }
 a:active, a:focus, a:hover{
 	color: $main-color - $color-diff;
+	&.secundary{ color: $success-color - $color-diff; }
 }
 
 
@@ -92,7 +97,6 @@ ol{
 	}
 }
 
-
 // Blockquote
 blockquote{
 
@@ -112,7 +116,7 @@ blockquote{
 
 hr{
 	border: 0;
-	border-bottom: 1px solid $gray2;
+	border-bottom: 1px solid darken($body-background, 7);
 	margin: 20px 0 20px 0;
 	clear: both;
 }

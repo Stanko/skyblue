@@ -1,6 +1,5 @@
 $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100;
 
-
 @each $value in $margin-and-padding-values {
 	.margin-#{$value} { margin: #{$value}px; }
 	.margin-top-#{$value} { margin-top: #{$value}px; }
@@ -17,14 +16,15 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 	.padding-right-#{$value} { padding-right: #{$value}px; }
 	.padding-y-#{$value} { padding-top: #{$value}px; padding-bottom: #{$value}px; }
 	.padding-x-#{$value} { padding-left: #{$value}px; padding-right: #{$value}px; }
-}
 
+}
 // Floats
 .float-left{ float: left; }
 .float-right{ float: right; }
 .float-none{ float: none; }
 
-.clear{ @include clearfix; }
+.relative{ position: relative; }
+.absolute{ position: absolute; }
 
 // Text
 .text-center{ text-align: center; }
@@ -33,16 +33,17 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 .text-justify{ text-align: justify; }
 
 .uppercase{ text-transform: uppercase; }
-.lowercase{ text-transform: lowercase; }
-
 
 // Colors
 .color-main{ color: $main-color; }
+.color-main2{ color: $main-color+#222; }
 .color-success{ color: $success-color; }
 .color-error{ color: $error-color; }
 .color-warning{ color: $warning-color; }
 .color-light{ color: $light-color; }
 .color-dark{ color: $dark-color; }
+.color-black{ color: #111; }
+.color-white { color: #fff; }
 
 // Colors
 .bg-main{ background-color: $main-color; color: #fff; }
@@ -53,13 +54,19 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 .bg-dark{ background-color: $dark-color; color: #fff; }
 .bg-white{ background-color: #fff; }
 
-
 // Display
 .block{ display: block; }
 .inline-block{ display: inline-block; }
 .inline{ display: inline; }
+.display-none{ display: none; }
 
+.full-width{ width: 100%; }
 
-// Round borders
-.border-radius{ border-radius: $border-radius; }
-.border-round{ border-radius: 50%; }
+.middle{ vertical-align: middle; }
+
+// Radius and borders
+.radius-5{ border-radius: 5px; }
+.radius-10{ border-radius: 10px; }
+.radius-15{ border-radius: 15px; }
+
+.no-border{ border: none; }

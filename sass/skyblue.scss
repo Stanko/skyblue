@@ -1,6 +1,6 @@
 /*
  *
- * Sky-blue Sass by Rocket-launch
+ * SkyBlue Sass by RocketLaunch
  *
  * Built and maintained with a lots of love by Stanko
  *
@@ -15,34 +15,23 @@
 @import "reset";
 
 
-// Main
-@import "main";
-
 // Grid system and page structure
 @import "grid";
-@import "flexgrid";
-@import "layout";
 
 
 // Base CSS
-//@import "fonts";
 @import "typography";
-@import "navigation";
-
 @import "buttons";
 @import "forms";
-
 @import "tables";
 
 
-// Responsive
-@import "responsive";
-
-
-
-// Helpers - it needs to be last to override all others
+// Helpers at the end to override
 @import "helpers";
 
+// Awesome Stroke Icons
+// http://themes-pixeden.com/font-demos/7-stroke/index.html
+@import "icons";
 
-// Dummy testing stuff
-@import "dummy";
+// Main
+@import "main";
