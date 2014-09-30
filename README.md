@@ -3,7 +3,7 @@ SkyBlue
 
 Minimal CSS (SASS) framework I made for my own needs.
 
-Uses grid system with 12 columns. Add ``col`` class and responsive ``xs-# sm-# md-# lg-#"
+Uses grid system with 12 columns. Add ``col`` class and responsive ``xs-# sm-# md-# lg-#``
 
 [Check the demo](http://stanko.github.io/skyblue/).
 
