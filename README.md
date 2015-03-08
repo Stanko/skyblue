@@ -20,7 +20,6 @@ Some websites made using this framework:
 * [Hacienda Rodizio](http://haciendarodizio.com)
 * [eSmithy](http://esmithy.com)
 * [Tesla Smart House](http://teslasmarthouse.com)
-<!--- modena -->
 
 If you want to list your site/project please contact me.
 
