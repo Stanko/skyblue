@@ -1,7 +1,7 @@
 SkyBlue
 =======
 
-Minimal CSS (SASS) framework I made for my own needs.
+Small CSS (SASS) framework I made for my own needs.
 
 Uses grid system with 12 columns. Add ``col`` class and responsive ``xs-# sm-# md-# lg-#``
 
@@ -15,7 +15,7 @@ Some websites made using this framework:
 * [Hacienda Rodizio](http://haciendarodizio.com)
 * [eSmithy](http://esmithy.com)
 * [Tesla Smart House](http://teslasmarthouse.com)
-
+<!-- modena -->
 
 ====
 

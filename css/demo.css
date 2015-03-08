@@ -1,11 +1,11 @@
 .font-icon-detail {
-  padding-top: 15px;
-  height: 80px; }
-
-.font-icon-class {
-  font-size: 12px;
-  line-height: 14px;
-  display: block; }
+  padding-top: 12px;
+  height: 100px; }
+  .font-icon-detail span {
+    font-size: 48px; }
+  .font-icon-detail div {
+    font-size: 12px;
+    line-height: 15px; }
 
 .c1, .c2 {
   padding: 10px 0;
@@ -16,3 +16,8 @@
 
 .c2 {
   background: #0191A1; }
+
+.grid-info code {
+  margin: 1px 0;
+  background: #eeeef3;
+  color: #444; }
