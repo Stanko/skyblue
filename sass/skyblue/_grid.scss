@@ -71,4 +71,8 @@
 // 	.container {
 // 		max-width: $container-width-large-desktop;
 // 	}
+// 	@for $i from 1 through $grid-columns {
+// 		.xl-#{$i}{ width: $i*$grid-unit-width; float: left; }
+// 		.offset-xl-#{$i}{ margin-left: $i*$grid-unit-width; }
+// 	}
 // }

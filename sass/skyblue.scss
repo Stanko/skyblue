@@ -7,31 +7,31 @@
  */
 
 // Core variables and mixins
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "mixins";
+@import "skyblue/variables"; // Modify this for custom colors, font-sizes, etc
+@import "skyblue/mixins";
 
 
 // CSS Reset
-@import "reset";
+@import "skyblue/reset";
 
 
 // Grid system and page structure
-@import "grid";
+@import "skyblue/grid";
 
 
 // Base CSS
-@import "typography";
-@import "buttons";
-@import "forms";
-@import "tables";
+@import "skyblue/typography";
+@import "skyblue/buttons";
+@import "skyblue/forms";
+@import "skyblue/tables";
 
 
 // Helpers at the end to override
-@import "helpers";
+@import "skyblue/helpers";
 
 // Awesome Stroke Icons
 // http://themes-pixeden.com/font-demos/7-stroke/index.html
-@import "icons";
+@import "skyblue/icons";
 
 // Main
-@import "main";
+@import "skyblue/main";
