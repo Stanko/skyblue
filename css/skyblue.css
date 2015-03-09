@@ -1037,7 +1037,7 @@ th {
 /* line 154, /Users/stanko/Projects/htdocs/skyblue/sass/skyblue/_tables.scss */
 .table-hover tr:hover > td {
   background-color: #5e91bf;
-  border-left: none;
+  border-left-color: #5e91bf;
   color: #fff; }
   /* line 158, /Users/stanko/Projects/htdocs/skyblue/sass/skyblue/_tables.scss */
   .table-hover tr:hover > td:first-child {

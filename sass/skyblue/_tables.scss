@@ -153,7 +153,7 @@ th {
 .table-hover {
     tr:hover > td{
         background-color: $table-background-hover;
-        border-left: none;
+        border-left-color: $table-background-hover;
         color: $table-color-hover;
         &:first-child{
             border-left: 1px solid $table-border-color;
