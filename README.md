@@ -25,4 +25,8 @@ If you want to list your site/project please contact me.
 
 ====
 
+Licenced under [MIT license](https://github.com/Stanko/skyblue/blob/gh-pages/LICENSE.md).
+
+====
+
 I included [great stroke icons](http://themes-pixeden.com/font-demos/7-stroke/index.html) by Pixeden.
