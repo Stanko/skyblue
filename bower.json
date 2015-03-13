@@ -1,0 +1,24 @@
+{
+  "name": "skyblue",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Stanko/skyblue",
+  "authors": [
+    "Stanko <stanko.tadic@gmail.com>"
+  ],
+  "description": "Small SASS/CSS framework",
+  "main": "css/skyblue.css",
+  "keywords": [
+    "css",
+    "sass",
+    "framework",
+    "skyblue"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
