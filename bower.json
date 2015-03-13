@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/Stanko/skyblue",
   "authors": [
-    "Stanko <stanko.tadic@gmail.com>"
+    "Stanko <stanko@null-object.com>"
   ],
   "description": "Small SASS/CSS framework",
   "main": "css/skyblue.css",
