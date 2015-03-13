@@ -4,13 +4,18 @@ SkyBlue
 This is not Bootstrap killer, I just think Bootstrap is way too bloated.
 SkyBlue is a minimal framework that is meant to be starting point for my projects.
 
+#### [Demo and documentation](http://stanko.github.io/skyblue/).
+
+- Clone the repo: `git clone https://github.com/Stanko/skyblue.git`.
+- Install with [Bower](http://bower.io): `bower install skyblue`.
+- [Download the zip](https://github.com/Stanko/skyblue/archive/gh-pages.zipp).
+
+
 Uses grid system with 12 columns. Add ``col`` class
 and responsive ``xs-#`` ``sm-#``
 ``md-#`` ``lg-#``. Offsets are also
 available by ``offset-xm-#`` ``offset-sm-#``
 ``offset-md-#`` ``offset-lg-#`` classes.
-
-[Check the demo](http://stanko.github.io/skyblue/).
 
 I made it for my own needs. Feel free to use it and abuse it, in both free and commercial products.
 
