@@ -58,22 +58,26 @@ textarea{
 }
 select{
 	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
 // Hack for webkit only
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
 	select{
-		background-color: #fff;
-		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAKCAYAAACqnE5VAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYeBwwgz2YJHAAAASVJREFUOMud0jFqwzAUBuD/6QLqDXqE+Abx4MGDIR5CCBpEsUFzjtTRhAwqeMiQQUdIj9AbJPt7Vhe1OKShdv5FvCf0PngIAOCcWznnNCbGOaedcyvMiGrbdikiXkRC0zT/Yk3TaBEJIuLbtl1OhpjZMzOYORORYK19iFlrtYgEZs7SGz8ZEpFdeoQ0IBhj7jBjjGbmMQIR2U2FCAC22+0qxvgO4CX1zzHGfL/fXwFgs9loIgoAsnR/IaK3rus+ZkEAsF6vFzHGMMIuwzDkAKCUuukTUX44HD7nfAYaF3VdL4ZhuBmazt9aKZV772chdxAAVFX1GmP0ozX95ExEdd/3X3gi9FezLEud1piNkPx4PF7xZOjRRVEUOq0RSqn8dDo9jQDAN6OnnUe+41wgAAAAAElFTkSuQmCC);
-		background-repeat: no-repeat;
-		background-position: right center;
+		@include select();
+	}
+}
+// Hack for firefox
+@-moz-document url-prefix() {
+	select{
+		@include select();
 	}
 }
 
 label{
 	display: block;
 	margin-bottom: 0.5em;
-	height: 1.5;
+	height: 1.5em;
 	line-height: 1.5em;
 
 	&.error, .error &{
