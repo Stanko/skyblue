@@ -129,7 +129,8 @@ input[type="radio"]{
 	cursor: pointer;
 
 	input{
-		display: none;
+		opacity: 0;
+		position: absolute;
 	}
 
 	span:before,
@@ -170,6 +171,13 @@ input[type="radio"]{
 			background: $checkbox-checked-bg;
 		}
 	}
+
+	input:focus + span:before{
+		border: 1px solid darken($checkbox-bg, 20)
+	}
+	input:focus:checked + span:before{
+		border: 1px solid darken($checkbox-checked-bg, 20)
+	}
 }
 
 .fancy-radio{
@@ -203,5 +211,9 @@ input[type="radio"]{
 		&:before{
 			background: $radio-checked-bg;
 		}
+	}
+
+	input:focus + span:before{
+		border: 1px solid darken($radio-checked-bg, 20);
 	}
 }
