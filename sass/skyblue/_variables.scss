@@ -26,7 +26,7 @@ $body-background:		#FbFbFb;
 $text-color:			#555;
 
 $main-color:			#4378a7;
-$success-color:			#16A6B6;
+$success-color:			#16b6B6;
 $error-color:			#E74C3C;
 $warning-color:			#F1C000;
 $light-color:			#ecf0f1;
@@ -57,6 +57,24 @@ $table-border-color:	$gray2;
 $table-background:		$gray1;
 $table-background-hover:lighten($main-color, 10);
 $table-color-hover:		#fff;
+
+// Forms
+$checkbox-height: 22px;
+$checkbox-width: 38px;
+$checkbox-circle-size: $checkbox-height - 2;
+$checkbox-top: ($font-size * 1.5 - $checkbox-height) / 2;
+$checkbox-bg: #c3c5c4;
+$checkbox-checked-bg: $success-color;
+
+$radio-size: 20px;
+$radio-circle-size: 10px;
+$radio-top: ($font-size * 1.5 - $radio-size - 2) / 2;
+$radio-border-color: #c3c5c4;
+$radio-checked-bg: $success-color;
+$radio-circle-left: $radio-size / 2;
+$radio-circle-top: $radio-circle-left + $radio-top;
+$radio-circle-active-left: ($radio-size - $radio-circle-size) / 2;
+$radio-circle-active-top: $radio-circle-active-left + $radio-top;
 
 // Grid
 $grid-columns:			12;

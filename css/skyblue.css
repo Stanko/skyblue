@@ -414,12 +414,12 @@ a {
           transition: all 0.25s;
   text-decoration: none; }
   a.secundary {
-    color: #16A6B6; }
+    color: #16b6B6; }
 
 a:active, a:focus, a:hover {
   color: #2e6392; }
   a:active.secundary, a:focus.secundary, a:hover.secundary {
-    color: #0191a1; }
+    color: #01a1a1; }
 
 ul, ol {
   margin-bottom: 16px;
@@ -519,13 +519,13 @@ button, input[type="submit"], input[type="button"] {
     top: 1px;
     position: relative; }
   .btn.btn-success {
-    background: #16A6B6;
+    background: #16b6B6;
     color: #fff; }
     .btn.btn-success:hover {
-      background-color: #0191a1;
+      background-color: #01a1a1;
       color: #fff; }
     .btn.btn-success:active {
-      background-color: #007c8c;
+      background-color: #008c8c;
       color: #fff;
       top: 1px;
       position: relative; }
@@ -590,16 +590,16 @@ button, input[type="submit"], input[type="button"] {
       border-color: #194e7d;
       background: none; }
     .btn.btn-empty.btn-success {
-      border: 2px solid #16A6B6;
-      color: #16A6B6;
+      border: 2px solid #16b6B6;
+      color: #16b6B6;
       background: none; }
       .btn.btn-empty.btn-success:hover {
-        color: #0191a1;
-        border-color: #0191a1;
+        color: #01a1a1;
+        border-color: #01a1a1;
         background: none; }
       .btn.btn-empty.btn-success:active {
-        color: #007c8c;
-        border-color: #007c8c;
+        color: #008c8c;
+        border-color: #008c8c;
         background: none; }
     .btn.btn-empty.btn-error {
       border: 2px solid #E74C3C;
@@ -675,7 +675,7 @@ input[type="text"].form-control, input[type="password"].form-control, input[type
   input[type="text"].form-control.warning, .warning input[type="text"].form-control, input[type="password"].form-control.warning, .warning input[type="password"].form-control, input[type="date"].form-control.warning, .warning input[type="date"].form-control, input[type="datetime"].form-control.warning, .warning input[type="datetime"].form-control, input[type="email"].form-control.warning, .warning input[type="email"].form-control, input[type="number"].form-control.warning, .warning input[type="number"].form-control, input[type="search"].form-control.warning, .warning input[type="search"].form-control, input[type="tel"].form-control.warning, .warning input[type="tel"].form-control, input[type="time"].form-control.warning, .warning input[type="time"].form-control, input[type="url"].form-control.warning, .warning input[type="url"].form-control, select.form-control.warning, .warning select.form-control, textarea.form-control.warning, .warning textarea.form-control {
     border-color: #F1C000; }
   input[type="text"].form-control.success, .success input[type="text"].form-control, input[type="password"].form-control.success, .success input[type="password"].form-control, input[type="date"].form-control.success, .success input[type="date"].form-control, input[type="datetime"].form-control.success, .success input[type="datetime"].form-control, input[type="email"].form-control.success, .success input[type="email"].form-control, input[type="number"].form-control.success, .success input[type="number"].form-control, input[type="search"].form-control.success, .success input[type="search"].form-control, input[type="tel"].form-control.success, .success input[type="tel"].form-control, input[type="time"].form-control.success, .success input[type="time"].form-control, input[type="url"].form-control.success, .success input[type="url"].form-control, select.form-control.success, .success select.form-control, textarea.form-control.success, .success textarea.form-control {
-    border-color: #16A6B6; }
+    border-color: #16b6B6; }
 
 textarea {
   height: auto;
@@ -710,12 +710,7 @@ label {
   label.warning, .warning label {
     color: #F1C000; }
   label.success, .success label {
-    color: #16A6B6; }
-
-input[type="checkbox"], input[type="radio"] {
-  font-size: 1em;
-  height: 1em;
-  width: 1em; }
+    color: #16b6B6; }
 
 ::-webkit-input-placeholder {
   color: #999; }
@@ -748,6 +743,64 @@ input[type="checkbox"], input[type="radio"] {
   max-width: 100%; }
   .form.form-horizontal .checkbox-group label, .form.form-horizontal .radio-group label {
     display: block; }
+
+.fancy-radio, .fancy-checkbox {
+  position: relative; }
+  .fancy-radio input, .fancy-checkbox input {
+    display: none; }
+  .fancy-radio span:before, .fancy-radio span:after, .fancy-checkbox span:before, .fancy-checkbox span:after {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    -webkit-transition: all 0.25s;
+            transition: all 0.25s; }
+
+.fancy-checkbox {
+  padding-left: 44px; }
+  .fancy-checkbox span:before {
+    width: 38px;
+    height: 22px;
+    border-radius: 11px;
+    top: 1px;
+    left: 0;
+    background: #c3c5c4; }
+  .fancy-checkbox span:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #fff;
+    top: 2px;
+    left: 1px; }
+  .fancy-checkbox input:checked + span:after {
+    left: 17px; }
+  .fancy-checkbox input:checked + span:before {
+    background: #16b6B6; }
+
+.fancy-radio {
+  padding-left: 28px; }
+  .fancy-radio span:before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 1px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #c3c5c4; }
+  .fancy-radio span:after {
+    border-radius: 50%;
+    background: #fff;
+    top: 11px;
+    left: 10px;
+    width: 0;
+    height: 0; }
+  .fancy-radio input:checked + span:after {
+    width: 10px;
+    height: 10px;
+    top: 6px;
+    left: 5px; }
+  .fancy-radio input:checked + span:before {
+    background: #16b6B6; }
 
 table {
   max-width: 100%;
@@ -1498,7 +1551,7 @@ th {
   color: #659ac9; }
 
 .color-success {
-  color: #16A6B6; }
+  color: #16b6B6; }
 
 .color-error {
   color: #E74C3C; }
@@ -1523,7 +1576,7 @@ th {
   color: #fff; }
 
 .bg-success {
-  background-color: #16A6B6;
+  background-color: #16b6B6;
   color: #fff; }
 
 .bg-error {

@@ -91,8 +91,9 @@
 		<ul>
 			<li><strike>Make bower component if people are interested</strike></li>
 			<li>Better documentation</li>
-			<li>CSS checkboxes/radio buttons for modern browsers and IE9+</li>
+			<li><strike>CSS checkboxes/radio buttons for modern browsers and IE9+</strike></li>
 			<li><strike>Grunt (or maybe Gulp) script for compiling SASS</strike></li>
+			<li>Changelog</li>
 		</ul>
 
 
@@ -311,13 +312,42 @@ RL.stopPropagation = function(e){
 				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
 				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
 			</div>
+			<label>Fancy checkboxes (modern browsers and IE9+)</label>
+			<div class="checkbox-group">
+				<label class="fancy-checkbox">
+					<input type="checkbox">
+					<span>Checkbox</span>
+				</label>
+				<label class="fancy-checkbox">
+					<input type="checkbox">
+					<span>Checkbox 2</span>
+				</label>
+				<label class="fancy-checkbox">
+					<input type="checkbox">
+					<span>Checkbox 3</span>
+				</label>
+			</div>
 			<label>Radios</label>
 			<div class="checkbox-group">
 				<label class=""><input type="radio" name="radio"/> Radio</label>
 				<label class=""><input type="radio" name="radio"/> Radio</label>
 				<label class=""><input type="radio" name="radio"/> Radio</label>
 			</div>
-
+			<label>Fancy radios (modern browsers and IE9+)</label>
+			<div class="checkbox-group">
+				<label class="fancy-radio">
+					<input type="radio" name="radio2">
+					<span>Radio</span>
+				</label>
+				<label class="fancy-radio">
+					<input type="radio" name="radio2">
+					<span>Radio 2</span>
+				</label>
+				<label class="fancy-radio">
+					<input type="radio" name="radio2">
+					<span>Radio 3</span>
+				</label>
+			</div>
 			<div>
 				<label>Input</label>
 				<input class="form-control" type="text" placeholder="Street name and number" />
