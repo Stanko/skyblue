@@ -765,7 +765,8 @@ label {
     border-radius: 11px;
     top: 1px;
     left: 0;
-    background: #c3c5c4; }
+    background: #c3c5c4;
+    border: 1px solid #c3c5c4; }
   .fancy-checkbox span:after {
     width: 20px;
     height: 20px;
@@ -776,7 +777,8 @@ label {
   .fancy-checkbox input:checked + span:after {
     left: 17px; }
   .fancy-checkbox input:checked + span:before {
-    background: #16b6B6; }
+    background: #16b6B6;
+    border: 1px solid #16b6B6; }
   .fancy-checkbox input:focus + span:before {
     border: 1px solid #8f9391; }
   .fancy-checkbox input:focus:checked + span:before {
