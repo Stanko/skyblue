@@ -68,7 +68,7 @@ $checkbox-checked-bg: $success-color;
 
 $radio-size: 20px;
 $radio-circle-size: 10px;
-$radio-top: ($font-size * 1.5 - $radio-size - 2) / 2;
+$radio-top: ($font-size * 1.5 - $radio-size) / 2;
 $radio-border-color: #c3c5c4;
 $radio-checked-bg: $success-color;
 $radio-circle-left: $radio-size / 2;

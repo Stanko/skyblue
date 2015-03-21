@@ -126,6 +126,7 @@ input[type="radio"]{
 .fancy-radio,
 .fancy-checkbox{
 	position: relative;
+	cursor: pointer;
 
 	input{
 		display: none;

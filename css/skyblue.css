@@ -744,7 +744,8 @@ label {
     display: block; }
 
 .fancy-radio, .fancy-checkbox {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .fancy-radio input, .fancy-checkbox input {
     display: none; }
   .fancy-radio span:before, .fancy-radio span:after, .fancy-checkbox span:before, .fancy-checkbox span:after {
@@ -782,21 +783,21 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    top: 1px;
+    top: 2px;
     left: 0;
     background: #fff;
     border: 1px solid #c3c5c4; }
   .fancy-radio span:after {
     border-radius: 50%;
     background: #fff;
-    top: 11px;
+    top: 12px;
     left: 10px;
     width: 0;
     height: 0; }
   .fancy-radio input:checked + span:after {
     width: 10px;
     height: 10px;
-    top: 6px;
+    top: 7px;
     left: 5px; }
   .fancy-radio input:checked + span:before {
     background: #16b6B6; }
