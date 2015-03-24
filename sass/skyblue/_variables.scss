@@ -1,11 +1,11 @@
 // Grays
-$gray7:				#111;
-$gray6:				#333;
-$gray5:				#555;
-$gray4:				#777;
-$gray3:				#999;
-$gray2:				#ddd;
-$gray1:				#f7f7f7;
+$gray7:				#111 !default;
+$gray6:				#333 !default;
+$gray5:				#555 !default;
+$gray4:				#777 !default;
+$gray3:				#999 !default;
+$gray2:				#ddd !default;
+$gray1:				#f7f7f7 !default;
 
 // Maybe use these?
 // grays
@@ -22,79 +22,79 @@ $gray1:				#f7f7f7;
 // violet #9b59b6 #8e44ad
 
 // Colors
-$body-background:		#FbFbFb;
-$text-color:			#555;
+$body-background:		#FbFbFb !default;
+$text-color:			#555 !default;
 
-$main-color:			#4378a7;
-$success-color:			#16b6B6;
-$error-color:			#E74C3C;
-$warning-color:			#F1C000;
-$light-color:			#ecf0f1;
-$dark-color:			#252428;
-$main-light-color:		#72A8D6;
-$main-grey-color:		#7F8184;
+$main-color:			#4378a7 !default;
+$success-color:			#16b6B6 !default;
+$error-color:			#E74C3C !default;
+$warning-color:			#F1C000 !default;
+$light-color:			#ecf0f1 !default;
+$dark-color:			#252428 !default;
+$main-light-color:		#72A8D6 !default;
+$main-grey-color:		#7F8184 !default;
 
-$navigation-color:		#2c3e50;
+$navigation-color:		#2c3e50 !default;
 
-$color-diff:			#151515;
+$color-diff:			#151515 !default;
 
 // Defaults
-$font-family:			'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size:				16px;
-$font-weight:			normal;
-$line-height:			1.5em;
-$bold:					700;
+$font-family:			'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size:				16px !default;
+$font-weight:			normal !default;
+$line-height:			1.5em !default;
+$bold:					700 !default;
 
-$transition-time:		0.25s;
+$transition-time:		0.25s !default;
 
 // Code
-$pre-font-family:		"Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace;
-$pre-font-size:			15px;
+$pre-font-family:		"Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$pre-font-size:			15px !default;
 
 
 // Tables
-$table-border-color:	$gray2;
-$table-background:		$gray1;
-$table-background-hover:lighten($main-color, 10);
-$table-color-hover:		#fff;
+$table-border-color:	$gray2 !default;
+$table-background:		$gray1 !default;
+$table-background-hover:lighten($main-color, 10) !default;
+$table-color-hover:		#fff !default;
 
 // Forms
-$checkbox-height: 22px;
-$checkbox-width: 38px;
-$checkbox-circle-size: $checkbox-height - 2;
-$checkbox-top: ($font-size * 1.5 - $checkbox-height) / 2;
-$checkbox-bg: #c3c5c4;
-$checkbox-checked-bg: $success-color;
+$checkbox-height: 22px !default;
+$checkbox-width: 38px !default;
+$checkbox-circle-size: $checkbox-height - 2 !default;
+$checkbox-top: ($font-size * 1.5 - $checkbox-height) / 2 !default;
+$checkbox-bg: #c3c5c4 !default;
+$checkbox-checked-bg: $success-color !default;
 
-$radio-size: 20px;
-$radio-circle-size: 10px;
-$radio-top: ($font-size * 1.5 - $radio-size) / 2;
-$radio-border-color: #c3c5c4;
-$radio-checked-bg: $success-color;
-$radio-circle-left: $radio-size / 2;
-$radio-circle-top: $radio-circle-left + $radio-top;
-$radio-circle-active-left: ($radio-size - $radio-circle-size) / 2;
-$radio-circle-active-top: $radio-circle-active-left + $radio-top;
+$radio-size: 20px !default;
+$radio-circle-size: 10px !default;
+$radio-top: ($font-size * 1.5 - $radio-size) / 2 !default;
+$radio-border-color: #c3c5c4 !default;
+$radio-checked-bg: $success-color !default;
+$radio-circle-left: $radio-size / 2 !default;
+$radio-circle-top: $radio-circle-left + $radio-top !default;
+$radio-circle-active-left: ($radio-size - $radio-circle-size) / 2 !default;
+$radio-circle-active-top: $radio-circle-active-left + $radio-top !default;
 
 // Grid
-$grid-columns:			12;
-$grid-padding-width:	40px;
-$grid-unit-width:		100% / $grid-columns;
+$grid-columns:			12 !default;
+$grid-padding-width:	40px !default;
+$grid-unit-width:		100% / $grid-columns !default;
 
 
-$tablet-portrait-breakpoint:	480px;
-$tablet-breakpoint:				768px;
-$desktop-breakpoint:			970px;
-$large-desktop-breakpoint:		1200px;
+$tablet-portrait-breakpoint:	480px !default;
+$tablet-breakpoint:				768px !default;
+$desktop-breakpoint:			970px !default;
+$large-desktop-breakpoint:		1200px !default;
 
-$container-width-tablet:		720px;
-$container-width-desktop:		940px;
-$container-width-large-desktop:	1150px;
+$container-width-tablet:		720px !default;
+$container-width-desktop:		940px !default;
+$container-width-large-desktop:	1150px !default;
 
 
 // Helpers
-$border-radius:			3px;
-$big-border-radius:		100px;
+$border-radius:			3px !default;
+$big-border-radius:		100px !default;
 
 //Custom colors
-$white: #fff;
+$white: #fff !default;
