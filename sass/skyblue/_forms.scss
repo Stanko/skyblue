@@ -63,13 +63,13 @@ select{
 
 // Hack for webkit only
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-	select{
+	select, select.form-control{
 		@include select();
 	}
 }
 // Hack for firefox
 @-moz-document url-prefix() {
-	select{
+	select, select.form-control{
 		@include select();
 	}
 }
