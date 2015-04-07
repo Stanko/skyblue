@@ -28,14 +28,15 @@
 	}
 }
 
-@for $i from 1 through $grid-columns {
+@for $i from 0 through $grid-columns {
 	.xs-#{$i}{ width: $i*$grid-unit-width; float: left; }
 	.offset-xs-#{$i}{ margin-left: $i*$grid-unit-width; }
 }
 
+
 // Responsive: Tablets portrait and up
-@media screen and (min-width: $tablet-portrait-breakpoint) {
-	@for $i from 1 through $grid-columns {
+@include sm {
+	@for $i from 0 through $grid-columns {
 		.sm-#{$i}{ width: $i*$grid-unit-width; float: left; }
 		.offset-sm-#{$i}{ margin-left: $i*$grid-unit-width; }
 	}
@@ -43,36 +44,36 @@
 
 
 // Responsive: Tablets and up
-@media screen and (min-width: $tablet-breakpoint) {
+@include md {
 	.container {
-		max-width: $container-width-tablet;
+		max-width: $container-width-md;
 	}
 
-	@for $i from 1 through $grid-columns {
+	@for $i from 0 through $grid-columns {
 		.md-#{$i}{ width: $i*$grid-unit-width; float: left; }
 		.offset-md-#{$i}{ margin-left: $i*$grid-unit-width; }
 	}
 }
 
 // Responsive: Desktops and up
-@media screen and (min-width: $desktop-breakpoint) {
+@include lg {
 	.container {
-		max-width: $container-width-desktop;
+		max-width: $container-width-lg;
 	}
 
-	@for $i from 1 through $grid-columns {
+	@for $i from 0 through $grid-columns {
 		.lg-#{$i}{ width: $i*$grid-unit-width; float: left; }
 		.offset-lg-#{$i}{ margin-left: $i*$grid-unit-width; }
 	}
 }
 
-// // Responsive: Large desktops and up
-// @media screen and (min-width: $large-desktop-breakpoint) {
-// 	.container {
-// 		max-width: $container-width-large-desktop;
-// 	}
-// 	@for $i from 1 through $grid-columns {
-// 		.xl-#{$i}{ width: $i*$grid-unit-width; float: left; }
-// 		.offset-xl-#{$i}{ margin-left: $i*$grid-unit-width; }
-// 	}
-// }
+// Responsive: Large desktops and up
+@include xl {
+	.container {
+		max-width: $container-width-xl;
+	}
+	@for $i from 0 through $grid-columns {
+		.xl-#{$i}{ width: $i*$grid-unit-width; float: left; }
+		.offset-xl-#{$i}{ margin-left: $i*$grid-unit-width; }
+	}
+}

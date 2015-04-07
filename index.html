@@ -1,149 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8" >
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 
 	<title>SkyBlue CSS Framework</title>
 
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500italic,500' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/skyblue.css">
-	<link rel="stylesheet" href="css/demo.css">
+
+	<link rel="stylesheet" href="demo/css/docs.css">
+	<link rel="stylesheet" href="demo/google-code-prettify/prettify.css">
+
 
 	<!--[if lt IE 9]>
-		<script type="text/javascript" src="js/ie/htmlshiv.js"></script>
-		<script type="text/javascript" src="js/ie/respond.src.js"></script>
+		<script type="text/javascript" src="demo/ie/htmlshiv.js"></script>
+		<script type="text/javascript" src="demo/ie/respond.src.js"></script>
 	<![endif]-->
 </head>
-<body>
-	<div class="bg-dark padding-top-30">
-		<div class="container text-center">
-			<h1>SkyBlue CSS Framework</h1>
+<body onload="prettyPrint()">
 
-			<a class="btn btn-big btn-success" href="https://github.com/Stanko/skyblue">GitHub</a>
-			<a class="btn btn-big btn-info" href="https://github.com/Stanko/skyblue/archive/gh-pages.zip">Download .zip</a>
+<div class="bg-dark padding-y-20">
+	<div class="container text-center">
+		<h1>SkyBlue CSS Framework</h1>
 
-			<div>
-				By Stanko @ <a href="http://null-object.com">Null Object</a>
-			</div>
-
-			<div class="nav padding-y-15">
-				<a class="btn btn-dark btn-small" href="#grid">Grid</a>
-				<a class="btn btn-dark btn-small" href="#typography" class="active">Typography</a>
-				<a class="btn btn-dark btn-small" href="#tables">Tables</a>
-				<a class="btn btn-dark btn-small" href="#forms">Forms</a>
-				<a class="btn btn-dark btn-small" href="#buttons">Buttons</a>
-				<a class="btn btn-dark btn-small" href="#icons">Icons</a>
-			</div>
+		<a class="btn btn-success" href="https://github.com/Stanko/skyblue">GitHub</a>
+		<a class="btn btn-info" href="https://github.com/Stanko/skyblue/archive/gh-pages.zip">Download .zip</a>
+		<div>
+			By Stanko @ <a href="http://null-object.com">Null Object</a>
 		</div>
 	</div>
-	<div class="container margin-top-30">
-		<h2>About SkyBlue</h2>
-
-		<div class="row">
-			<div class="col md-6">
-				<p>
-					This is not Bootstrap killer, I just think Bootstrap is way too bloated.
-					SkyBlue is a minimal framework that is meant to be starting point for my projects.
-				</p>
-				<p class="grid-info">
-					Uses grid system with 12 columns. Add <code>col</code> class
-					and responsive <code>xs-#</code> <code>sm-#</code>
-					<code>md-#</code> <code>lg-#</code>. Offsets are also
-					available by <code>offset-xm-#</code> <code>offset-sm-#</code>
-					<code>offset-md-#</code> <code>offset-lg-#</code> classes.
-				</p>
-
-				<p>
-					I made it for my own needs. Feel free to use it and abuse it,
-					in both free and commercial products.
-				</p>
-			</div>
-			<div class="col md-6">
-				<p class="grid-info">
-					SkyBlue is available on bower:<br>
-					<code>bower install skyblue</code>
-				</p>
-				<p>
-					Framework is made in SASS and source is available on
-					<a href="https://github.com/Stanko/skyblue">Git-hub</a>.
-				</p>
-				<p>
-					Some websites made using this framework:
-				</p>
-				<ul>
-					<li><a href="http://null-object.com">Null Object</a></li>
-					<li><a href="http://haciendarodizio.com">Hacienda Rodizio</a></li>
-					<li><a href="http://esmithy.com">eSmithy</a></li>
-					<li><a href="http://teslasmarthouse.com">Tesla Smart House</a></li>
-				</ul>
-				<p>
-					If you want to list your site/project please contact me.
-				</p>
-				<p>
-					Licenced under <a href="https://github.com/Stanko/skyblue/blob/gh-pages/LICENSE.md">MIT license</a>.
-				</p>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col md-3">
+			<div class="sidemenu js-sidemenu">
+				<h5>SkyBlue components</h5>
+				<div>
+					<a href="#about">About</a>
+					<a href="#grid">Grid</a>
+					<a href="#typography" class="active">Typography</a>
+					<a href="#tables">Tables</a>
+					<a href="#forms">Forms</a>
+					<a href="#buttons">Buttons</a>
+					<a href="#helpers">Helpers</a>
+					<a href="#responsive">Responsive</a>
+					<a href="#icons">Icons</a>
+				</div>
 			</div>
 		</div>
+		<div class="col md-9 float-right">
+			<h2 id="about">About</h2>
+			<p>
+				This is not Bootstrap killer, I just think Bootstrap is way too bloated.
+				SkyBlue is a minimal framework that is meant to be starting point for my projects.
+			</p>
+			<p>
+				Uses grid system with 12 columns.
+			</p>
 
-		<h4>TODO</h4>
-		<ul>
-			<li><strike>Make bower component if people are interested</strike></li>
-			<li>Better documentation</li>
-			<li><strike>CSS checkboxes/radio buttons for modern browsers and IE9+</strike></li>
-			<li><strike>Grunt (or maybe Gulp) script for compiling SASS</strike></li>
-			<li>Changelog</li>
-		</ul>
+			<p>
+				I made it for my own needs. Feel free to use it and abuse it,
+				in both free and commercial products.
+			</p>
 
+			<p>
+				SkyBlue is available on bower:<br>
+				<code>bower install skyblue</code>
+			</p>
+			<p>
+				Framework is made in SASS and source is available on
+				<a href="https://github.com/Stanko/skyblue">GitHub</a>.
+			</p>
+			<p>
+				Some websites made using this framework:
+			</p>
+			<ul>
+				<li><a href="http://null-object.com">Null Object</a></li>
+				<li><a href="http://haciendarodizio.com">Hacienda Rodizio</a></li>
+				<li><a href="http://esmithy.com">eSmithy</a></li>
+				<li><a href="http://teslasmarthouse.com">Tesla Smart House</a></li>
+			</ul>
+			<p>
+				If you want to list your site/project please contact me.
+			</p>
+			<p>
+				Licenced under <a href="https://github.com/Stanko/skyblue/blob/gh-pages/LICENSE.md">MIT license</a>.
+			</p>
 
-		<h2 id="grid" class="margin-top-50">Grid</h2>
-		<div class="row dummy">
-			<div class="col md-1"><div class="c1">1</div></div>
-			<div class="col md-11"><div class="c1">11</div></div>
-		</div>
-		<div class="row dummy">
-			<div class="col md-2"><div class="c2">2</div></div>
-			<div class="col md-10"><div class="c2">10</div></div>
-		</div>
-		<div class="row dummy">
-			<div class="col md-3"><div class="c1">3</div></div>
-			<div class="col md-9"><div class="c1">9</div></div>
-		</div>
-		<div class="row dummy">
-			<div class="col md-4"><div class="c2">4</div></div>
-			<div class="col md-8"><div class="c2">8</div></div>
-		</div>
-		<div class="row dummy">
-			<div class="col md-5"><div class="c1">5</div></div>
-			<div class="col md-7"><div class="c1">7</div></div>
-		</div>
-		<div class="row dummy">
-			<div class="col md-6"><div class="c2">6</div></div>
-			<div class="col md-6"><div class="c2">6</div></div>
-		</div>
+			<hr>
+
+			<h2 id="grid">Grid</h2>
+
+			<p>
+				Add <code>col</code> class to every column. Size it using responsive classes,
+				where <code>#</code> is a number from 0 to 12
+				<br>
+				<code>xs-#</code>
+				<code>sm-#</code>
+				<code>md-#</code>
+				<code>lg-#</code>
+				<code>xl-#</code>
+			</p>
+
+				Offsets are also available by adding<br>
+				<code>offset-xm-#</code> <code>offset-sm-#</code>
+				<code>offset-md-#</code> <code>offset-lg-#</code>
+				<code>offset-xl-#</code>
+			</p>
+
+			<div class="row row-border margin-bottom-20">
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+				<div class="col md-1">1</div>
+			</div>
+			<div class="row row-border margin-bottom-20">
+				<div class="col md-4">4</div>
+				<div class="col md-4">4</div>
+				<div class="col md-4">4</div>
+			</div>
+			<div class="row row-border margin-bottom-20">
+				<div class="col md-6">6</div>
+				<div class="col md-6">6</div>
+			</div>
+
+<pre class="prettyprint">
+&lt;div class="row">
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+    &lt;div class="col md-1">1&lt;/div>
+&lt;/div>
+&lt;div class="row">
+    &lt;div class="col md-4">4&lt;/div>
+    &lt;div class="col md-4">4&lt;/div>
+    &lt;div class="col md-4">4&lt;/div>
+&lt;/div>
+&lt;div class="row">
+    &lt;div class="col md-6">6&lt;/div>
+    &lt;div class="col md-6">6&lt;/div>
+&lt;/div>
+</pre>
+
+			<h3>Actuall .cel size with padding included</h3>
+			<div class="row row-color">
+				<div class="col md-1"><div class="c1">1</div></div>
+				<div class="col md-11"><div class="c1">11</div></div>
+			</div>
+			<div class="row row-color">
+				<div class="col md-4"><div class="c2">4</div></div>
+				<div class="col md-8"><div class="c2">8</div></div>
+			</div>
+			<div class="row row-color">
+				<div class="col md-5"><div class="c1">5</div></div>
+				<div class="col md-7"><div class="c1">7</div></div>
+			</div>
+			<div class="row row-color">
+				<div class="col md-6"><div class="c2">6</div></div>
+				<div class="col md-6"><div class="c2">6</div></div>
+			</div>
+
+<pre class="prettyprint">
+&lt;div class="row row-color">
+    &lt;div class="col md-1">&lt;div>1&lt;/div>&lt;/div>
+    &lt;div class="col md-11">&lt;div>11&lt;/div>&lt;/div>
+&lt;/div>
+&lt;div class="row row-color">
+    &lt;div class="col md-4">&lt;div>4&lt;/div>&lt;/div>
+    &lt;div class="col md-8">&lt;div>8&lt;/div>&lt;/div>
+&lt;/div>
+&lt;div class="row row-color">
+    &lt;div class="col md-5">&lt;div>5&lt;/div>&lt;/div>
+    &lt;div class="col md-7">&lt;div>7&lt;/div>&lt;/div>
+&lt;/div>
+&lt;div class="row row-color">
+    &lt;div class="col md-6">&lt;div>6&lt;/div>&lt;/div>
+    &lt;div class="col md-6">&lt;div>6&lt;/div>&lt;/div>
+&lt;/div>
+</pre>
 
 		<h3>Nesting grid</h3>
-		<div class="row dummy">
+
+		<div class="row row-border margin-bottom-20">
 			<div class="col md-8">
-				<div class="margin-bottom-15">xs-4 inside md-8</div>
+				md-8
 				<div class="row">
-					<div class="col xs-4"><div class="c1">xs-4</div></div>
-					<div class="col xs-4"><div class="c1">xs-4</div></div>
-					<div class="col xs-4"><div class="c1">xs-4</div></div>
+					<div class="col xs-6">xs-6</div>
+					<div class="col xs-6">xs-6</div>
 				</div>
 			</div>
 			<div class="col md-4">
-				<div class="margin-bottom-15">xs-4 inside md-4</div>
+				md-4
 				<div class="row">
-					<div class="col xs-4"><div class="c2">xs-4</div></div>
-					<div class="col xs-4"><div class="c2">xs-4</div></div>
-					<div class="col xs-4"><div class="c2">xs-4</div></div>
+					<div class="col xs-4">xs-4</div>
+					<div class="col xs-4">xs-4</div>
+					<div class="col xs-4">xs-4</div>
 				</div>
 			</div>
 		</div>
 
-		<hr/>
+<pre class="prettyprint">
+&lt;div class="row">
+    &lt;div class="col md-8">
+        md-8&lt;
+        &lt;div class="row">
+            &lt;div class="col xs-6">xs-6&lt;/div>
+            &lt;div class="col xs-6">xs-6&lt;/div>
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="col md-4">
+        md-4&lt;
+        &lt;div class="row">
+            &lt;div class="col xs-4">xs-4&lt;/div>
+            &lt;div class="col xs-4">xs-4&lt;/div>
+            &lt;div class="col xs-4">xs-4&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</pre>
+
+
+		<hr>
 
 		<h2 id="typography">Typography</h2>
 
@@ -156,7 +250,7 @@
 		<div>
 			<h3>Headers</h3>
 			<h1>Header 1</h1>
-			<h2>Header 2</h2>
+			<h2 class="padding-top-0">Header 2</h2>
 			<h3>Header 3</h3>
 			<h4>Header 4</h4>
 			<h5>Header 5</h5>
@@ -164,7 +258,7 @@
 		</div>
 
 		<div>
-			<h3>Unordered list</h3>
+			<h3>Unordered list <span class="color-main">*</span></h3>
 			<ul>
 				<li>Cras mattis consectetur purus sit amet fermentum.</li>
 				<li>
@@ -178,7 +272,7 @@
 				<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
 			</ul>
 
-			<h3>Ordered list</h3>
+			<h3>Ordered list <span class="color-main">*</span></h3>
 			<ol>
 				<li>Cras mattis consectetur purus sit amet fermentum.</li>
 				<li>
@@ -191,13 +285,23 @@
 				</li>
 				<li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
 			</ol>
+
+			<p><span class="color-main">*</span> Use <code>.unstyled</code> class to remove all styles from lists</p>
 		</div>
 
 		<div>
 			<h3>Blockquote</h3>
 			<blockquote>
-				<p>Very smart blockquote!</p>
-				<cite>Smarty, Smart Person</cite>
+				<p>
+					Information is not knowledge.<br>
+					Knowledge is not wisdom.<br>
+					Wisdom is not truth.<br>
+					Truth is not beauty.<br>
+					Beauty is not love.<br>
+					Love is not music.<br>
+					Music is THE BEST.
+				</p>
+				<cite>Frank Zappa</cite>
 			</blockquote>
 
 			<h3>Code</h3>
@@ -221,7 +325,7 @@ RL.stopPropagation = function(e){
 			</p>
 		</div>
 
-		<hr/>
+		<hr>
 
 		<h2 id="tables">Tables</h2>
 		<div class="row">
@@ -256,6 +360,28 @@ RL.stopPropagation = function(e){
 						</tr>
 					</tbody>
 				</table>
+<pre class="prettyprint">
+&lt;table class="table">
+    &lt;thead>
+        &lt;tr>
+            &lt;th>#&lt;/th>
+            &lt;th>First Name&lt;/th>
+            &lt;th>Last Name&lt;/th>
+            &lt;th>User&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>1&lt;/td>
+            &lt;td>Stanko&lt;/td>
+            &lt;td>Tadic&lt;/td>
+            &lt;td>stanko&lt;/td>
+        &lt;/tr>
+        ...
+    &lt;/tbody>
+&lt;/table>
+</pre>
+
 				<h3>Table <small>striped, bordered, hover</small></h3>
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
@@ -287,15 +413,66 @@ RL.stopPropagation = function(e){
 						</tr>
 					</tbody>
 				</table>
+<pre class="prettyprint">
+&lt;table class="table table-striped table-bordered table-hover">
+    ...
+&lt;/table>
+</pre>
 			</div>
 		</div>
 
-		<hr/>
+		<hr>
 
 		<h2 id="forms"> Forms </h2>
+		<p>
+			For text inputs, selects and textarea, just use class <code>form-control</code>.
+		</p>
+
 		<form class="form">
+			<div>
+				<label>Input</label>
+				<input class="form-control" type="text" placeholder="Street name and number" >
+			</div>
+			<div  class="error">
+				<label>Input - error</label>
+				<input class="form-control" type="text" placeholder="Postal code" value="Error" >
+			</div>
+			<div class="warning">
+				<label>Input - warning</label>
+				<input class="form-control" type="text" placeholder="Postal code" value="Warning"  >
+			</div>
+			<div class="success">
+				<label>Input - success</label>
+				<input class="form-control" type="text" placeholder="Postal code" value="Success" >
+			</div>
+<pre class="prettyprint">
+&lt;div>
+    &lt;label>Input&lt;/label>
+    &lt;input class="form-control" type="text">
+&lt;/div>
+&lt;div  class="error">
+    &lt;label>Input - error&lt;/label>
+    &lt;input class="form-control" type="text">
+&lt;/div>
+&lt;div class="warning">
+    &lt;label>Input - warning&lt;/label>
+    &lt;input class="form-control" type="text">
+&lt;/div>
+&lt;div class="success">
+    &lt;label>Input - success&lt;/label>
+    &lt;input class="form-control" type="text">
+&lt;/div>
+</pre>
+
+			<label>Textarea</label>
+			<textarea class="form-control"></textarea>
+
+<pre class="prettyprint">
+&lt;textarea class="form-control">&lt;/textarea>
+</pre>
+
 			<label>Select box</label>
-			<select class="chosen-select form-control persons">
+			<select class="form-control">
 				<option> 2 persons </option>
 				<option> 3 persons </option>
 				<option> 4 persons </option>
@@ -306,14 +483,26 @@ RL.stopPropagation = function(e){
 				<option> 9 persons </option>
 				<option> 10 persons </option>
 			</select>
-
+<pre class="prettyprint">
+&lt;select class="form-control">
+    &lt;option> 2 persons &lt;/option>
+    &lt;option> 3 persons &lt;/option>
+    ...
+&lt;/select>
+</pre>
 			<label>Checkboxes</label>
-			<div class="checkbox-group">
-				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
-				<label class=""><input type="checkbox" class="skyblue-checkbox" /> Checkbox</label>
+			<div class="margin-bottom-20">
+				<label><input type="checkbox"> Checkbox</label>
+				<label><input type="checkbox"> Checkbox</label>
 			</div>
+<pre class="prettyprint">
+&lt;div>
+    &lt;label>&lt;input type="checkbox"> Checkbox&lt;/label>
+    &lt;label>&lt;input type="checkbox"> Checkbox&lt;/label>
+&lt;/div>
+</pre>
 			<label>Fancy checkboxes (modern browsers and IE9+)</label>
-			<div class="checkbox-group">
+			<div class="margin-bottom-20">
 				<label class="fancy-checkbox">
 					<input type="checkbox">
 					<span>Checkbox</span>
@@ -327,14 +516,27 @@ RL.stopPropagation = function(e){
 					<span>Checkbox 3</span>
 				</label>
 			</div>
+<pre class="prettyprint">
+&lt;label class="fancy-checkbox">
+    &lt;input type="checkbox">
+    &lt;span>Checkbox&lt;/span>
+&lt;/label>
+</pre>
+
 			<label>Radios</label>
-			<div class="checkbox-group">
-				<label class=""><input type="radio" name="radio"/> Radio</label>
-				<label class=""><input type="radio" name="radio"/> Radio</label>
-				<label class=""><input type="radio" name="radio"/> Radio</label>
+			<div>
+				<label><input type="radio" name="radio"> Radio</label>
+				<label><input type="radio" name="radio"> Radio</label>
+				<label><input type="radio" name="radio"> Radio</label>
 			</div>
+<pre class="prettyprint">
+&lt;div>
+    &lt;label>&lt;input type="checkbox"> Checkbox&lt;/label>
+    &lt;label>&lt;input type="checkbox"> Checkbox&lt;/label>
+&lt;/div>
+</pre>
 			<label>Fancy radios (modern browsers and IE9+)</label>
-			<div class="checkbox-group">
+			<div class="margin-bottom-20">
 				<label class="fancy-radio">
 					<input type="radio" name="radio2">
 					<span>Radio</span>
@@ -348,88 +550,344 @@ RL.stopPropagation = function(e){
 					<span>Radio 3</span>
 				</label>
 			</div>
-			<div>
-				<label>Input</label>
-				<input class="form-control" type="text" placeholder="Street name and number" />
-			</div>
-			<div  class="error">
-				<label>Input - error</label>
-				<input class="form-control" type="text" placeholder="Postal code" value="Error" />
-			</div>
-			<div class="warning">
-				<label>Input - warning</label>
-				<input class="form-control" type="text" placeholder="Postal code" value="Warning"  />
-			</div>
-			<div class="success">
-				<label>Input - success</label>
-				<input class="form-control" type="text" placeholder="Postal code" value="Success" />
-			</div>
+<pre class="prettyprint">
+&lt;label class="fancy-radio">
+    &lt;input type="radio">
+    &lt;span>Radio&lt;/span>
+&lt;/label>
+</pre>
 
-			<label class="width4">Textarea</label>
-			<textarea class="form-control"></textarea>
 
 			<div>
-				<button class="btn" href="javascript:void(0)">Button</button>
+				<button class="btn">Button</button>
 			</div>
 		</form>
 
 		<p>For horizontal forms just use grid</p>
 
-		<hr/>
+		<hr>
 
 		<h2 id="buttons">Buttons</h2>
 		<div>
-			<a class="btn" href="javascript:void(0)">Button</a>
-			<a class="btn btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-dark" href="javascript:void(0)">Dark</a>
+			<a class="btn">Button</a>
+			<a class="btn btn-success">Success</a>
+			<a class="btn btn-error">Error</a>
+			<a class="btn btn-warning">Warning</a>
+			<a class="btn btn-light">Light</a>
+			<a class="btn btn-dark">Dark</a>
 		</div>
-		<div>
-			<a class="btn btn-empty" href="javascript:void(0)">Empty btn</a>
-			<a class="btn btn-empty btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-empty btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-empty btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-empty btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-empty btn-dark" href="javascript:void(0)">Dark</a>
-		</div>
-		<h3>Small btns</h3>
-		<div>
-			<a class="btn btn-small" href="javascript:void(0)">Button</a>
-			<a class="btn btn-small btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-small btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-small btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-small btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-small btn-dark" href="javascript:void(0)">Dark</a>
-		</div>
-		<div>
-			<a class="btn btn-empty btn-small" href="javascript:void(0)">Button</a>
-			<a class="btn btn-empty btn-small btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-empty btn-small btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-empty btn-small btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-empty btn-small btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-empty btn-small btn-dark" href="javascript:void(0)">Dark</a>
-		</div>
-		<h3>Big btns</h3>
-		<div>
-			<a class="btn btn-big" href="javascript:void(0)">Button</a>
-			<a class="btn btn-big btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-big btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-big btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-big btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-big btn-dark" href="javascript:void(0)">Dark</a>
-		</div>
-		<div>
-			<a class="btn btn-empty btn-big" href="javascript:void(0)">Button</a>
-			<a class="btn btn-empty btn-big btn-success" href="javascript:void(0)">Success</a>
-			<a class="btn btn-empty btn-big btn-error" href="javascript:void(0)">Error</a>
-			<a class="btn btn-empty btn-big btn-warning" href="javascript:void(0)">Warning</a>
-			<a class="btn btn-empty btn-big btn-light" href="javascript:void(0)">Light</a>
-			<a class="btn btn-empty btn-big btn-dark" href="javascript:void(0)">Dark</a>
-		</div>
+<pre class="prettyprint">
+&lt;a class="btn">Button&lt;/a>
+&lt;a class="btn btn-success">Success&lt;/a>
+&lt;a class="btn btn-error">Error&lt;/a>
+&lt;a class="btn btn-warning">Warning&lt;/a>
+&lt;a class="btn btn-light">Light&lt;/a>
+&lt;a class="btn btn-dark">Dark&lt;/a>
+</pre>
 
-		<hr/>
+		<h3>Empty buttons</h3>
+		<p>Just add <code>btn-empty</code> class.
+		<div>
+			<a class="btn btn-empty">Empty btn</a>
+			<a class="btn btn-empty btn-success">Success</a>
+			<a class="btn btn-empty btn-error">Error</a>
+			<a class="btn btn-empty btn-warning">Warning</a>
+			<a class="btn btn-empty btn-light">Light</a>
+			<a class="btn btn-empty btn-dark">Dark</a>
+		</div>
+<pre class="prettyprint">
+&lt;a class="btn btn-empty">Button&lt;/a>
+</pre>
+		<h3>Small buttons</h3>
+		<p>Just add <code>btn-sm</code> class.
+		<div>
+			<a class="btn btn-sm">Button</a>
+			<a class="btn btn-sm btn-success">Success</a>
+			<a class="btn btn-sm btn-error">Error</a>
+			<a class="btn btn-sm btn-warning">Warning</a>
+			<a class="btn btn-sm btn-light">Light</a>
+			<a class="btn btn-sm btn-dark">Dark</a>
+		</div>
+		<div>
+			<a class="btn btn-empty btn-sm">Button</a>
+			<a class="btn btn-empty btn-sm btn-success">Success</a>
+			<a class="btn btn-empty btn-sm btn-error">Error</a>
+			<a class="btn btn-empty btn-sm btn-warning">Warning</a>
+			<a class="btn btn-empty btn-sm btn-light">Light</a>
+			<a class="btn btn-empty btn-sm btn-dark">Dark</a>
+		</div>
+		<h3>Big buttons</h3>
+		<p>Just add <code>btn-lg</code> class.
+		<div>
+			<a class="btn btn-lg">Button</a>
+			<a class="btn btn-lg btn-success">Success</a>
+			<a class="btn btn-lg btn-error">Error</a>
+			<a class="btn btn-lg btn-warning">Warning</a>
+			<a class="btn btn-lg btn-light">Light</a>
+			<a class="btn btn-lg btn-dark">Dark</a>
+		</div>
+		<div>
+			<a class="btn btn-empty btn-lg">Button</a>
+			<a class="btn btn-empty btn-lg btn-success">Success</a>
+			<a class="btn btn-empty btn-lg btn-error">Error</a>
+			<a class="btn btn-empty btn-lg btn-warning">Warning</a>
+			<a class="btn btn-empty btn-lg btn-light">Light</a>
+			<a class="btn btn-empty btn-lg btn-dark">Dark</a>
+		</div>
+<pre class="prettyprint">
+&lt;a class="btn btn-lg">Button&lt;/a>
+</pre>
+
+		<hr>
+
+
+		<h2 id="helpers">Helpers</h2>
+
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Class name</th>
+					<th>What it does</th>
+					<th>Notes</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>margin-<span class="color-error">#</span></code></td>
+					<td>margin: <span class="color-error">#</span>px</td>
+					<td>Where <span class="color-error">#</span> can be 0, 5, 10, 15, 20, 25, 30, 40, 50, 100</td>
+				</tr>
+				<tr>
+					<td><code>margin-top-<span class="color-error">#</span></code></td>
+					<td>margin-top: <span class="color-error">#</span>px</td>
+					<td>Same works for "bottom", "left", "right".</td>
+				</tr>
+				<tr>
+					<td><code>margin-x-<span class="color-error">#</span></code></td>
+					<td>margin-left: <span class="color-error">#</span>px; margin-right: <span class="color-error">#</span>px</td>
+					<td>Same works for "y".</td>
+				</tr>
+				<tr>
+					<td><code>padding-<span class="color-error">#</span></code></td>
+					<td>padding: <span class="color-error">#</span>px</td>
+					<td>Where <span class="color-error">#</span> can be 0, 5, 10, 15, 20, 25, 30, 40, 50, 100</td>
+				</tr>
+				<tr>
+					<td><code>padding-top-<span class="color-error">#</span></code></td>
+					<td>padding-top: <span class="color-error">#</span>px</td>
+					<td>Same works for "bottom", "left", "right".</td>
+				</tr>
+				<tr>
+					<td><code>padding-x-<span class="color-error">#</span></code></td>
+					<td>padding-left: <span class="color-error">#</span>px; padding-right: <span class="color-error">#</span>px</td>
+					<td>Same works for "y".</td>
+				</tr>
+
+				<tr>
+					<td><code>float-left</code></td>
+					<td>float: left;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>float-right</code></td>
+					<td>float: right;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>float-none</code></td>
+					<td>float: none;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>clearfix</code></td>
+					<td>@include clearfix;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>relative</code></td>
+					<td>position: relative;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>absolute</code></td>
+					<td>position: absolute;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>text-center</code></td>
+					<td>text-align: center;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>text-left</code></td>
+					<td>text-align: left;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>text-right</code></td>
+					<td>text-align: right;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>text-justify</code></td>
+					<td>text-align: justify;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>uppercase</code></td>
+					<td>text-transform: uppercase;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-main</code></td>
+					<td>color: $main-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-success</code></td>
+					<td>color: $success-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-error</code></td>
+					<td>color: $error-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-warning</code></td>
+					<td>color: $warning-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-light</code></td>
+					<td>color: $light-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-dark</code></td>
+					<td>color: $dark-color;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-black</code></td>
+					<td>color: #000;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>color-white </code></td>
+					<td>color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-main</code></td>
+					<td>background-color: $main-color; color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-success</code></td>
+					<td>background-color: $success-color; color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-error</code></td>
+					<td>background-color: $error-color; color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-warning</code></td>
+					<td>background-color: $warning-color; color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-light</code></td>
+					<td>background-color: $light-color; color: $gray3;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-dark</code></td>
+					<td>background-color: $dark-color; color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>bg-white</code></td>
+					<td>background-color: #fff;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>block</code></td>
+					<td>display: block;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>inline-block</code></td>
+					<td>display: inline-block;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>inline</code></td>
+					<td>display: inline;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>hide</code></td>
+					<td>display: none;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>full-width</code></td>
+					<td>width: 100%;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>middle</code></td>
+					<td>vertical-align: middle;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>radius-3</code></td>
+					<td>border-radius: 3px;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>radius-5</code></td>
+					<td>border-radius: 5px;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>radius-10</code></td>
+					<td>border-radius: 10px;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>radius-15</code></td>
+					<td>border-radius: 15px;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>radius-big</code></td>
+					<td>border-radius: $big-border-radius;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>no-border</code></td>
+					<td>border: none;</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><code>ellipsis</code></td>
+					<td>@include ellipsis;</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr>
+
+		<h2 id="responsive">Responsive</h2>
+
+		<p>
+			TODO docs
+		</p>
 
 
 		<h2 id="icons">Icons</h2>
@@ -437,7 +895,9 @@ RL.stopPropagation = function(e){
 		<p>
 			I included <a href="http://themes-pixeden.com/font-demos/7-stroke/index.html">great stroke icons</a> by Pixeden.
 		</p>
-
+<pre class="prettyprint">
+&lt;span class="icon-home">&lt;/span>
+</pre>
 		<div class="row text-center margin-bottom-100">
 			<div class="font-icon-list col md-2 sm-3 xs-6 xs-6">
 				<div class="font-icon-detail">
@@ -1654,7 +2114,13 @@ RL.stopPropagation = function(e){
 
 		</div>
 	</div>
+</div>
 
 
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="demo/js/jquery.sticky-kit.min.js"></script>
+<script src="demo/google-code-prettify/prettify.js"></script>
+<script src="demo/js/docs.js"></script>
 </body>
 </html>

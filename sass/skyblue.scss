@@ -27,12 +27,13 @@
 @import "skyblue/tables";
 
 
-// Helpers at the end to override
-@import "skyblue/helpers";
-
 // Awesome Stroke Icons
 // http://themes-pixeden.com/font-demos/7-stroke/index.html
 @import "skyblue/icons";
 
 // Main
 @import "skyblue/main";
+
+
+// Helpers at the end to override
+@import "skyblue/helpers";

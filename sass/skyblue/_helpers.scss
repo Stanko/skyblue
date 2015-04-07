@@ -1,27 +1,31 @@
-$margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 100;
+@mixin generate-paddings-and-margins($size:''){
+	$margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 100;
+	@each $value in $margin-and-padding-values {
+		.#{$size}margin-#{$value} { margin: #{$value}px; }
+		.#{$size}margin-top-#{$value} { margin-top: #{$value}px; }
+		.#{$size}margin-bottom-#{$value} { margin-bottom: #{$value}px; }
+		.#{$size}margin-left-#{$value} { margin-left: #{$value}px; }
+		.#{$size}margin-right-#{$value} { margin-right: #{$value}px; }
+		.#{$size}margin-y-#{$value} { margin-top: #{$value}px; margin-bottom: #{$value}px; }
+		.#{$size}margin-x-#{$value} { margin-left: #{$value}px; margin-right: #{$value}px; }
 
-@each $value in $margin-and-padding-values {
-	.margin-#{$value} { margin: #{$value}px; }
-	.margin-top-#{$value} { margin-top: #{$value}px; }
-	.margin-bottom-#{$value} { margin-bottom: #{$value}px; }
-	.margin-left-#{$value} { margin-left: #{$value}px; }
-	.margin-right-#{$value} { margin-right: #{$value}px; }
-	.margin-y-#{$value} { margin-top: #{$value}px; margin-bottom: #{$value}px; }
-	.margin-x-#{$value} { margin-left: #{$value}px; margin-right: #{$value}px; }
-
-	.padding-#{$value} { padding: #{$value}px; }
-	.padding-top-#{$value} { padding-top: #{$value}px; }
-	.padding-bottom-#{$value} { padding-bottom: #{$value}px; }
-	.padding-left-#{$value} { padding-left: #{$value}px; }
-	.padding-right-#{$value} { padding-right: #{$value}px; }
-	.padding-y-#{$value} { padding-top: #{$value}px; padding-bottom: #{$value}px; }
-	.padding-x-#{$value} { padding-left: #{$value}px; padding-right: #{$value}px; }
-
+		.#{$size}padding-#{$value} { padding: #{$value}px; }
+		.#{$size}padding-top-#{$value} { padding-top: #{$value}px; }
+		.#{$size}padding-bottom-#{$value} { padding-bottom: #{$value}px; }
+		.#{$size}padding-left-#{$value} { padding-left: #{$value}px; }
+		.#{$size}padding-right-#{$value} { padding-right: #{$value}px; }
+		.#{$size}padding-y-#{$value} { padding-top: #{$value}px; padding-bottom: #{$value}px; }
+		.#{$size}padding-x-#{$value} { padding-left: #{$value}px; padding-right: #{$value}px; }
+	}
 }
+@include generate-paddings-and-margins();
+
 // Floats
 .float-left{ float: left; }
 .float-right{ float: right; }
 .float-none{ float: none; }
+
+.clearfix{ @include clearfix; }
 
 .relative{ position: relative; }
 .absolute{ position: absolute; }
@@ -36,13 +40,12 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 
 // Colors
 .color-main{ color: $main-color; }
-.color-main2{ color: $main-color+#222; }
 .color-success{ color: $success-color; }
 .color-error{ color: $error-color; }
 .color-warning{ color: $warning-color; }
 .color-light{ color: $light-color; }
 .color-dark{ color: $dark-color; }
-.color-black{ color: #111; }
+.color-black{ color: #000; }
 .color-white { color: #fff; }
 
 // Colors
@@ -58,15 +61,88 @@ $margin-and-padding-values: 0, 5, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 10
 .block{ display: block; }
 .inline-block{ display: inline-block; }
 .inline{ display: inline; }
-.display-none{ display: none; }
+.hide{ display: none; }
 
 .full-width{ width: 100%; }
 
 .middle{ vertical-align: middle; }
 
 // Radius and borders
+.radius-3{ border-radius: 3px; }
 .radius-5{ border-radius: 5px; }
 .radius-10{ border-radius: 10px; }
 .radius-15{ border-radius: 15px; }
+.radius-big{ border-radius: $big-border-radius; }
 
 .no-border{ border: none; }
+
+
+.ellipsis{
+	@include ellipsis;
+}
+
+@include sm {
+	.sm-block{ display: block; }
+	.sm-inline{ display: inline; }
+	.sm-inline-block{ display: inline-block; }
+	.sm-hide{ display: none; }
+	@include generate-paddings-and-margins('sm-');
+}
+@include md {
+	.md-block{ display: block; }
+	.md-inline{ display: inline; }
+	.md-inline-block{ display: inline-block; }
+	.md-hide{ display: none; }
+	@include generate-paddings-and-margins('md-');
+}
+@include lg {
+	.lg-block{ display: block; }
+	.lg-inline{ display: inline; }
+	.lg-inline-block{ display: inline-block; }
+	.lg-hide{ display: none; }
+	@include generate-paddings-and-margins('lg-');
+}
+@include xl {
+	.xl-block{ display: block; }
+	.xl-inline{ display: inline; }
+	.xl-inline-block{ display: inline-block; }
+	.xl-hide{ display: none; }
+	@include generate-paddings-and-margins('xl-');
+}
+
+
+@include xs-only {
+	.xs-only-block{ display: block; }
+	.xs-only-inline{ display: inline; }
+	.xs-only-inline-block{ display: inline-block; }
+	.xs-only-hide{ display: none; }
+	@include generate-paddings-and-margins('xs-only-');
+}
+@include sm-only {
+	.sm-only-block{ display: block; }
+	.sm-only-inline{ display: inline; }
+	.sm-only-inline-block{ display: inline-block; }
+	.sm-only-hide{ display: none; }
+	@include generate-paddings-and-margins('sm-only-');
+}
+@include md-only {
+	.md-only-block{ display: block; }
+	.md-only-inline{ display: inline; }
+	.md-only-inline-block{ display: inline-block; }
+	.md-only-hide{ display: none; }
+	@include generate-paddings-and-margins('md-only-');
+}
+@include lg-only {
+	.lg-only-block{ display: block; }
+	.lg-only-inline{ display: inline; }
+	.lg-only-inline-block{ display: inline-block; }
+	.lg-only-hide{ display: none; }
+	@include generate-paddings-and-margins('lg-only-');
+}
+@include xl {
+	.xl-block{ display: block; }
+	.xl-inline{ display: inline; }
+	.xl-inline-block{ display: inline-block; }
+	.xl-hide{ display: none; }
+	@include generate-paddings-and-margins('xl-');
+}

@@ -19,7 +19,7 @@ $inputs:
 		width: 100%;
 		max-width: 100%;
 		padding: 0.5em;
-		margin-bottom: $font-size;
+		margin-bottom: 1em;
 		font-family: $font-family;
 		font-weight: $font-weight;
 		color: $gray5;
@@ -100,7 +100,7 @@ input[type="radio"]{
 
 .form{
 	.checkbox-group, .radio-group{
-		margin-bottom: $font-size;
+		margin-bottom: 1em;
 	}
 	&.form-horizontal{
 		label{
@@ -143,6 +143,9 @@ input[type="radio"]{
 	}
 }
 
+$checkbox-circle-size:					$checkbox-height - 2 !default;
+$checkbox-top:							($font-size * 1.5 - $checkbox-height) / 2 !default;
+
 .fancy-checkbox{
 	padding-left: $checkbox-width + 6px;
 
@@ -181,6 +184,12 @@ input[type="radio"]{
 		border: 1px solid darken($checkbox-checked-bg, 20);
 	}
 }
+
+$radio-top:								($font-size * 1.5 - $radio-size) / 2 !default;
+$radio-circle-left:						$radio-size / 2 !default;
+$radio-circle-top:						$radio-circle-left + $radio-top !default;
+$radio-circle-active-left:				($radio-size - $radio-circle-size) / 2 !default;
+$radio-circle-active-top:				$radio-circle-active-left + $radio-top !default;
 
 .fancy-radio{
 	padding-left: $radio-size + 8px;

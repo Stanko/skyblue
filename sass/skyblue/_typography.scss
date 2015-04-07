@@ -36,7 +36,7 @@ h6{
 // Paragraphs
 p{
 	line-height: $line-height;
-	margin-bottom: $font-size;
+	margin-bottom: 1em;
 }
 small{
 	font-size: 0.75em;
@@ -61,7 +61,7 @@ img{
 
 // Links
 a{
-	color: $main-color + #222;
+	color: $main-color;
 	transition: all $transition-time;
 	text-decoration: none;
 	&.secundary{ color: $success-color; }
@@ -75,7 +75,7 @@ a:active, a:focus, a:hover{
 
 // Lists
 ul, ol{
-	margin-bottom: $font-size;
+	margin-bottom: 1em;
 	padding-left: 22px;
 	ul, ol{
 		margin-bottom: 0;
@@ -111,15 +111,15 @@ ul, ol{
 
 // Blockquote
 blockquote{
-
 	border-left: 2px solid $gray2;
 	padding: 0.5em 1em;
-	margin-bottom: $font-size;
+	margin-bottom: 1em;
 	font-size: 1.1em;
-	color: $gray5;
+	color: $gray4;
 
 	cite{
 		font-size: 0.8em;
+		color: $gray5;
 		&:before {
 		    content: "— ";
 		}
@@ -137,13 +137,13 @@ hr{
 
 // Code
 pre, code{
-	font-family: $pre-font-family;
-	font-size: $pre-font-size;
+	font-family: $code-font-family;
+	font-size: $code-font-size;
 	line-height: $line-height;
 
-	color: $gray2;
-	background: $gray6;
-	// border: 2px solid $gray2;
+	color: $code-color;
+	background: $code-bg;
+	border: 1px solid $code-border;
 	border-radius: 3px;
 
 	padding: 0.8em 1em;
@@ -153,7 +153,7 @@ pre, code{
     word-wrap: break-word;
 }
 pre{
-	margin-bottom: $font-size;
+	margin-bottom: 1em;
 }
 code{
 	display: inline-block;

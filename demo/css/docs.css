@@ -1,0 +1,66 @@
+.font-icon-detail{
+	padding-top: 12px;
+	height: 100px;
+}
+
+.font-icon-detail span{
+	font-size: 48px;
+}
+
+.font-icon-detail div{
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.row-border .col{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #E1E1E8;
+	background: #F7F7F9;
+}
+
+.c1, .c2{
+	padding: 10px 0;
+	margin-bottom: 20px;
+	background: #4378A7;
+	color: #fff;
+	text-align: center;
+}
+.c2{
+	background: #0191A1;
+}
+
+.demo{
+	border: 1px solid #E1E1E8;
+	border-bottom: 0;
+	border-radius: 5px 5px 0 0;
+	padding: 15px;
+}
+
+.fixed{
+	top: 0;
+	position: fixed;
+	display: inline-block;
+}
+.sidemenu{
+	padding-top: 30px;
+}
+.sidemenu a{
+	padding: 4px 10px;
+	width: 100%;
+	display: block;
+	color: #777;
+	display: block;
+	display: block;
+	border-bottom: none;
+	font-size: 14px;
+	border-left: 2px solid #59ABE3;
+}
+.sidemenu a:hover{
+	background: #FaFaFc;
+	color: #000;
+}
+
+h2{
+	padding-top: 30px;
+}

@@ -1,90 +1,88 @@
 // Grays
-$gray7:									#111 !default;
-$gray6:									#333 !default;
-$gray5:									#555 !default;
-$gray4:									#777 !default;
-$gray3:									#999 !default;
-$gray2:									#ddd !default;
-$gray1:									#f7f7f7 !default;
-
+$gray7:                                 #111 !default;
+$gray6:                                 #333 !default;
+$gray5:                                 #555 !default;
+$gray4:                                 #777 !default;
+$gray3:                                 #999 !default;
+$gray2:                                 #ddd !default;
+$gray1:                                 #f7f7f7 !default;
+// #E7E7EC
+// #CBCBD2
+// #7D7D8E
+// #3F3F44
 
 // Colors
-$body-background:						#FbFbFb !default;
-$text-color:							#555555 !default;
+$body-background:                       #fff !default;
+$text-color:                            #555555 !default;
 
-$main-color:							#4378a7 !default;
-$success-color:							#16b6B6 !default;
-$error-color:							#E74C3C !default;
-$warning-color:							#F1C000 !default;
-$light-color:							#ecf0f1 !default;
-$dark-color:							#252428 !default;
-$main-light-color:						#72A8D6 !default;
-$main-grey-color:						#7F8184 !default;
+$main-color:                            #3498DB !default;
+$success-color:                         #1BBC9B !default;
+$error-color:                           #E74C3C !default;
+$warning-color:                         #F1C000 !default;
+$light-color:                           #ecf0f1 !default;
+$dark-color:                            #252428 !default;
+$main-light-color:                      #72A8D6 !default;
+$main-grey-color:                       #7F8184 !default;
 
-$navigation-color:						#2c3e50 !default;
-
-$color-diff:							#151515 !default;
+$color-diff:                            #151515 !default;
 
 // Defaults
-$font-family:							'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-size:								16px !default;
-$font-weight:							normal !default;
-$line-height:							1.5em !default;
-$bold:									700 !default;
-
-$transition-time:						0.25s !default;
+$font-family:                           "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-size:                             16px !default;
+$font-weight:                           normal !default;
+$line-height:                           1.5em !default;
+$bold:                                  700 !default;
+$transition-time:                       0.25s !default;
 
 // Code
-$pre-font-family:						"Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace !default;
-$pre-font-size:							15px !default;
+$code-font-family:                      "Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace !default;
+$code-font-size:                        13px !default;
+$code-color:                            #333;
+$code-bg:                               #F7F7F9;
+$code-border:                           #E1E1E8;
 
 
 // Tables
-$table-border-color:					$gray2 !default;
-$table-background:						$gray1 !default;
-$table-background-hover:				lighten($main-color, 10) !default;
-$table-color-hover:						#fff !default;
+$table-border-color:                    $gray2 !default;
+$table-background:                      $gray1 !default;
+$table-background-hover:                lighten($main-color, 10) !default;
+$table-color-hover:                     #fff !default;
+
 
 // Forms
-
 // Fancy checkboxes
-$checkbox-height:						22px !default;
-$checkbox-width:						38px !default;
-$checkbox-circle-size:					$checkbox-height - 2 !default;
-$checkbox-top:							($font-size * 1.5 - $checkbox-height) / 2 !default;
-$checkbox-bg:							#c3c5c4 !default;
-$checkbox-checked-bg:					$success-color !default;
+$checkbox-height:                       22px !default;
+$checkbox-width:                        38px !default;
+$checkbox-bg:                           #c3c5c4 !default;
+$checkbox-checked-bg:                   $success-color !default;
 
 // Fancy radio buttons
-$radio-size:							20px !default;
-$radio-circle-size:						10px !default;
-$radio-top:								($font-size * 1.5 - $radio-size) / 2 !default;
-$radio-border-color:					#c3c5c4 !default;
-$radio-checked-bg:						$success-color !default;
-$radio-circle-left:						$radio-size / 2 !default;
-$radio-circle-top:						$radio-circle-left + $radio-top !default;
-$radio-circle-active-left:				($radio-size - $radio-circle-size) / 2 !default;
-$radio-circle-active-top:				$radio-circle-active-left + $radio-top !default;
+$radio-size:                            20px !default;
+$radio-circle-size:                     10px !default;
+$radio-border-color:                    #c3c5c4 !default;
+$radio-checked-bg:                      $success-color !default;
+
 
 // Grid
-$grid-columns:							12 !default;
-$grid-padding-width:					40px !default;
-$grid-unit-width:						100% / $grid-columns !default;
+$grid-columns:                          12 !default;
+$grid-padding-width:                    40px !default;
+$grid-unit-width:                       100% / $grid-columns !default;
+
 
 // Breakpoints
-$tablet-portrait-breakpoint:			480px !default;
-$tablet-breakpoint:						768px !default;
-$desktop-breakpoint:					970px !default;
-$large-desktop-breakpoint:				1200px !default;
+$sm-breakpoint:                         480px !default;
+$md-breakpoint:                         768px !default;
+$lg-breakpoint:                         970px !default;
+$xl-breakpoint:                         1200px !default;
 
-$container-width-tablet:				720px !default;
-$container-width-desktop:				940px !default;
-$container-width-large-desktop:			1150px !default;
+$container-width-md:                    720px !default;
+$container-width-lg:                    940px !default;
+$container-width-xl:                    1150px !default;
 
 
 // Helpers
-$border-radius:							3px !default;
-$big-border-radius:						100px !default;
+$border-radius:                         3px !default;
+$big-border-radius:                     1000px !default;
 
 //Custom colors
-$white:									#fff !default;
+$white:                                 #fff !default;

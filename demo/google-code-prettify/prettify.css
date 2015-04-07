@@ -1,0 +1,59 @@
+.pln{
+	color: #333;
+}
+
+.str{
+	color:#080;
+}
+.kwd{
+	color:#008;
+}
+.com{
+	color:#800;
+}
+.typ{
+	color:#606;
+}
+.lit{
+	color:#066;
+}
+.pun,.opn,.clo{
+	color:#660;
+}
+.tag{
+	color: #2F6F9F;
+}
+.atn{
+	color: #4F9FD0;
+}
+.atv{
+	color: #D54950;
+}
+.dec,.var{
+	color:#606;
+}
+.fun{
+	color:red;
+}
+pre.prettyprint{
+	padding: 15px;
+	border:1px solid #888;
+	background: #F7F7F9;
+	font-size: 13px;
+	border: 1px solid #E1E1E8;
+	border-radius: 5px;
+}
+.demo + pre.prettyprint{
+	border-radius: 0 0 5px 5px;
+}
+
+ol.linenums{
+	margin-top:0;
+	margin-bottom:0;
+}
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8{
+	list-style-type:none;
+}
+li.L1,li.L3,li.L5,li.L7,li.L9{
+	background:#eee;
+}

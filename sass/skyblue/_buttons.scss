@@ -43,7 +43,7 @@ button, input[type="submit"], input[type="button"]{
 	display: inline-block;
 	min-width: 120px;
 	padding: 10px 25px;
-	margin-bottom: $font-size;
+	margin-bottom: 1em;
 	border: none;
 	border-radius: $border-radius;
 	font-size: 1em;
@@ -53,14 +53,14 @@ button, input[type="submit"], input[type="button"]{
 	transition: border-color $transition-time, background-color $transition-time, color $transition-time;
 
 	// SMALL BUTTON
-	&.btn-small{
+	&.btn-sm{
 		padding: 5px 15px;
 		min-width: 30px;
 		font-size: 0.8em;
 		line-height: 1.2em;
 	}
 	// BIG BUTTON
-	&.btn-big{
+	&.btn-lg{
 		padding: 12px 45px;
 		min-width: 200px;
 		font-size: 1.4em;
