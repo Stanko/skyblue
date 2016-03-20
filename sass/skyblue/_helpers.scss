@@ -139,10 +139,10 @@
 	.lg-only-hide{ display: none; }
 	@include generate-paddings-and-margins('lg-only-');
 }
-@include xl {
-	.xl-block{ display: block; }
-	.xl-inline{ display: inline; }
-	.xl-inline-block{ display: inline-block; }
-	.xl-hide{ display: none; }
-	@include generate-paddings-and-margins('xl-');
+@include xl-only {
+	.xl-only-block{ display: block; }
+	.xl-only-inline{ display: inline; }
+	.xl-only-inline-block{ display: inline-block; }
+	.xl-only-hide{ display: none; }
+	@include generate-paddings-and-margins('xl-only-');
 }
