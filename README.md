@@ -1,5 +1,10 @@
-SkyBlue
-=======
+# SkyBlue
+
+## 2020 Update
+
+This repo is not actively maintained. I removed gulp in favor of `node-sass` but that is it. Glad to see some folks are still using it. Cheers!
+
+## Readme
 
 This is not Bootstrap killer, I just think Bootstrap is way too bloated.
 SkyBlue is a minimal framework that is meant to be starting point for my projects.
@@ -19,19 +24,19 @@ available by ``offset-xm-#`` ``offset-sm-#``
 
 I made it for my own needs. Feel free to use it and abuse it, in both free and commercial products.
 
+## Examples
+
 Some websites made using this framework:
 
-* [Null Object](http://null-object.com)
 * [Hacienda Rodizio](http://haciendarodizio.com)
-* [eSmithy](http://esmithy.com)
 * [Tesla Smart House](http://teslasmarthouse.com)
 
 If you want to list your site/project please contact me.
 
-====
-
-Licenced under [MIT license](https://github.com/Stanko/skyblue/blob/gh-pages/LICENSE.md).
-
-====
+## Icons
 
 I included [great stroke icons](http://themes-pixeden.com/font-demos/7-stroke/index.html) by Pixeden.
+
+## License
+
+Licensed under [MIT license](https://github.com/Stanko/skyblue/blob/gh-pages/LICENSE.md).
