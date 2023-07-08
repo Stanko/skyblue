@@ -2,7 +2,7 @@
 
 ## 2020 Update
 
-This repo is not actively maintained. I removed gulp in favor of `node-sass` but that is it. Glad to see some folks are still using it. Cheers!
+This repo is not actively maintained. I removed gulp in favor of `sass` but that is it. Glad to see some folks are still using it. Cheers!
 
 ## Readme
 
