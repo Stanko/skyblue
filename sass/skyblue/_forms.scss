@@ -1,230 +1,232 @@
-$inputs:
-	'input[type="text"],
-	input[type="password"],
-	input[type="date"],
-	input[type="datetime"],
-	input[type="email"],
-	input[type="number"],
-	input[type="search"],
-	input[type="tel"],
-	input[type="time"],
-	input[type="url"],
-	select,
-	textarea';
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='datetime'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+select,
+textarea {
+  &.form-control {
+    height: 2.625em;
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    color: $gray5;
+    font-size: 1em;
+    border: 2px solid $gray2;
+    border-radius: $border-radius;
 
+    -webkit-font-smoothing: antialiased;
+    -webkit-appearance: none;
 
-#{$inputs} {
-	&.form-control{
-		height: 2.625em;
-		width: 100%;
-		max-width: 100%;
-		padding: 0.5em;
-		margin-bottom: 1em;
-		font-family: $font-family;
-		font-weight: $font-weight;
-		color: $gray5;
-		font-size: 1em;
-		border: 2px solid $gray2;
-		border-radius: $border-radius;
+    transition: border-color $transition-time, color $transition-time;
 
-		-webkit-font-smoothing: antialiased;
-		-webkit-appearance: none;
+    &:focus {
+      border: 2px solid $main-color;
+      color: $gray7;
+      outline: none;
+    }
 
-		transition: border-color $transition-time, color $transition-time;
-
-		&:focus{
-			border: 2px solid $main-color;
-			color: $gray7;
-			outline: none;
-		}
-
-
-		&.error, .error &{
-			border-color: $error-color;
-		}
-		&.warning, .warning &{
-			border-color: $warning-color;
-		}
-		&.success, .success &{
-			border-color: $success-color;
-		}
-	}
+    &.error,
+    .error & {
+      border-color: $error-color;
+    }
+    &.warning,
+    .warning & {
+      border-color: $warning-color;
+    }
+    &.success,
+    .success & {
+      border-color: $success-color;
+    }
+  }
 }
 
-textarea{
-	height: auto;
-	min-height: 100px;
-	line-height: $line-height;
+textarea {
+  height: auto;
+  min-height: 100px;
+  line-height: $line-height;
 }
-select{
-	-webkit-appearance: none;
-	-moz-appearance: none;
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 // Hack for webkit only
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-	select, select.form-control{
-		@include select();
-	}
+  select,
+  select.form-control {
+    @include select();
+  }
 }
 // Hack for firefox
 @-moz-document url-prefix() {
-	select, select.form-control{
-		@include select();
-	}
+  select,
+  select.form-control {
+    @include select();
+  }
 }
 
-label{
-	display: block;
-	margin-bottom: 0.5em;
-	line-height: 1.5em;
+label {
+  display: block;
+  margin-bottom: 0.5em;
+  line-height: 1.5em;
 
-	&.error, .error &{
-		color: $error-color;
-	}
-	&.warning, .warning &{
-		color: $warning-color;
-	}
-	&.success, .success &{
-		color: $success-color;
-	}
+  &.error,
+  .error & {
+    color: $error-color;
+  }
+  &.warning,
+  .warning & {
+    color: $warning-color;
+  }
+  &.success,
+  .success & {
+    color: $success-color;
+  }
 }
 
-input[type="checkbox"],
-input[type="radio"]{
-
+input[type='checkbox'],
+input[type='radio'] {
 }
-
 
 @include placeholder($gray3);
 
-.form{
-	.checkbox-group, .radio-group{
-		margin-bottom: 1em;
-	}
-	&.form-horizontal{
-		label{
-			display: inline-block;
-			width: 200px;
-			max-width: 100%;
-			font-size: 1em;
-			vertical-align: top;
-		}
+.form {
+  .checkbox-group,
+  .radio-group {
+    margin-bottom: 1em;
+  }
+  &.form-horizontal {
+    label {
+      display: inline-block;
+      width: 200px;
+      max-width: 100%;
+      font-size: 1em;
+      vertical-align: top;
+    }
 
-		.checkbox-group, .radio-group{
-			display: inline-block;
-			width: 200px;
-			max-width: 100%;
-			label{
-				display: block;
-			}
-		}
-	}
+    .checkbox-group,
+    .radio-group {
+      display: inline-block;
+      width: 200px;
+      max-width: 100%;
+      label {
+        display: block;
+      }
+    }
+  }
 }
-
 
 .fancy-radio,
-.fancy-checkbox{
-	position: relative;
-	cursor: pointer;
+.fancy-checkbox {
+  position: relative;
+  cursor: pointer;
 
-	input{
-		opacity: 0;
-		position: absolute;
-	}
+  input {
+    opacity: 0;
+    position: absolute;
+  }
 
-	span:before,
-	span:after{
-		box-sizing: border-box;
-		content: '';
-		display: block;
-		position: absolute;
-		transition: all 0.25s;
-	}
+  span:before,
+  span:after {
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    position: absolute;
+    transition: all 0.25s;
+  }
 }
 
-$checkbox-circle-size:					$checkbox-height - 2 !default;
-$checkbox-top:							($font-size * 1.5 - $checkbox-height) / 2 !default;
+$checkbox-circle-size: $checkbox-height - 2 !default;
+$checkbox-top: ($font-size * 1.5 - $checkbox-height) * 0.5 !default;
 
-.fancy-checkbox{
-	padding-left: $checkbox-width + 6px;
+.fancy-checkbox {
+  padding-left: $checkbox-width + 6px;
 
-	span:before{
-		width: $checkbox-width;
-		height: $checkbox-height;
-		border-radius: $checkbox-height / 2;
-		top: $checkbox-top;
-		left: 0;
-		background: $checkbox-bg;
-		border: 1px solid $checkbox-bg;
-	}
-	span:after{
-		width: $checkbox-circle-size;
-		height: $checkbox-circle-size;
-		border-radius: $checkbox-circle-size / 2;
-		background: #fff;
-		top: $checkbox-top + 1;
-		left: 1px;
-	}
+  span:before {
+    width: $checkbox-width;
+    height: $checkbox-height;
+    border-radius: $checkbox-height * 0.5;
+    top: $checkbox-top;
+    left: 0;
+    background: $checkbox-bg;
+    border: 1px solid $checkbox-bg;
+  }
+  span:after {
+    width: $checkbox-circle-size;
+    height: $checkbox-circle-size;
+    border-radius: $checkbox-circle-size * 0.5;
+    background: #fff;
+    top: $checkbox-top + 1;
+    left: 1px;
+  }
 
-	input:checked + span{
-		&:after{
-			left: $checkbox-width - $checkbox-circle-size - 1;
-		}
-		&:before{
-			background: $checkbox-checked-bg;
-			border: 1px solid $checkbox-checked-bg;
-		}
-	}
+  input:checked + span {
+    &:after {
+      left: $checkbox-width - $checkbox-circle-size - 1;
+    }
+    &:before {
+      background: $checkbox-checked-bg;
+      border: 1px solid $checkbox-checked-bg;
+    }
+  }
 
-	input:focus + span:before{
-		border: 1px solid darken($checkbox-bg, 20);
-	}
-	input:focus:checked + span:before{
-		border: 1px solid darken($checkbox-checked-bg, 20);
-	}
+  input:focus + span:before {
+    border: 1px solid darken($checkbox-bg, 20);
+  }
+  input:focus:checked + span:before {
+    border: 1px solid darken($checkbox-checked-bg, 20);
+  }
 }
 
-$radio-top:								($font-size * 1.5 - $radio-size) / 2 !default;
-$radio-circle-left:						$radio-size / 2 !default;
-$radio-circle-top:						$radio-circle-left + $radio-top !default;
-$radio-circle-active-left:				($radio-size - $radio-circle-size) / 2 !default;
-$radio-circle-active-top:				$radio-circle-active-left + $radio-top !default;
+$radio-top: ($font-size * 1.5 - $radio-size) * 0.5 !default;
+$radio-circle-left: $radio-size * 0.5 !default;
+$radio-circle-top: $radio-circle-left + $radio-top !default;
+$radio-circle-active-left: ($radio-size - $radio-circle-size) * 0.5 !default;
+$radio-circle-active-top: $radio-circle-active-left + $radio-top !default;
 
-.fancy-radio{
-	padding-left: $radio-size + 8px;
+.fancy-radio {
+  padding-left: $radio-size + 8px;
 
-	span:before{
-		width: $radio-size;
-		height: $radio-size;
-		border-radius: 50%;
-		top: $radio-top;
-		left: 0;
-		background: #fff;
-		border: 1px solid $radio-border-color;
-	}
-	span:after{
-		border-radius: 50%;
-		background: #fff;
-		top: $radio-circle-top;
-		left: $radio-circle-left;
-		width: 0;
-		height: 0;
-	}
+  span:before {
+    width: $radio-size;
+    height: $radio-size;
+    border-radius: 50%;
+    top: $radio-top;
+    left: 0;
+    background: #fff;
+    border: 1px solid $radio-border-color;
+  }
+  span:after {
+    border-radius: 50%;
+    background: #fff;
+    top: $radio-circle-top;
+    left: $radio-circle-left;
+    width: 0;
+    height: 0;
+  }
 
-	input:checked + span{
-		&:after{
-			width: $radio-circle-size;
-			height: $radio-circle-size;
-			top: $radio-circle-active-top;
-			left: $radio-circle-active-left;
-		}
-		&:before{
-			background: $radio-checked-bg;
-		}
-	}
+  input:checked + span {
+    &:after {
+      width: $radio-circle-size;
+      height: $radio-circle-size;
+      top: $radio-circle-active-top;
+      left: $radio-circle-active-left;
+    }
+    &:before {
+      background: $radio-checked-bg;
+    }
+  }
 
-	input:focus + span:before{
-		border: 1px solid darken($radio-checked-bg, 20);
-	}
+  input:focus + span:before {
+    border: 1px solid darken($radio-checked-bg, 20);
+  }
 }

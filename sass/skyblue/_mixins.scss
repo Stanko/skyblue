@@ -1,86 +1,107 @@
 // Box sizing
 @mixin box-sizing($boxmodel) {
-	-webkit-box-sizing: $boxmodel;
-	-moz-box-sizing: $boxmodel;
-	box-sizing: $boxmodel;
+  -webkit-box-sizing: $boxmodel;
+  -moz-box-sizing: $boxmodel;
+  box-sizing: $boxmodel;
 }
 
 // Clearfix
-@mixin clearfix{
-	&:before, &:after { content: " "; display: table; line-height: 0; }
-	&:after { clear: both; }
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: ' ';
+    display: table;
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
-
 @mixin ellipsis($width: 100%) {
-	width: $width;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 // Responsive mixins
 @mixin sm {
-	@media screen and (min-width: $sm-breakpoint) { @content; }
+  @media screen and (min-width: $sm-breakpoint) {
+    @content;
+  }
 }
 @mixin md {
-	@media screen and (min-width: $md-breakpoint) { @content; }
+  @media screen and (min-width: $md-breakpoint) {
+    @content;
+  }
 }
 @mixin lg {
-	@media screen and (min-width: $lg-breakpoint) { @content; }
+  @media screen and (min-width: $lg-breakpoint) {
+    @content;
+  }
 }
 @mixin xl {
-	@media screen and (min-width: $xl-breakpoint) { @content; }
+  @media screen and (min-width: $xl-breakpoint) {
+    @content;
+  }
 }
 @mixin xs-only {
-	@media screen and (max-width: $sm-breakpoint - 1) { @content; }
+  @media screen and (max-width: #{$sm-breakpoint - 1}) {
+    @content;
+  }
 }
 @mixin sm-only {
-	@media screen and (min-width: $sm-breakpoint) and (max-width: $md-breakpoint - 1) { @content; }
+  @media screen and (min-width: $sm-breakpoint) and (max-width: #{$md-breakpoint - 1}) {
+    @content;
+  }
 }
 @mixin md-only {
-	@media screen and (min-width: $md-breakpoint) and (max-width: $lg-breakpoint - 1) { @content; }
+  @media screen and (min-width: $md-breakpoint) and (max-width: #{$lg-breakpoint - 1}) {
+    @content;
+  }
 }
 @mixin lg-only {
-	@media screen and (min-width: $lg-breakpoint) and (max-width: $xl-breakpoint - 1) { @content; }
+  @media screen and (min-width: $lg-breakpoint) and (max-width: #{$xl-breakpoint - 1}) {
+    @content;
+  }
 }
 @mixin xl-only {
-	@media screen and (min-width: $xl-breakpoint) { @content; }
+  @media screen and (min-width: $xl-breakpoint) {
+    @content;
+  }
 }
-
-
-
 
 // Placeholder
-@mixin placeholder($color){
-	// Web-kit
-	::-webkit-input-placeholder {
-	    color:    $color;
-	}
-	// FF4-18
-	:-moz-placeholder {
-	    color:    $color;
-	}
-	// FF19+
-	::-moz-placeholder {
-	    color:    $color;
-	}
-	// IE10
-	:-ms-input-placeholder {
-	    color:    $color;
-	}
-	// Fix for input type search
-	[type="search"] {
-	    -moz-appearance:    textfield;
-	    -webkit-appearance: textfield;
-	    appearance: textfield;
-	}
+@mixin placeholder($color) {
+  // Web-kit
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  // FF4-18
+  :-moz-placeholder {
+    color: $color;
+  }
+  // FF19+
+  ::-moz-placeholder {
+    color: $color;
+  }
+  // IE10
+  :-ms-input-placeholder {
+    color: $color;
+  }
+  // Fix for input type search
+  [type='search'] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+  }
 }
 
-@mixin select(){
-	background-color: #fff;
-	background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPSczNicgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBkPSdNMTcuNDE4IDYuMTA5YzAuMjcyLTAuMjY4IDAuNzA5LTAuMjY4IDAuOTc5IDBzMC4yNzEgMC43MDEgMCAwLjk2OWwtNy45MDggNy44M2MtMC4yNyAwLjI2OC0wLjcwNyAwLjI2OC0wLjk3OSAwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEgMC0wLjk2OXMwLjcwOS0wLjI2OCAwLjk3OSAwbDcuNDE5IDcuMTQxIDcuNDE4LTcuMTQxeicgZmlsbD0nIzQ0NDQ0NCc+PC9wYXRoPjwvc3ZnPg==);
-	background-repeat: no-repeat;
-	background-position: right center;
-	padding-right: 36px;
+@mixin select() {
+  background-color: #fff;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPScxLjEnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZycgeG1sbnM6eGxpbms9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsnIHdpZHRoPSczNicgaGVpZ2h0PScyMCcgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBkPSdNMTcuNDE4IDYuMTA5YzAuMjcyLTAuMjY4IDAuNzA5LTAuMjY4IDAuOTc5IDBzMC4yNzEgMC43MDEgMCAwLjk2OWwtNy45MDggNy44M2MtMC4yNyAwLjI2OC0wLjcwNyAwLjI2OC0wLjk3OSAwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEgMC0wLjk2OXMwLjcwOS0wLjI2OCAwLjk3OSAwbDcuNDE5IDcuMTQxIDcuNDE4LTcuMTQxeicgZmlsbD0nIzQ0NDQ0NCc+PC9wYXRoPjwvc3ZnPg==);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 36px;
 }

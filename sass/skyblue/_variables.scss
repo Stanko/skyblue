@@ -1,88 +1,86 @@
 // Grays
-$gray7:                                 #111 !default;
-$gray6:                                 #333 !default;
-$gray5:                                 #555 !default;
-$gray4:                                 #777 !default;
-$gray3:                                 #999 !default;
-$gray2:                                 #ddd !default;
-$gray1:                                 #f7f7f7 !default;
+@use 'sass:math';
+
+$gray7: #111 !default;
+$gray6: #333 !default;
+$gray5: #555 !default;
+$gray4: #777 !default;
+$gray3: #999 !default;
+$gray2: #ddd !default;
+$gray1: #f7f7f7 !default;
 // #E7E7EC
 // #CBCBD2
 // #7D7D8E
 // #3F3F44
 
 // Colors
-$body-background:                       #fff !default;
-$text-color:                            #555555 !default;
+$body-background: #fff !default;
+$text-color: #555555 !default;
 
-$main-color:                            #3498DB !default;
-$success-color:                         #1BBC9B !default;
-$error-color:                           #E74C3C !default;
-$warning-color:                         #F1C000 !default;
-$light-color:                           #ecf0f1 !default;
-$dark-color:                            #252428 !default;
-$main-light-color:                      #72A8D6 !default;
-$main-grey-color:                       #7F8184 !default;
+$main-color: #3498db !default;
+$success-color: #1bbc9b !default;
+$error-color: #e74c3c !default;
+$warning-color: #f1c000 !default;
+$light-color: #ecf0f1 !default;
+$dark-color: #252428 !default;
+$main-light-color: #72a8d6 !default;
+$main-grey-color: #7f8184 !default;
 
-$color-diff:                            #151515 !default;
+$color-diff: -12% !default;
 
 // Defaults
-$font-family:                           "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-size:                             16px !default;
-$font-weight:                           normal !default;
-$line-height:                           1.5em !default;
-$bold:                                  700 !default;
-$transition-time:                       0.25s !default;
+$font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-size: 16px !default;
+$font-weight: normal !default;
+$line-height: 1.5em !default;
+$bold: 700 !default;
+$transition-time: 0.25s !default;
 
 // Code
-$code-font-family:                      "Deja-vu Sans Mono", Monaco, Menlo, Consolas, "Courier New", monospace !default;
-$code-font-size:                        13px !default;
-$code-color:                            #333;
-$code-bg:                               #F7F7F9;
-$code-border:                           #E1E1E8;
-
+$code-font-family: 'Deja-vu Sans Mono', Monaco, Menlo, Consolas, 'Courier New',
+  monospace !default;
+$code-font-size: 13px !default;
+$code-color: #333;
+$code-bg: #f7f7f9;
+$code-border: #e1e1e8;
 
 // Tables
-$table-border-color:                    $gray2 !default;
-$table-background:                      $gray1 !default;
-$table-background-hover:                lighten($main-color, 10) !default;
-$table-color-hover:                     #fff !default;
-
+$table-border-color: $gray2 !default;
+$table-background: $gray1 !default;
+$table-background-hover: lighten($main-color, 10) !default;
+$table-color-hover: #fff !default;
 
 // Forms
 // Fancy checkboxes
-$checkbox-height:                       22px !default;
-$checkbox-width:                        38px !default;
-$checkbox-bg:                           #c3c5c4 !default;
-$checkbox-checked-bg:                   $success-color !default;
+$checkbox-height: 22px !default;
+$checkbox-width: 38px !default;
+$checkbox-bg: #c3c5c4 !default;
+$checkbox-checked-bg: $success-color !default;
 
 // Fancy radio buttons
-$radio-size:                            20px !default;
-$radio-circle-size:                     10px !default;
-$radio-border-color:                    #c3c5c4 !default;
-$radio-checked-bg:                      $success-color !default;
-
+$radio-size: 20px !default;
+$radio-circle-size: 10px !default;
+$radio-border-color: #c3c5c4 !default;
+$radio-checked-bg: $success-color !default;
 
 // Grid
-$grid-columns:                          12 !default;
-$grid-padding-width:                    40px !default;
-$grid-unit-width:                       100% / $grid-columns !default;
-
+$grid-columns: 12 !default;
+$grid-padding-width: 40px !default;
+$grid-unit-width: math.div(100%, $grid-columns) !default;
 
 // Breakpoints
-$sm-breakpoint:                         480px !default;
-$md-breakpoint:                         768px !default;
-$lg-breakpoint:                         970px !default;
-$xl-breakpoint:                         1200px !default;
+$sm-breakpoint: 480px !default;
+$md-breakpoint: 768px !default;
+$lg-breakpoint: 970px !default;
+$xl-breakpoint: 1200px !default;
 
-$container-width-md:                    720px !default;
-$container-width-lg:                    940px !default;
-$container-width-xl:                    1150px !default;
-
+$container-width-md: 720px !default;
+$container-width-lg: 940px !default;
+$container-width-xl: 1150px !default;
 
 // Helpers
-$border-radius:                         3px !default;
-$big-border-radius:                     1000px !default;
+$border-radius: 3px !default;
+$big-border-radius: 1000px !default;
 
 //Custom colors
-$white:                                 #fff !default;
+$white: #fff !default;

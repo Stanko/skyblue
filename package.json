@@ -1,12 +1,12 @@
 {
   "name": "skyblue",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "sass": "^1.63.6"
   },
   "scripts": {
     "build-all": "npm run build && npm run build-minified",
-    "build": "node-sass sass/skyblue.scss css/skyblue.css  --output-style expanded",
-    "build-minified": "node-sass sass/skyblue.scss css/skyblue.min.css --output-style compressed"
+    "build": "sass sass/skyblue.scss css/skyblue.css --source-map --style expanded",
+    "build-minified": "sass sass/skyblue.scss css/skyblue.min.css --source-map --style compressed"
   }
 }

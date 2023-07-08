@@ -1,15 +1,21 @@
-body{
-	font-family: $font-family;
-	font-size: $font-size;
-	font-weight: $font-weight;
-	line-height: $line-height;
-	background-color: $body-background;
-	color: $text-color;
-
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  background-color: $body-background;
+  color: $text-color;
 }
 
-img{ max-width: 100%; }
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  cursor: pointer;
+}
 
 .noscroll {
-	overflow: hidden;
+  overflow: hidden;
 }

@@ -1,136 +1,135 @@
-button, input[type="submit"], input[type="button"]{
-	font-family: $font-family;
-	font-weight: $font-weight;
-	font-size: 1em;
-	-webkit-appearance: none;
-	-webkit-font-smoothing: antialiased;
+@use 'sass:color';
+
+button,
+input[type='submit'],
+input[type='button'] {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: 1em;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
 }
 
-@mixin generate-btn($background, $color, $active-color){
-	background: $background;
-	color: $color;
+@mixin generate-btn($background, $color, $active-color) {
+  background: $background;
+  color: $color;
 
-	&:hover{
-		background-color: $background - $color-diff;
-		color: $active-color;
-	}
-	&:active{
-		background-color: $background - $color-diff*2;
-		color: $active-color;
-		top: 1px;
-		position: relative;
-	}
+  &:hover {
+    background-color: color.scale($background, $lightness: $color-diff);
+    color: $active-color;
+  }
+  &:active {
+    background-color: color.scale($background, $lightness: $color-diff * 2);
+    color: $active-color;
+    top: 1px;
+    position: relative;
+  }
 }
 
-@mixin generate-empty-btn($border, $color){
-	border: 2px solid $border;
-	color: $color;
-	background: none;
+@mixin generate-empty-btn($border, $color) {
+  border: 2px solid $border;
+  color: $color;
+  background: none;
 
-	&:hover{
-		color: $color - $color-diff;
-		border-color: $border - $color-diff;
-		background: none;
-	}
-	&:active{
-		color: $color - $color-diff*2;
-		border-color: $border - $color-diff*2;
-		background: none;
-	}
+  &:hover {
+    color: color.scale($color, $lightness: $color-diff);
+    border-color: color.scale($border, $lightness: $color-diff);
+    background: none;
+  }
+  &:active {
+    color: color.scale($color, $lightness: $color-diff * 2);
+    border-color: color.scale($border, $lightness: $color-diff * 2);
+    background: none;
+  }
 }
 
-.btn{
-	display: inline-block;
-	min-width: 120px;
-	padding: 10px 25px;
-	margin-bottom: 1em;
-	border: none;
-	border-radius: $border-radius;
-	font-size: 1em;
-	line-height: 1.4em;
-	text-align: center;
-	text-decoration: none;
-	transition: border-color $transition-time, background-color $transition-time, color $transition-time;
+.btn {
+  display: inline-block;
+  min-width: 120px;
+  padding: 10px 25px;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: $border-radius;
+  font-size: 1em;
+  line-height: 1.4em;
+  text-align: center;
+  text-decoration: none;
+  transition: border-color $transition-time, background-color $transition-time,
+    color $transition-time;
 
-	// SMALL BUTTON
-	&.btn-sm{
-		padding: 5px 15px;
-		min-width: 30px;
-		font-size: 0.8em;
-		line-height: 1.2em;
-	}
-	// BIG BUTTON
-	&.btn-lg{
-		padding: 12px 45px;
-		min-width: 200px;
-		font-size: 1.4em;
-	}
+  // SMALL BUTTON
+  &.btn-sm {
+    padding: 5px 15px;
+    min-width: 30px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+  }
+  // BIG BUTTON
+  &.btn-lg {
+    padding: 12px 45px;
+    min-width: 200px;
+    font-size: 1.4em;
+  }
 
-	@include generate-btn($main-color, #fff, #fff);
+  @include generate-btn($main-color, #fff, #fff);
 
+  // SUCCESS BUTTON
+  &.btn-success {
+    @include generate-btn($success-color, #fff, #fff);
+  }
 
-	// SUCCESS BUTTON
-	&.btn-success{
-		@include generate-btn($success-color, #fff, #fff);
-	}
+  // ERROR BUTTON
+  &.btn-error {
+    @include generate-btn($error-color, #fff, #fff);
+  }
 
-	// ERROR BUTTON
-	&.btn-error{
-		@include generate-btn($error-color, #fff, #fff);
-	}
+  // WARNING BUTTON
+  &.btn-warning {
+    @include generate-btn($warning-color, #fff, #fff);
+  }
 
-	// WARNING BUTTON
-	&.btn-warning{
-		@include generate-btn($warning-color, #fff, #fff);
-	}
+  // LIGHT BUTTON
+  &.btn-light {
+    @include generate-btn($light-color, $gray3, #fff);
+  }
 
-	// LIGHT BUTTON
-	&.btn-light{
-		@include generate-btn($light-color, $gray3, #fff);
-	}
+  // DARK BUTTON
+  &.btn-dark {
+    @include generate-btn($dark-color, #fff, #fff);
+  }
 
-	// DARK BUTTON
-	&.btn-dark{
-		@include generate-btn($dark-color, #fff, #fff);
-	}
+  // EMPTY BUTTONS
+  &.btn-empty {
+    background: transparent;
+    border: 2px solid $main-color;
+    border-radius: $big-border-radius;
+    padding: 8px 25px;
 
+    @include generate-empty-btn($main-color, $main-color);
 
+    // SUCCESS BUTTON
+    &.btn-success {
+      @include generate-empty-btn($success-color, $success-color);
+    }
 
-	// EMPTY BUTTONS
-	&.btn-empty{
-		background: transparent;
-		border: 2px solid $main-color;
-		border-radius: $big-border-radius;
-		padding: 8px 25px;
+    // ERROR BUTTON
+    &.btn-error {
+      @include generate-empty-btn($error-color, $error-color);
+    }
 
-		@include generate-empty-btn($main-color, $main-color);
+    // WARNING BUTTON
+    &.btn-warning {
+      @include generate-empty-btn($warning-color, $warning-color);
+    }
 
+    // LIGHT BUTTON
+    &.btn-light {
+      @include generate-empty-btn($gray2, $gray3);
+    }
 
-		// SUCCESS BUTTON
-		&.btn-success{
-			@include generate-empty-btn($success-color, $success-color);
-		}
-
-		// ERROR BUTTON
-		&.btn-error{
-			@include generate-empty-btn($error-color, $error-color);
-		}
-
-		// WARNING BUTTON
-		&.btn-warning{
-			@include generate-empty-btn($warning-color, $warning-color);
-		}
-
-		// LIGHT BUTTON
-		&.btn-light{
-			@include generate-empty-btn($gray2, $gray3);
-		}
-
-		// DARK BUTTON
-		&.btn-dark{
-			@include generate-empty-btn($dark-color, $dark-color);
-		}
-	}
-
-
+    // DARK BUTTON
+    &.btn-dark {
+      @include generate-empty-btn($dark-color, $dark-color);
+    }
+  }
 }
