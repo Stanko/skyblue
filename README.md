@@ -26,12 +26,9 @@ I made it for my own needs. Feel free to use it and abuse it, in both free and c
 
 ## Examples
 
-Some websites made using this framework:
+A website made using this framework:
 
-* [Hacienda Rodizio](http://haciendarodizio.com)
 * [Tesla Smart House](http://teslasmarthouse.com)
-
-If you want to list your site/project please contact me.
 
 ## Icons
 
