@@ -2,7 +2,7 @@
   "name": "skyblue",
   "version": "1.0.5",
   "dependencies": {
-    "node-sass": "^7.0.3"
+    "node-sass": "^9.0.0"
   },
   "scripts": {
     "build-all": "npm run build && npm run build-minified",
