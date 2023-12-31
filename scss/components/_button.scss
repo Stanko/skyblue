@@ -11,7 +11,9 @@ button {
 
 // Custom buttons base styles
 
-[class^='btn'] {
+.btn,
+.btn-empty,
+.btn-ghost {
   font-size: 1.4rem;
   font-weight: 500;
   display: inline-flex;

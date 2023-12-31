@@ -12,6 +12,14 @@
   .#{$breakpoint-prefix}flex-wrap {
     flex-wrap: wrap;
   }
+
+  .#{$breakpoint-prefix}flex-column {
+    flex-direction: column;
+  }
+
+  .#{$breakpoint-prefix}flex-row {
+    flex-direction: row;
+  }
 }
 
 // ----- Position ----- //
@@ -79,6 +87,29 @@
     }
     .#{$breakpoint-prefix}px-#{$px} {
       padding-inline: $rem;
+    }
+
+    // Margin auto
+    .#{$breakpoint-prefix}m-#{auto} {
+      margin: auto;
+    }
+    .#{$breakpoint-prefix}mt-#{auto} {
+      margin-top: auto;
+    }
+    .#{$breakpoint-prefix}mb-#{auto} {
+      margin-bottom: auto;
+    }
+    .#{$breakpoint-prefix}ml-#{auto} {
+      margin-left: auto;
+    }
+    .#{$breakpoint-prefix}mr-#{auto} {
+      margin-right: auto;
+    }
+    .#{$breakpoint-prefix}my-#{auto} {
+      margin-block: auto;
+    }
+    .#{$breakpoint-prefix}mx-#{auto} {
+      margin-inline: auto;
     }
 
     // Gap

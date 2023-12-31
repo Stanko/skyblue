@@ -9,12 +9,13 @@
   <title>SkyBlue v2</title>
 
   <link rel="stylesheet" href="scss/skyblue.scss">
+  <link rel="stylesheet" href="scss/icons.scss">
   <link rel="stylesheet" href="scss/demo.scss">
 </head>
 
 <body>
   <main>
-    <h1>SkyBlue v2</h1>
+    <h1>SkyBlue v2 <span class="bi-heart blue text-200" /></h1>
     <h2>Colors</h2>
 
     <div class="flex">
@@ -85,11 +86,23 @@
 
     <h2>Grid</h2>
 
-    <div class="grid gap-8 md:gap-12">
+    <div class="grid gap-16">
       <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
       <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
       <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
       <div class="col-6 md:col-start-5 md:col-end-8 lg:col-3">6 / 4 / 3</div>
+    </div>
+
+    <h3>Nested grid</h3>
+
+    <div class="grid gap-16">
+      <div class="col-9">
+        <div class="grid gap-16 blue">
+          <div class="col-6">6</div>
+          <div class="col-6">6</div>
+        </div>
+      </div>
+      <div class="col-3">3</div>
     </div>
 
     <h2>Buttons</h2>
@@ -189,21 +202,59 @@
       </div>
     </div>
 
+    <h2>Icon Buttons</h2>
+
+    <div class="text-400 flex gap-12">
+      <button aria-label="Close" class="icon-btn">
+        <span class="bi-x-lg"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn blue">
+        <span class="bi-heart"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn red">
+        <span class="bi-arrow-clockwise"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn green">
+        <span class="bi-chat-left-quote"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn purple">
+        <span class="bi-egg-fill"></span>
+      </button>
+    </div>
+
+    <div class="text-400 flex gap-12">
+      <button aria-label="Close" class="icon-btn-shadow">
+        <span class="bi-x-lg"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn-shadow blue">
+        <span class="bi-heart"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn-shadow red">
+        <span class="bi-arrow-clockwise"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn-shadow green">
+        <span class="bi-chat-left-quote"></span>
+      </button>
+      <button aria-label="Close" class="icon-btn-shadow purple">
+        <span class="bi-egg-fill"></span>
+      </button>
+    </div>
+
     <h2>Checkboxes</h2>
-    <div>
-      <label class="mb-12">
+    <div class="flex flex-column gap-12">
+      <label>
         <input type="checkbox">
         Checkbox gray
       </label>
-      <label class="mb-12 blue">
+      <label class="blue">
         <input type="checkbox">
         Checkbox blue
       </label>
-      <label class="mb-12 red">
+      <label class="red">
         <input type="checkbox">
         Checkbox red
       </label>
-      <label class="mb-12 purple indeterminate">
+      <label class="purple indeterminate">
         <input type="checkbox">
         Checkbox purple
       </label>
@@ -218,20 +269,20 @@
     </script>
 
     <h2>Radio group</h2>
-    <div>
-      <label class="mb-12">
+    <div class="flex flex-column gap-12">
+      <label>
         <input type="radio" name="radio-1">
         Radio gray
       </label>
-      <label class="mb-12 blue">
+      <label class="blue">
         <input type="radio" name="radio-1" checked>
         Radio blue
       </label>
-      <label class="mb-12 red">
+      <label class="red">
         <input type="radio" name="radio-1">
         Radio red
       </label>
-      <label class="mb-12 purple">
+      <label class="purple">
         <input type="radio" name="radio-1">
         Radio purple
       </label>
@@ -240,6 +291,44 @@
         Radio green
       </label>
     </div>
+
+    <h2>Dialog (modal)</h2>
+
+    <div>
+      <button class="btn blue" data-dialog="dialog-1">Open dialog</button>
+    </div>
   </main>
+
+
+  <dialog class="dialog m-auto" id="dialog-1">
+    <div class="p-32">
+      <form method="dialog">
+        <button class="icon-btn-shadow" type="submit" autofocus>
+          <span class="bi-x-lg"></span>
+        </button>
+      </form>
+
+      <h1>Modal title</h1>
+      <p>Modal content</p>
+    </div>
+  </dialog>
+
+  <script>
+    const $dialogTriggers = document.querySelectorAll('[data-dialog]');
+
+    $dialogTriggers.forEach($dialogTrigger => {
+      const $dialog = document.getElementById($dialogTrigger.dataset.dialog);
+
+      $dialogTrigger.addEventListener('click', (e) => {
+        $dialog.showModal();
+      });
+
+      $dialog.addEventListener('click', e => {
+        if (e.target === $dialog) {
+          $dialog.close();
+        }
+      });
+    })
+  </script>
 
 </html>

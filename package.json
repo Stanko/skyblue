@@ -10,5 +10,8 @@
     "build-all": "npm run build && npm run build-minified",
     "build": "sass sass/skyblue.scss css/skyblue.css --source-map --style expanded",
     "build-minified": "sass sass/skyblue.scss css/skyblue.min.css --source-map --style compressed"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.11.2"
   }
 }

@@ -1,8 +1,4 @@
-/*
- *
- * SkyBlue
- *
- */
+// ----- SkyBlue ----- //
 
 // Core variables and mixins
 @import 'base/reset';
@@ -15,8 +11,10 @@
 // Components
 @import 'components/grid';
 @import 'components/button';
+@import 'components/icon-button';
 @import 'components/checkbox';
 @import 'components/radio';
+@import 'components/dialog';
 
 // Helpers at the end to make sure they can override
 @import 'base/helpers';

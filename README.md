@@ -51,3 +51,5 @@ Work in progress.
   ```
 
 - [x] Checkbox - indeterminate state
+- [ ] Dialog - document that in order to close it on overlay click, there needs to be a wrapper div
+- [ ] Dialog - optional animations
