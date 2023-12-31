@@ -6,12 +6,240 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
 
-  <title>SkyBlue </title>
+  <title>SkyBlue v2</title>
 
-  <link rel="stylesheet" href="css/skyblue.css">
+  <link rel="stylesheet" href="scss/skyblue.scss">
+  <link rel="stylesheet" href="scss/demo.scss">
 </head>
 
 <body>
-  <h1>SkyBlue CSS Framework</h1>
+  <main>
+    <h1>SkyBlue v2</h1>
+    <h2>Colors</h2>
+
+    <div class="flex">
+      <div class="w-48 h-48 bg-50"></div>
+      <div class="w-48 h-48 bg-100"></div>
+      <div class="w-48 h-48 bg-200"></div>
+      <div class="w-48 h-48 bg-300"></div>
+      <div class="w-48 h-48 bg-400"></div>
+      <div class="w-48 h-48 bg-500"></div>
+      <div class="w-48 h-48 bg-600"></div>
+      <div class="w-48 h-48 bg-700"></div>
+      <div class="w-48 h-48 bg-800"></div>
+      <div class="w-48 h-48 bg-900"></div>
+      <div class="w-48 h-48 bg-950"></div>
+    </div>
+    <div class="blue flex">
+      <div class="w-48 h-48 bg-50"></div>
+      <div class="w-48 h-48 bg-100"></div>
+      <div class="w-48 h-48 bg-200"></div>
+      <div class="w-48 h-48 bg-300"></div>
+      <div class="w-48 h-48 bg-400"></div>
+      <div class="w-48 h-48 bg-500"></div>
+      <div class="w-48 h-48 bg-600"></div>
+      <div class="w-48 h-48 bg-700"></div>
+      <div class="w-48 h-48 bg-800"></div>
+      <div class="w-48 h-48 bg-900"></div>
+      <div class="w-48 h-48 bg-950"></div>
+    </div>
+    <div class="red flex">
+      <div class="w-48 h-48 bg-50"></div>
+      <div class="w-48 h-48 bg-100"></div>
+      <div class="w-48 h-48 bg-200"></div>
+      <div class="w-48 h-48 bg-300"></div>
+      <div class="w-48 h-48 bg-400"></div>
+      <div class="w-48 h-48 bg-500"></div>
+      <div class="w-48 h-48 bg-600"></div>
+      <div class="w-48 h-48 bg-700"></div>
+      <div class="w-48 h-48 bg-800"></div>
+      <div class="w-48 h-48 bg-900"></div>
+      <div class="w-48 h-48 bg-950"></div>
+    </div>
+    <div class="purple flex">
+      <div class="w-48 h-48 bg-50"></div>
+      <div class="w-48 h-48 bg-100"></div>
+      <div class="w-48 h-48 bg-200"></div>
+      <div class="w-48 h-48 bg-300"></div>
+      <div class="w-48 h-48 bg-400"></div>
+      <div class="w-48 h-48 bg-500"></div>
+      <div class="w-48 h-48 bg-600"></div>
+      <div class="w-48 h-48 bg-700"></div>
+      <div class="w-48 h-48 bg-800"></div>
+      <div class="w-48 h-48 bg-900"></div>
+      <div class="w-48 h-48 bg-950"></div>
+    </div>
+    <div class="green flex">
+      <div class="w-48 h-48 bg-50"></div>
+      <div class="w-48 h-48 bg-100"></div>
+      <div class="w-48 h-48 bg-200"></div>
+      <div class="w-48 h-48 bg-300"></div>
+      <div class="w-48 h-48 bg-400"></div>
+      <div class="w-48 h-48 bg-500"></div>
+      <div class="w-48 h-48 bg-600"></div>
+      <div class="w-48 h-48 bg-700"></div>
+      <div class="w-48 h-48 bg-800"></div>
+      <div class="w-48 h-48 bg-900"></div>
+      <div class="w-48 h-48 bg-950"></div>
+    </div>
+
+    <h2>Grid</h2>
+
+    <div class="grid gap-8 md:gap-12">
+      <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
+      <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
+      <div class="col-6 md:col-4 lg:col-3">6 / 4 / 3</div>
+      <div class="col-6 md:col-start-5 md:col-end-8 lg:col-3">6 / 4 / 3</div>
+    </div>
+
+    <h2>Buttons</h2>
+
+    <button>Default unstyled button</button>
+
+    <div class="md:flex md:flex-wrap md:gap-12 buttons">
+      <!-- Buttons -->
+      <div class="">
+        <div class="">
+          <button class="btn btn--sm ">Button</button>
+          <button class="btn-empty btn-empty--sm">Button</button>
+          <button class="btn-ghost btn-ghost--sm">Button</button>
+        </div>
+        <div class="">
+          <button class="btn ">Button</button>
+          <button class="btn-empty">Button</button>
+          <button class="btn-ghost">Button</button>
+        </div>
+        <div class="">
+          <button class="btn btn--lg ">Button</button>
+          <button class="btn-empty btn-empty--lg">Button</button>
+          <button class="btn-ghost btn-ghost--lg">Button</button>
+        </div>
+      </div>
+      <!-- Blue buttons -->
+      <div class="blue">
+        <div class="">
+          <button class="btn btn--sm ">Button</button>
+          <button class="btn-empty btn-empty--sm">Button</button>
+          <button class="btn-ghost btn-ghost--sm">Button</button>
+        </div>
+        <div class="">
+          <button class="btn ">Button</button>
+          <button class="btn-empty">Button</button>
+          <button class="btn-ghost">Button</button>
+        </div>
+        <div class="">
+          <button class="btn btn--lg ">Button</button>
+          <button class="btn-empty btn-empty--lg">Button</button>
+          <button class="btn-ghost btn-ghost--lg">Button</button>
+        </div>
+      </div>
+      <!-- Red buttons -->
+      <div class="red">
+        <div class="">
+          <button class="btn btn--sm ">Button</button>
+          <button class="btn-empty btn-empty--sm">Button</button>
+          <button class="btn-ghost btn-ghost--sm">Button</button>
+        </div>
+        <div class="">
+          <button class="btn ">Button</button>
+          <button class="btn-empty">Button</button>
+          <button class="btn-ghost">Button</button>
+        </div>
+        <div class="">
+          <button class="btn btn--lg ">Button</button>
+          <button class="btn-empty btn-empty--lg">Button</button>
+          <button class="btn-ghost btn-ghost--lg">Button</button>
+        </div>
+      </div>
+      <!-- Green buttons -->
+      <div class="green">
+        <div class="">
+          <button class="btn btn--sm ">Button</button>
+          <button class="btn-empty btn-empty--sm">Button</button>
+          <button class="btn-ghost btn-ghost--sm">Button</button>
+        </div>
+        <div class="">
+          <button class="btn ">Button</button>
+          <button class="btn-empty">Button</button>
+          <button class="btn-ghost">Button</button>
+        </div>
+        <div class="">
+          <button class="btn btn--lg ">Button</button>
+          <button class="btn-empty btn-empty--lg">Button</button>
+          <button class="btn-ghost btn-ghost--lg">Button</button>
+        </div>
+      </div>
+      <!-- Purple buttons -->
+      <div class="purple">
+        <div class="">
+          <button class="btn btn--sm ">Button</button>
+          <button class="btn-empty btn-empty--sm">Button</button>
+          <button class="btn-ghost btn-ghost--sm">Button</button>
+        </div>
+        <div class="">
+          <button class="btn ">Button</button>
+          <button class="btn-empty">Button</button>
+          <button class="btn-ghost">Button</button>
+        </div>
+        <div class="">
+          <button class="btn btn--lg ">Button</button>
+          <button class="btn-empty btn-empty--lg">Button</button>
+          <button class="btn-ghost btn-ghost--lg">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <h2>Checkboxes</h2>
+    <div>
+      <label class="mb-12">
+        <input type="checkbox">
+        Checkbox gray
+      </label>
+      <label class="mb-12 blue">
+        <input type="checkbox">
+        Checkbox blue
+      </label>
+      <label class="mb-12 red">
+        <input type="checkbox">
+        Checkbox red
+      </label>
+      <label class="mb-12 purple indeterminate">
+        <input type="checkbox">
+        Checkbox purple
+      </label>
+      <label class="green">
+        <input type="checkbox" checked>
+        Checkbox green
+      </label>
+    </div>
+    <script>
+      const $checkbox = document.querySelector('.indeterminate input');
+      $checkbox.indeterminate = true;
+    </script>
+
+    <h2>Radio group</h2>
+    <div>
+      <label class="mb-12">
+        <input type="radio" name="radio-1">
+        Radio gray
+      </label>
+      <label class="mb-12 blue">
+        <input type="radio" name="radio-1" checked>
+        Radio blue
+      </label>
+      <label class="mb-12 red">
+        <input type="radio" name="radio-1">
+        Radio red
+      </label>
+      <label class="mb-12 purple">
+        <input type="radio" name="radio-1">
+        Radio purple
+      </label>
+      <label class="green">
+        <input type="radio" name="radio-1">
+        Radio green
+      </label>
+    </div>
+  </main>
 
 </html>

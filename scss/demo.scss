@@ -1,0 +1,23 @@
+body {
+  padding: 40px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main > * + * {
+  margin-top: 1em;
+}
+
+.grid > div {
+  background: var(--main-50);
+  padding: 10px;
+  outline: 1px solid var(--main-100);
+  outline-offset: -1px;
+}
+
+.buttons div + div {
+  margin-top: 1rem;
+}

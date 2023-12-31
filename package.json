@@ -2,9 +2,11 @@
   "name": "skyblue",
   "version": "2.0.0",
   "devDependencies": {
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "vite": "^5.0.10"
   },
   "scripts": {
+    "start": "vite",
     "build-all": "npm run build && npm run build-minified",
     "build": "sass sass/skyblue.scss css/skyblue.css --source-map --style expanded",
     "build-minified": "sass sass/skyblue.scss css/skyblue.min.css --source-map --style compressed"

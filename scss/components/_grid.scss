@@ -1,0 +1,42 @@
+$grid-columns: 12;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat($grid-columns, 1fr);
+}
+
+[class^='col'] {
+  overflow: hidden;
+}
+
+@mixin generate-columns($breakpoint-prefix: '') {
+  @for $i from 0 through $grid-columns {
+    .#{$breakpoint-prefix}col-#{$i} {
+      grid-column: span $i;
+    }
+
+    .#{$breakpoint-prefix}col-start-#{$i} {
+      grid-column-start: $i;
+    }
+  }
+
+  @for $i from 0 through $grid-columns - 1 {
+    .#{$breakpoint-prefix}col-end-#{$i} {
+      grid-column-end: $i + 1;
+    }
+  }
+}
+
+@include generate-columns();
+
+@include sm {
+  @include generate-columns('sm\\:');
+}
+
+@include md {
+  @include generate-columns('md\\:');
+}
+
+@include lg {
+  @include generate-columns('lg\\:');
+}

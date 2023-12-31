@@ -1,0 +1,117 @@
+// TODO check if there is more elegant way to center it visually
+$button-padding-sm: 0.7rem 1.6rem 0.8rem;
+$button-padding-md: 1rem 2.4rem 1.1rem; // default
+$button-padding-lg: 1.6rem 3.6rem 1.7rem;
+
+button {
+  background-color: transparent;
+  border: none;
+  line-height: 1.2;
+}
+
+// Custom buttons base styles
+
+[class^='btn'] {
+  font-size: 1.4rem;
+  font-weight: 500;
+  display: inline-flex;
+  border-radius: 10rem;
+  outline: none;
+  border: 1px solid transparent;
+  padding: $button-padding-md;
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+// Default button
+
+@mixin btn($bg-color: var(--black), $text-color: var(--white), $hover-color: var(--main-800)) {
+  background: $bg-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bg-color;
+    outline-offset: 2px;
+  }
+}
+
+.btn {
+  @include btn(var(--main-600), var(--white), var(--main-700));
+}
+
+.btn--sm {
+  font-size: 1.3rem;
+  padding: $button-padding-sm;
+}
+
+.btn--lg {
+  font-size: 1.6rem;
+  padding: $button-padding-lg;
+}
+
+// Empty button
+
+@mixin btn-empty($text-color, $hover-text-color, $hover-bg-color) {
+  color: $text-color;
+  border: 1px solid currentColor;
+
+  &:hover {
+    color: $hover-text-color;
+    background-color: $hover-bg-color;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $text-color;
+    outline-offset: 2px;
+  }
+}
+
+.btn-empty {
+  @include btn-empty(var(--main-600), var(--main-700), var(--main-50));
+}
+
+.btn-empty--sm {
+  font-size: 1.3rem;
+  padding: $button-padding-sm;
+}
+
+.btn-empty--lg {
+  font-size: 1.6rem;
+  padding: $button-padding-lg;
+}
+
+// Ghost button
+
+@mixin btn-ghost($text-color, $hover-text-color, $hover-bg-color, $focus-bg-color) {
+  color: $text-color;
+
+  &:focus-visible {
+    background-color: $focus-bg-color;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: $hover-text-color;
+    background-color: $hover-bg-color;
+  }
+}
+
+.btn-ghost {
+  @include btn-ghost(var(--main-600), var(--main-700), var(--main-100), var(--main-50));
+}
+
+.btn-ghost--sm {
+  font-size: 1.3rem;
+  padding: $button-padding-sm;
+}
+
+.btn-ghost--lg {
+  font-size: 1.6rem;
+  padding: $button-padding-lg;
+}

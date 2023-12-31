@@ -1,0 +1,141 @@
+// ----- Display ----- //
+
+@mixin generate-display-helpers($breakpoint-prefix: '') {
+  $display-values: flex, inline-flex, block, inline-block, inline, grid, inline-grid;
+
+  @each $display in $display-values {
+    .#{$breakpoint-prefix}#{$display} {
+      display: $display;
+    }
+  }
+
+  .#{$breakpoint-prefix}flex-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+// ----- Position ----- //
+
+@mixin generate-position-helpers($breakpoint-prefix: '') {
+  $position-values: relative, absolute, fixed, sticky;
+
+  @each $position in $position-values {
+    .#{$breakpoint-prefix}#{$position} {
+      position: $position;
+    }
+  }
+}
+
+// ----- Spacing ----- //
+
+@mixin generate-spacing-helpers($breakpoint-prefix: '') {
+  // TODO decide on values
+  $margin-and-padding: 0, 1, 2, 4, 8, 12, 16, 20, 24, 32, 48, 64;
+
+  @each $px in $margin-and-padding {
+    $rem: rem($px);
+
+    // Margin
+    .#{$breakpoint-prefix}m-#{$px} {
+      margin: $rem;
+    }
+    .#{$breakpoint-prefix}mt-#{$px} {
+      margin-top: $rem;
+    }
+    .#{$breakpoint-prefix}mb-#{$px} {
+      margin-bottom: $rem;
+    }
+    .#{$breakpoint-prefix}ml-#{$px} {
+      margin-left: $rem;
+    }
+    .#{$breakpoint-prefix}mr-#{$px} {
+      margin-right: $rem;
+    }
+    .#{$breakpoint-prefix}my-#{$px} {
+      margin-block: $rem;
+    }
+    .#{$breakpoint-prefix}mx-#{$px} {
+      margin-inline: $rem;
+    }
+
+    // Padding
+    .#{$breakpoint-prefix}p-#{$px} {
+      padding: $rem;
+    }
+    .#{$breakpoint-prefix}pt-#{$px} {
+      padding-top: $rem;
+    }
+    .#{$breakpoint-prefix}pb-#{$px} {
+      padding-bottom: $rem;
+    }
+    .#{$breakpoint-prefix}pl-#{$px} {
+      padding-left: $rem;
+    }
+    .#{$breakpoint-prefix}pr-#{$px} {
+      padding-right: $rem;
+    }
+    .#{$breakpoint-prefix}py-#{$px} {
+      padding-block: $rem;
+    }
+    .#{$breakpoint-prefix}px-#{$px} {
+      padding-inline: $rem;
+    }
+
+    // Gap
+    .#{$breakpoint-prefix}gap-#{$px} {
+      gap: $rem;
+    }
+
+    // Size
+    .#{$breakpoint-prefix}w-#{$px} {
+      width: $rem;
+    }
+    .#{$breakpoint-prefix}h-#{$px} {
+      height: $rem;
+    }
+  }
+}
+
+// ----- Colors ----- //
+
+@mixin generate-color-helpers($breakpoint-prefix: '') {
+  $color-shades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950;
+
+  @each $shade in $color-shades {
+    .#{$breakpoint-prefix}bg-#{$shade} {
+      background-color: var(--main-#{$shade});
+    }
+
+    .#{$breakpoint-prefix}text-#{$shade} {
+      color: var(--main-#{$shade});
+    }
+  }
+}
+
+// ----- Breakpoints ----- //
+
+@include generate-display-helpers();
+@include generate-position-helpers();
+@include generate-spacing-helpers();
+@include generate-color-helpers();
+
+@include sm {
+  @include generate-display-helpers('sm\\:');
+  @include generate-position-helpers('sm\\:');
+  @include generate-spacing-helpers('sm\\:');
+  @include generate-color-helpers('sm\\:');
+}
+
+@include md {
+  @include generate-display-helpers('md\\:');
+  @include generate-position-helpers('md\\:');
+  @include generate-spacing-helpers('md\\:');
+  @include generate-color-helpers('md\\:');
+}
+
+@include lg {
+  @include generate-display-helpers('lg\\:');
+  @include generate-position-helpers('lg\\:');
+  @include generate-spacing-helpers('lg\\:');
+  @include generate-color-helpers('lg\\:');
+}
