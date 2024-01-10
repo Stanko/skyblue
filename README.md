@@ -50,6 +50,10 @@ Work in progress.
   values.join('\n');
   ```
 
+  - https://uicolors.app/create
+
 - [x] Checkbox - indeterminate state
 - [ ] Dialog - document that in order to close it on overlay click, there needs to be a wrapper div
 - [ ] Dialog - optional animations
+  - https://web.dev/articles/building/a-dialog-component
+  - https://ariakit.org/examples/dialog-animated
