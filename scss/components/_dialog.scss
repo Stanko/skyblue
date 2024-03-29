@@ -1,7 +1,83 @@
+.html--modal-visible {
+  touch-action: none;
+  height: 100%;
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+}
+
+.modal--visible {
+  display: block;
+}
+
+.modal__dialog,
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal__dialog {
+  // Positioning
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  // Scroll
+  touch-action: all;
+  overscroll-behavior-y: contain;
+  overflow-y: auto;
+}
+
+.modal__backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal__content {
+  background-color: white;
+  border-radius: 20px;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes modal-out {
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
 .dialog {
+  animation: modal-in 250ms;
   border: none;
+  touch-action: allf;
+}
+
+.closing {
+  animation: modal-out 250ms forwards;
 }
 
 .dialog::backdrop {
+  opacity: 0;
+  transition: opacity 250ms;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog.open::backdrop {
+  opacity: 1;
+}
+
+.dialog.closing::backdrop {
+  opacity: 0;
 }

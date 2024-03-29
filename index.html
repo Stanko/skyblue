@@ -297,8 +297,23 @@
     <div>
       <button class="btn blue" data-dialog="dialog-1">Open dialog</button>
     </div>
+
+    <div>
+      <button class="btn purple" data-modal="modal-1">Open modal</button>
+    </div>
   </main>
 
+  <div class="modal" id="modal-1">
+    <div class="modal__backdrop"></div>
+    <div class="modal__dialog">
+      <div role="dialog" class="modal__content">
+        <div class="p-32">
+          <h1>Modal title</h1>
+          <p>Modal content</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <dialog class="dialog m-auto" id="dialog-1">
     <div class="p-32">
@@ -314,18 +329,56 @@
   </dialog>
 
   <script>
+    const $modalTriggers = document.querySelectorAll('[data-modal]');
     const $dialogTriggers = document.querySelectorAll('[data-dialog]');
+
+    $modalTriggers.forEach($modalTrigger => {
+      const $modal = document.getElementById($modalTrigger.dataset.modal);
+
+      $modalTrigger.addEventListener('click', (e) => {
+        $modal.classList.add('modal--visible');
+        document.documentElement.classList.add('html--modal-visible')
+      });
+    });
 
     $dialogTriggers.forEach($dialogTrigger => {
       const $dialog = document.getElementById($dialogTrigger.dataset.dialog);
 
+      // Open on button click
       $dialogTrigger.addEventListener('click', (e) => {
         $dialog.showModal();
+        $dialog.classList.add('open');
+      });
+
+      const startClosing = () => {
+        $dialog.addEventListener('animationend', (e) => {
+          $dialog.close();
+        }, { once: true });
+        $dialog.classList.add('closing');
+      }
+
+      $dialog.addEventListener('close', (e) => {
+        $dialog.classList.remove('open', 'closing');
+      });
+
+      // Move when opening?
+      $dialog.querySelectorAll('form[method=dialog]').forEach($form => {
+        $form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          startClosing();
+        })
+      })
+
+      $dialog.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          e.preventDefault();
+          startClosing();
+        }
       });
 
       $dialog.addEventListener('click', e => {
         if (e.target === $dialog) {
-          $dialog.close();
+          startClosing();
         }
       });
     })
